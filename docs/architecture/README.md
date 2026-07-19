@@ -1,5 +1,13 @@
 # Architecture
 
-This folder will hold system architecture documentation.
+System and frontend architecture documentation for TTSetupBuilder.
 
-**Next deliverable:** `ARCHITECTURE.md` (and/or ADRs under `docs/decisions/`) before any application bootstrap.
+**Product context:** [Product Vision](../PRODUCT_VISION.md) — read first.
+
+## Documents
+
+| Doc | Purpose |
+|-----|---------|
+| [Frontend Architecture](./FRONTEND_ARCHITECTURE.md) | Next.js 15 App Router requirements: folders, state, API, images, caching, SSR/ISR, RSC/client, CWV, a11y, SEO |
+
+**Next deliverables:** system `ARCHITECTURE.md` (data/backend/scrapers overview) and ADRs under `docs/decisions/` before application bootstrap.

@@ -61,11 +61,26 @@ TTSetupBuilder
 
 ---
 
+## Documentation
+
+| Doc | Purpose |
+|-----|---------|
+| [Product Vision](./docs/PRODUCT_VISION.md) | What we are building and why (photography-first equipment database) |
+| [Design System](./docs/ui/DESIGN_SYSTEM.md) | UI requirements: tokens, themes, photography, chrome rules |
+| [Component Library](./docs/ui/COMPONENT_LIBRARY.md) | Intended React component inventory (`packages/ui` vs `apps/web`) |
+| [Functional Requirements](./docs/FUNCTIONAL_REQUIREMENTS.md) | Personas, user stories, FR/NFR for every feature area |
+| [Data Model](./docs/DATA_MODEL.md) | Normalized relational model for catalog, players, media, setups |
+| [Navigation & IA](./docs/NAVIGATION.md) | App navigation, routes, and screen-level information architecture |
+| [Frontend Architecture](./docs/architecture/FRONTEND_ARCHITECTURE.md) | Next.js 15 App Router: RSC-first structure, state, images, caching, SSR/ISR |
+| [Architecture index](./docs/architecture/README.md) | Architecture docs folder |
+| [Roadmap](./ROADMAP.md) | High-level phased delivery |
+| [Development Roadmap](./docs/roadmap/DEVELOPMENT_ROADMAP.md) | Deployable milestones (M1–M9), acceptance criteria, complexity |
+
 ## Status
 
 🚧 Early Development
 
-Documentation and repository structure first. Application bootstrap comes next.
+Documentation first. Application bootstrap comes after architecture.
 
 ---
 
