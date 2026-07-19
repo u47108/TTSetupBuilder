@@ -10,7 +10,11 @@ out/
 .next/
 .turbo/
 *.tsbuildinfo
+apps/web/dist/
 
+# Vite
+*.local
+.vite/
 # Env
 .env
 .env.*
@@ -41,7 +45,6 @@ coverage/
 .nyc_output/
 
 # Misc
-*.local
 .cache/
 tmp/
 temp/

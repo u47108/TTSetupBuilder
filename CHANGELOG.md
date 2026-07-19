@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- pnpm workspace monorepo (`pnpm-workspace.yaml`, root `package.json`)
+- `apps/web` Vite + React 19 + TypeScript SPA foundation (Feature First, dark-only shell, ADR-006 routes)
+- TanStack Query provider, Zustand UI store skeleton, theme Context (dark-only)
+- `@ttsetupbuilder/types` minimal shared types (`Product`, `Player`, `Brand`, …)
+- ESLint + Prettier aligned with ADR-013
 - Architecture Decision Records as source of truth (`docs/adr/` — ADR-000 template through ADR-014)
 - Agent instructions (`AGENTS.md`) and Cursor project rule (`.cursor/rules/project.mdc`)
 - Product vision document (`docs/PRODUCT_VISION.md`)
@@ -22,13 +27,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Root `README.md` Technology section aligned with ADR-002 (Vite + React 19 SPA, not Next.js)
+- Root `README.md` Technology section aligned with ADR-002 (Vite + React 19 SPA, not Next.js); status updated for M1 bootstrap
 - `docs/decisions/README.md` now points to canonical `docs/adr/`
 
 ### Planned
 
 - System architecture (`docs/architecture/ARCHITECTURE.md`)
-- Vite + React SPA bootstrap in `apps/web` (per ADR-002 / ADR-003)
+- Catalog data + photography pipeline (M2/M3)
 
 ## [0.1.0] - 2026-07-19
 

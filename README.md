@@ -40,12 +40,24 @@ Unlike ecommerce websites, TTSetupBuilder prioritizes:
 
 ```text
 TTSetupBuilder
-├── apps/web          # Vite + React SPA (planned)
-├── packages/         # Shared packages (ui, types, config, database)
+├── apps/web          # Vite + React 19 SPA (bootstrapped)
+├── packages/types    # Shared TypeScript types (minimal stubs)
+├── packages/         # ui, config, database (placeholders)
 ├── scrapers/         # Data collection scripts
 ├── prompts/          # AI prompt templates
 └── docs/             # Architecture, UI, roadmap, ADRs
 ```
+
+---
+
+## Quick start
+
+```bash
+pnpm install
+pnpm --filter web dev
+```
+
+Build: `pnpm --filter web build`. Details: [`apps/web/README.md`](./apps/web/README.md).
 
 ---
 
@@ -87,9 +99,9 @@ SPA — no SSR required. Compatible with GitHub Pages and Cloudflare Pages.
 
 ## Status
 
-🚧 Early Development
+🚧 Early Development — **Milestone 1 foundation bootstrapped**
 
-Documentation first. Application bootstrap comes after architecture.
+Vite + React SPA in `apps/web` with Feature First layout, dark-only shell, and canonical React Router routes (ADR-002 / ADR-003 / ADR-006 / ADR-007). Catalog, search, and media pipeline come next.
 
 ---
 
