@@ -1,0 +1,50 @@
+---
+description: TTSetupBuilder project constraints — ADRs first, visual database not ecommerce
+alwaysApply: true
+---
+
+# TTSetupBuilder — project constraints
+
+## Authority
+
+- **ADRs in `docs/adr/` are the source of truth.** Read them before writing or changing application code.
+- **Never violate an Accepted ADR.** If a requested change conflicts with an ADR, stop and explain the conflict; do not silently diverge.
+- Architecture decisions **always override** generated code and older docs when they conflict.
+- Pay special attention to **ADR-002** (Vite + React SPA, not Next.js), **ADR-007** (dark-only UI), and **ADR-014** (offline-first / data ownership).
+
+## Product
+
+- **Visual database, not ecommerce** (ADR-001): no cart, checkout, “Buy now” primary CTAs, deal ribbons, or storefront conversion chrome.
+- **Photography first**: large images, galleries, quiet chrome. Products are explored, not sold.
+- **Multiplicity** (ADR-004): products have multiple images, stores (reference only), reviews, videos, and player associations — never assume a single image as the model.
+
+## Stack & structure
+
+- Stack is **React 19 + Vite + TypeScript + TailwindCSS + TanStack Query + Zustand + React Router + Framer Motion**, Node 22 LTS, **pnpm** (ADR-002).
+- **Do not** scaffold Next.js / App Router / SSR unless a new ADR supersedes ADR-002.
+- Organize code **Feature First** — no MVC layout, no top-level `pages/` as the primary structure (ADR-003).
+- State: TanStack Query for catalog/server-local data; Zustand for client UI state; React Context **for theme only** (ADR-005).
+- **Do not add major libraries** without updating ADR-002 (or a superseding ADR).
+
+## Data & images
+
+- **Never hotlink** third-party images; use owned repo/storage assets, thumbnails, WebP, lazy loading (ADR-008).
+- Pipeline: scrape → normalize → JSON/DB → frontend. **No runtime dependency** on third-party websites for catalog or media (ADR-009, ADR-014).
+- Search is **Fuse.js**, client-side, offline-first (ADR-010).
+- Builder: **Racket = Blade + FH + BH**; compose dynamically; do not store assembled-racket image inventories (ADR-011).
+
+## UI
+
+- **Dark only** for now (ADR-007). Do not implement a light theme or theme toggle that implies light is supported.
+- Glass, cards (purposeful), rounded XL, motion, photography-first — align with `docs/ui/DESIGN_SYSTEM.md` except where ADR-007 overrides.
+
+## Quality
+
+- Vitest + RTL + Playwright; coverage **> 80%** (ADR-012).
+- No `any`, no default exports, no barrel abuse; ESLint + Prettier; Conventional Commits; feature branches (ADR-013).
+
+## Agent workflow
+
+1. Read `docs/adr/` (and `AGENTS.md`) first.
+2. Prefer docs/ADR updates when decisions change.
+3. Documentation-only tasks: do not invent application bootstrap that contradicts ADRs.

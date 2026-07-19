@@ -1,5 +1,7 @@
 # Frontend Architecture — TTSetupBuilder
 
+> **Authoritative stack & structure:** Accepted ADRs under [`docs/adr/`](../adr/) (especially [ADR-002](../adr/ADR-002-tech-stack.md) Vite + React SPA and [ADR-003](../adr/ADR-003-frontend-architecture.md) Feature First). This document’s Next.js 15 / SSR / App Router assumptions are **superseded** where they conflict.
+
 > Architecture requirements for the photography-first Next.js frontend in a monorepo.
 
 | Field | Value |

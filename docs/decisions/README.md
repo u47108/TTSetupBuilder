@@ -1,5 +1,7 @@
 # Architecture Decision Records
 
-Record significant technical decisions here (ADRs).
+The canonical ADR location is **[`docs/adr/`](../adr/)**.
 
-Suggested naming: `NNNN-short-title.md` (e.g. `0001-monorepo-layout.md`).
+This folder (`docs/decisions/`) is retained only as a pointer so older links keep working. New ADRs, status changes, and supersessions belong under `docs/adr/`.
+
+Start here: [`docs/adr/README.md`](../adr/README.md).
