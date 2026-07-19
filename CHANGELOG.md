@@ -9,8 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Live scrapers for **VP Sport (Jumpseller)** — 7 categories (gomas lisas, maderos, poros, anti-topspin)
 - Live scrapers for **Dandoy blades + rubbers** with multi-page crawl and merged SPA catalog publish
-- Seed catalog: **120 blades + 120 rubbers** (240 products, 450+ owned images)
+- Seed catalog expanded (Dandoy + VP Sport): **~380 products**, owned JPEG ≤720px
 - Products grid and product detail gallery from local catalog
 - Multi-source ingestion registry (`docs/DATA_SOURCES.md`) and `@ttsetupbuilder/scrapers` CLI
 - Catalog contract extensions in `@ttsetupbuilder/types` (`CatalogProduct`, `CatalogDocument`, provenance + `imageLocalPaths`)

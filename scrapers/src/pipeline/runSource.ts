@@ -25,7 +25,8 @@ function toPublicProduct(product: CatalogProduct): CatalogProduct {
 }
 
 /**
- * Replace all products from this sourceId, keep other sources (multi-source catalog).
+ * Merge publish: drop previous rows for this sourceId, upsert incoming by product id,
+ * keep other sources. Prevents duplicate ids across overlapping category scrapes.
  */
 async function mergePublishCatalog(
   catalogPath: string,
@@ -41,15 +42,20 @@ async function mergePublishCatalog(
     /* first publish */
   }
 
-  const kept = (existing.products ?? []).filter(
-    (product) => product.provenance?.sourceId !== sourceId,
-  );
+  const byId = new Map<string, CatalogProduct>();
+  for (const product of existing.products ?? []) {
+    if (product.provenance?.sourceId !== sourceId) {
+      byId.set(product.id, product);
+    }
+  }
+  for (const product of incoming.map(toPublicProduct)) {
+    byId.set(product.id, product);
+  }
+
   const merged: CatalogDocument = {
     version: 1,
     generatedAt: scrapedAt,
-    products: [...kept, ...incoming.map(toPublicProduct)].sort((a, b) =>
-      a.name.localeCompare(b.name),
-    ),
+    products: [...byId.values()].sort((a, b) => a.name.localeCompare(b.name)),
   };
   await writeJsonFile(catalogPath, merged);
   return merged;

@@ -80,8 +80,10 @@ Flags:
   --max-pages=<n>     Max listing pages (default 1)
 
 Live parsers today:
-  dandoy-blades
-  dandoy-rubbers
+  dandoy-blades, dandoy-rubbers
+  vpsport-gomas-lisas, vpsport-maderos-clasicos, vpsport-maderos-japones,
+  vpsport-maderos-lapiceros, vpsport-poros-cortos, vpsport-poros-largos,
+  vpsport-gomas-anti-topspin
 
 Blocked / stub:
   tt11-* (Cloudflare challenge on automated GET)

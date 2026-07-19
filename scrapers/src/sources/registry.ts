@@ -2,6 +2,7 @@ import { getSourceConfig } from '../config/sources.js';
 import { createListingStub } from './createListingStub.js';
 import { dandoyBlades } from './dandoy-blades.js';
 import { dandoyRubbers } from './dandoy-rubbers.js';
+import { VPSPORT_MODULES } from './vpsport.js';
 import type { SourceModule } from './types.js';
 
 function requireConfig(id: string) {
@@ -23,6 +24,7 @@ export const ttSpinRubbers = createListingStub(requireConfig('tt-spin-rubbers'))
 export const prottRubbers = createListingStub(requireConfig('prott-rubbers'));
 export const prottBlades = createListingStub(requireConfig('prott-blades'));
 export { dandoyBlades, dandoyRubbers };
+export * from './vpsport.js';
 
 const MODULES: readonly SourceModule[] = [
   tt11BladesPenholder,
@@ -37,6 +39,7 @@ const MODULES: readonly SourceModule[] = [
   prottBlades,
   dandoyBlades,
   dandoyRubbers,
+  ...VPSPORT_MODULES,
 ];
 
 export function getSourceModule(id: string): SourceModule | undefined {

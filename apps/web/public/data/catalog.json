@@ -1,7 +1,177 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-19T22:51:47.934Z",
+  "generatedAt": "2026-07-19T23:19:11.146Z",
   "products": [
+    {
+      "id": "vpsport-all-round",
+      "slug": "all-round",
+      "name": "All Round",
+      "brandId": "all",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/all-round",
+      "images": [
+        {
+          "id": "vpsport-all-round-img-1",
+          "src": "/catalog/fdc44a19b64f6c09.jpg",
+          "alt": "All Round photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-all-round-img-2",
+          "src": "/catalog/34ddfe33506f8c99.jpg",
+          "alt": "All Round photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/fdc44a19b64f6c09.jpg",
+        "/catalog/34ddfe33506f8c99.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/all-round",
+        "scrapedAt": "2026-07-19T23:12:40.243Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-apolonia-zlc-blade",
+      "slug": "apolonia-zlc-blade",
+      "name": "Apolonia ZLC Blade",
+      "brandId": "apolonia",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/apolonia-zlc-fl-blade",
+      "images": [
+        {
+          "id": "vpsport-apolonia-zlc-blade-img-1",
+          "src": "/catalog/fc658ba6acc2da7b.jpg",
+          "alt": "Apolonia ZLC Blade photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-apolonia-zlc-blade-img-2",
+          "src": "/catalog/04624c97c12f4fba.jpg",
+          "alt": "Apolonia ZLC Blade photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/fc658ba6acc2da7b.jpg",
+        "/catalog/04624c97c12f4fba.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/apolonia-zlc-fl-blade",
+        "scrapedAt": "2026-07-19T23:12:46.337Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-balsa-carbo-x5",
+      "slug": "balsa-carbo-x5",
+      "name": "Balsa Carbo X5",
+      "brandId": "balsa",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/balsa-carbo-x5",
+      "images": [
+        {
+          "id": "vpsport-balsa-carbo-x5-img-1",
+          "src": "/catalog/7c8c7e826c76484e.jpg",
+          "alt": "Balsa Carbo X5 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-balsa-carbo-x5-img-2",
+          "src": "/catalog/cfa81fb655f84526.jpg",
+          "alt": "Balsa Carbo X5 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/7c8c7e826c76484e.jpg",
+        "/catalog/cfa81fb655f84526.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/balsa-carbo-x5",
+        "scrapedAt": "2026-07-19T23:13:01.158Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-balsa-carbo-x7",
+      "slug": "balsa-carbo-x7",
+      "name": "Balsa Carbo X7",
+      "brandId": "balsa",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/balsa-carbo-x7",
+      "images": [
+        {
+          "id": "vpsport-balsa-carbo-x7-img-1",
+          "src": "/catalog/6a0b79c93eeb32b0.jpg",
+          "alt": "Balsa Carbo X7 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-balsa-carbo-x7-img-2",
+          "src": "/catalog/b63a2a9b449277ac.jpg",
+          "alt": "Balsa Carbo X7 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/6a0b79c93eeb32b0.jpg",
+        "/catalog/b63a2a9b449277ac.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/balsa-carbo-x7",
+        "scrapedAt": "2026-07-19T23:13:05.977Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-balsa-carbon-375",
+      "slug": "balsa-carbon-375",
+      "name": "Balsa Carbon 375",
+      "brandId": "balsa",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/balsa-carbon-375",
+      "images": [
+        {
+          "id": "vpsport-balsa-carbon-375-img-1",
+          "src": "/catalog/af918b35bf2579f8.jpg",
+          "alt": "Balsa Carbon 375 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-balsa-carbon-375-img-2",
+          "src": "/catalog/8cedc58c9f82d3a6.jpg",
+          "alt": "Balsa Carbon 375 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/af918b35bf2579f8.jpg",
+        "/catalog/8cedc58c9f82d3a6.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/balsa-carbon-375",
+        "scrapedAt": "2026-07-19T23:12:53.675Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
     {
       "id": "dandoy-blade-banda-by-stiga-allround-future",
       "slug": "banda-by-stiga-allround-future",
@@ -85,6 +255,210 @@
       }
     },
     {
+      "id": "vpsport-bluefire-m1",
+      "slug": "bluefire-m1",
+      "name": "Bluefire M1",
+      "brandId": "bluefire",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/bluefire-m1",
+      "images": [
+        {
+          "id": "vpsport-bluefire-m1-img-1",
+          "src": "/catalog/afd040f36fc625f6.jpg",
+          "alt": "Bluefire M1 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-bluefire-m1-img-2",
+          "src": "/catalog/c4c2f9955df3b9b3.jpg",
+          "alt": "Bluefire M1 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/afd040f36fc625f6.jpg",
+        "/catalog/c4c2f9955df3b9b3.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/bluefire-m1",
+        "scrapedAt": "2026-07-19T23:06:51.185Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-bluefire-m3",
+      "slug": "bluefire-m3",
+      "name": "Bluefire M3",
+      "brandId": "bluefire",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/bluefire-m3",
+      "images": [
+        {
+          "id": "vpsport-bluefire-m3-img-1",
+          "src": "/catalog/c4c2f9955df3b9b3.jpg",
+          "alt": "Bluefire M3 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-bluefire-m3-img-2",
+          "src": "/catalog/3c1319ac93a94a71.jpg",
+          "alt": "Bluefire M3 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c4c2f9955df3b9b3.jpg",
+        "/catalog/3c1319ac93a94a71.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/bluefire-m3",
+        "scrapedAt": "2026-07-19T23:06:56.198Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-bugller",
+      "slug": "bugller",
+      "name": "Bugller",
+      "brandId": "bugller",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-poros-cortos). Source page: https://www.vpsport.cl/bugller",
+      "images": [
+        {
+          "id": "vpsport-bugller-img-1",
+          "src": "/catalog/7200a524f2dc2826.jpg",
+          "alt": "Bugller photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-bugller-img-2",
+          "src": "/catalog/eaa596939612fa1d.jpg",
+          "alt": "Bugller photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/7200a524f2dc2826.jpg",
+        "/catalog/eaa596939612fa1d.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-poros-cortos",
+        "sourceUrl": "https://www.vpsport.cl/bugller",
+        "scrapedAt": "2026-07-19T23:18:25.509Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-challenger-attack",
+      "slug": "challenger-attack",
+      "name": "Challenger Attack",
+      "brandId": "challenger",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-poros-cortos). Source page: https://www.vpsport.cl/challenguer-atack",
+      "images": [
+        {
+          "id": "vpsport-challenger-attack-img-1",
+          "src": "/catalog/ff9b9883b4549176.jpg",
+          "alt": "Challenger Attack photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-challenger-attack-img-2",
+          "src": "/catalog/b409205157698326.jpg",
+          "alt": "Challenger Attack photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/ff9b9883b4549176.jpg",
+        "/catalog/b409205157698326.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-poros-cortos",
+        "sourceUrl": "https://www.vpsport.cl/challenguer-atack",
+        "scrapedAt": "2026-07-19T23:18:29.572Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-cypress-g-max-s",
+      "slug": "cypress-g-max-s",
+      "name": "Cypress G-Max S",
+      "brandId": "cypress",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-japones). Source page: https://www.vpsport.cl/cypress-g-max-s",
+      "images": [
+        {
+          "id": "vpsport-cypress-g-max-s-img-1",
+          "src": "/catalog/c32a80b59aadbbc9.jpg",
+          "alt": "Cypress G-Max S photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-cypress-g-max-s-img-2",
+          "src": "/catalog/feca6596819940fb.jpg",
+          "alt": "Cypress G-Max S photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c32a80b59aadbbc9.jpg",
+        "/catalog/feca6596819940fb.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-japones",
+        "sourceUrl": "https://www.vpsport.cl/cypress-g-max-s",
+        "scrapedAt": "2026-07-19T23:16:40.814Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-cypress-v-max-s",
+      "slug": "cypress-v-max-s",
+      "name": "Cypress V-Max S",
+      "brandId": "cypress",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-japones). Source page: https://www.vpsport.cl/cuchilla-cypress-v-max-s",
+      "images": [
+        {
+          "id": "vpsport-cypress-v-max-s-img-1",
+          "src": "/catalog/feca6596819940fb.jpg",
+          "alt": "Cypress V-Max S photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-cypress-v-max-s-img-2",
+          "src": "/catalog/115da914a5088a79.jpg",
+          "alt": "Cypress V-Max S photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/feca6596819940fb.jpg",
+        "/catalog/115da914a5088a79.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-japones",
+        "sourceUrl": "https://www.vpsport.cl/cuchilla-cypress-v-max-s",
+        "scrapedAt": "2026-07-19T23:16:36.423Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
       "id": "dandoy-blade-dandoy-allround",
       "slug": "dandoy-allround",
       "name": "Dandoy Allround",
@@ -121,6 +495,74 @@
         "sourceUrl": "https://www.dandoy-sports.com/dandoy-allround.html",
         "scrapedAt": "2026-07-19T22:27:10.327Z",
         "attribution": "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-diode-pro",
+      "slug": "diode-pro",
+      "name": "Diode Pro",
+      "brandId": "diode",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/diode-pro",
+      "images": [
+        {
+          "id": "vpsport-diode-pro-img-1",
+          "src": "/catalog/340625abc5297d10.jpg",
+          "alt": "Diode Pro photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-diode-pro-img-2",
+          "src": "/catalog/77803c5c8295448a.jpg",
+          "alt": "Diode Pro photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/340625abc5297d10.jpg",
+        "/catalog/77803c5c8295448a.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/diode-pro",
+        "scrapedAt": "2026-07-19T23:10:07.841Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-diode-v",
+      "slug": "diode-v",
+      "name": "Diode V",
+      "brandId": "diode",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/diode-v-fl-blade",
+      "images": [
+        {
+          "id": "vpsport-diode-v-img-1",
+          "src": "/catalog/04624c97c12f4fba.jpg",
+          "alt": "Diode V photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-diode-v-img-2",
+          "src": "/catalog/f84d4a56ffe7c3d6.jpg",
+          "alt": "Diode V photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/04624c97c12f4fba.jpg",
+        "/catalog/f84d4a56ffe7c3d6.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/diode-v-fl-blade",
+        "scrapedAt": "2026-07-19T23:10:13.555Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
         "license": "unknown — review before redistribution",
         "mediaRights": "unknown"
       }
@@ -1299,33 +1741,6 @@
         "sourceId": "dandoy-blades",
         "sourceUrl": "https://www.dandoy-sports.com/donic-burn-all.html",
         "scrapedAt": "2026-07-19T22:39:22.032Z",
-        "attribution": "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
-        "license": "unknown — review before redistribution",
-        "mediaRights": "unknown"
-      }
-    },
-    {
-      "id": "dandoy-blade-donic-burn-off",
-      "slug": "donic-burn-off",
-      "name": "Donic Burn Off",
-      "brandId": "donic",
-      "category": "blade",
-      "description": "Imported from Dandoy Sports (blade). Source page: https://www.dandoy-sports.com/donic-burn-off.html",
-      "images": [
-        {
-          "id": "dandoy-blade-donic-burn-off-img-1",
-          "src": "/catalog/4d3ad15b65b48542.jpg",
-          "alt": "Donic Burn Off photo 1",
-          "isPrimary": true
-        }
-      ],
-      "imageLocalPaths": [
-        "/catalog/4d3ad15b65b48542.jpg"
-      ],
-      "provenance": {
-        "sourceId": "dandoy-blades",
-        "sourceUrl": "https://www.dandoy-sports.com/donic-burn-off.html",
-        "scrapedAt": "2026-07-19T22:39:14.614Z",
         "attribution": "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
         "license": "unknown — review before redistribution",
         "mediaRights": "unknown"
@@ -2587,33 +3002,6 @@
         "sourceId": "dandoy-blades",
         "sourceUrl": "https://www.dandoy-sports.com/donic-original-carbospeed.html",
         "scrapedAt": "2026-07-19T22:37:01.160Z",
-        "attribution": "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
-        "license": "unknown — review before redistribution",
-        "mediaRights": "unknown"
-      }
-    },
-    {
-      "id": "dandoy-blade-donic-original-dotec-all",
-      "slug": "donic-original-dotec-all",
-      "name": "Donic Original Dotec ALL",
-      "brandId": "donic",
-      "category": "blade",
-      "description": "Imported from Dandoy Sports (blade). Source page: https://www.dandoy-sports.com/donic-original-dotec-all.html",
-      "images": [
-        {
-          "id": "dandoy-blade-donic-original-dotec-all-img-1",
-          "src": "/catalog/4ff59616c8e684f0.jpg",
-          "alt": "Donic Original Dotec ALL photo 1",
-          "isPrimary": true
-        }
-      ],
-      "imageLocalPaths": [
-        "/catalog/4ff59616c8e684f0.jpg"
-      ],
-      "provenance": {
-        "sourceId": "dandoy-blades",
-        "sourceUrl": "https://www.dandoy-sports.com/donic-original-dotec-all.html",
-        "scrapedAt": "2026-07-19T22:36:44.316Z",
         "attribution": "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
         "license": "unknown — review before redistribution",
         "mediaRights": "unknown"
@@ -4016,6 +4404,3848 @@
       }
     },
     {
+      "id": "vpsport-falcima",
+      "slug": "falcima",
+      "name": "Falcima",
+      "brandId": "falcima",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/falcima",
+      "images": [
+        {
+          "id": "vpsport-falcima-img-1",
+          "src": "/catalog/96df6dbe82484236.jpg",
+          "alt": "Falcima photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-falcima-img-2",
+          "src": "/catalog/5827ec05216a197e.jpg",
+          "alt": "Falcima photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/96df6dbe82484236.jpg",
+        "/catalog/5827ec05216a197e.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/falcima",
+        "scrapedAt": "2026-07-19T23:10:19.194Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-falcima-cs",
+      "slug": "falcima-cs",
+      "name": "Falcima CS",
+      "brandId": "falcima",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/falcima-cs",
+      "images": [
+        {
+          "id": "vpsport-falcima-cs-img-1",
+          "src": "/catalog/845171b144c0b2f4.jpg",
+          "alt": "Falcima CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-falcima-cs-img-2",
+          "src": "/catalog/96df6dbe82484236.jpg",
+          "alt": "Falcima CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/845171b144c0b2f4.jpg",
+        "/catalog/96df6dbe82484236.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/falcima-cs",
+        "scrapedAt": "2026-07-19T23:16:55.272Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-alc",
+      "slug": "fan-zhendong-alc",
+      "name": "Fan Zhendong ALC",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/fan-zhendong-alc",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-alc-img-1",
+          "src": "/catalog/05d38ed6b3490286.jpg",
+          "alt": "Fan Zhendong ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-alc-img-2",
+          "src": "/catalog/11610fe15b8f96c9.jpg",
+          "alt": "Fan Zhendong ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/05d38ed6b3490286.jpg",
+        "/catalog/11610fe15b8f96c9.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-alc",
+        "scrapedAt": "2026-07-19T23:15:27.449Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-alc-cs",
+      "slug": "fan-zhendong-alc-cs",
+      "name": "Fan Zhendong ALC CS",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/fan-zhendong-alc-cs",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-alc-cs-img-1",
+          "src": "/catalog/9b46dd90bd9e35e1.jpg",
+          "alt": "Fan Zhendong ALC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-alc-cs-img-2",
+          "src": "/catalog/05d38ed6b3490286.jpg",
+          "alt": "Fan Zhendong ALC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/9b46dd90bd9e35e1.jpg",
+        "/catalog/05d38ed6b3490286.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-alc-cs",
+        "scrapedAt": "2026-07-19T23:18:00.228Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-cnf",
+      "slug": "fan-zhendong-cnf",
+      "name": "Fan Zhendong CNF",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/fan-zhendong-cnf",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-cnf-img-1",
+          "src": "/catalog/f6f1e9b96b162650.jpg",
+          "alt": "Fan Zhendong CNF photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-cnf-img-2",
+          "src": "/catalog/9f3982923691211c.jpg",
+          "alt": "Fan Zhendong CNF photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/f6f1e9b96b162650.jpg",
+        "/catalog/9f3982923691211c.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-cnf",
+        "scrapedAt": "2026-07-19T23:15:32.407Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-super-alc",
+      "slug": "fan-zhendong-super-alc",
+      "name": "Fan Zhendong Super ALC",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/fan-zhendong-super-alc-1",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-super-alc-img-1",
+          "src": "/catalog/24904f8d045bf71d.jpg",
+          "alt": "Fan Zhendong Super ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-super-alc-img-2",
+          "src": "/catalog/360944ced60d3e28.jpg",
+          "alt": "Fan Zhendong Super ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/24904f8d045bf71d.jpg",
+        "/catalog/360944ced60d3e28.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-super-alc-1",
+        "scrapedAt": "2026-07-19T23:15:37.143Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-super-alc-cs",
+      "slug": "fan-zhendong-super-alc-cs",
+      "name": "Fan Zhendong Super ALC CS",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/fan-zhendong-super-alc",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-super-alc-cs-img-1",
+          "src": "/catalog/d37d00a6535c1e7b.jpg",
+          "alt": "Fan Zhendong Super ALC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-super-alc-cs-img-2",
+          "src": "/catalog/fbefbea5158d36a3.jpg",
+          "alt": "Fan Zhendong Super ALC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/d37d00a6535c1e7b.jpg",
+        "/catalog/fbefbea5158d36a3.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-super-alc",
+        "scrapedAt": "2026-07-19T23:18:05.516Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-super-zlc",
+      "slug": "fan-zhendong-super-zlc",
+      "name": "Fan Zhendong Super ZLC",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/fan-zhendong-super-zlc",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-super-zlc-img-1",
+          "src": "/catalog/8569222d0e1db577.jpg",
+          "alt": "Fan Zhendong Super ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-super-zlc-img-2",
+          "src": "/catalog/bc66a244caeff5e4.jpg",
+          "alt": "Fan Zhendong Super ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/8569222d0e1db577.jpg",
+        "/catalog/bc66a244caeff5e4.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-super-zlc",
+        "scrapedAt": "2026-07-19T23:15:43.812Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-super-zlc-cs",
+      "slug": "fan-zhendong-super-zlc-cs",
+      "name": "Fan zhendong super ZLC CS",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/fan-zhendong-super-zlc-cs",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-super-zlc-cs-img-1",
+          "src": "/catalog/bc66a244caeff5e4.jpg",
+          "alt": "Fan zhendong super ZLC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-super-zlc-cs-img-2",
+          "src": "/catalog/8569222d0e1db577.jpg",
+          "alt": "Fan zhendong super ZLC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/bc66a244caeff5e4.jpg",
+        "/catalog/8569222d0e1db577.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-super-zlc-cs",
+        "scrapedAt": "2026-07-19T23:18:10.144Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-zlc",
+      "slug": "fan-zhendong-zlc",
+      "name": "Fan Zhendong ZLC",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/fan-zhendong-zlc",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-zlc-img-1",
+          "src": "/catalog/6d51590501e5f972.jpg",
+          "alt": "Fan Zhendong ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-zlc-img-2",
+          "src": "/catalog/f4934458c8b357ea.jpg",
+          "alt": "Fan Zhendong ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/6d51590501e5f972.jpg",
+        "/catalog/f4934458c8b357ea.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-zlc",
+        "scrapedAt": "2026-07-19T23:15:50.101Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-fan-zhendong-zlc-cs",
+      "slug": "fan-zhendong-zlc-cs",
+      "name": "Fan Zhendong ZLC CS",
+      "brandId": "fan",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/fan-zhendong-zlc-cs",
+      "images": [
+        {
+          "id": "vpsport-fan-zhendong-zlc-cs-img-1",
+          "src": "/catalog/4fc2edcb33aaefa3.jpg",
+          "alt": "Fan Zhendong ZLC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-fan-zhendong-zlc-cs-img-2",
+          "src": "/catalog/10e5f6f7dacb2079.jpg",
+          "alt": "Fan Zhendong ZLC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/4fc2edcb33aaefa3.jpg",
+        "/catalog/10e5f6f7dacb2079.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/fan-zhendong-zlc-cs",
+        "scrapedAt": "2026-07-19T23:18:16.267Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-feint-long-iii",
+      "slug": "feint-long-iii",
+      "name": "Feint Long III",
+      "brandId": "feint",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-poros-largos). Source page: https://www.vpsport.cl/feint-long-iii",
+      "images": [
+        {
+          "id": "vpsport-feint-long-iii-img-1",
+          "src": "/catalog/bcecf9905384ee88.jpg",
+          "alt": "Feint Long III photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-feint-long-iii-img-2",
+          "src": "/catalog/5e0caaedf98ba5f1.jpg",
+          "alt": "Feint Long III photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/bcecf9905384ee88.jpg",
+        "/catalog/5e0caaedf98ba5f1.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-poros-largos",
+        "sourceUrl": "https://www.vpsport.cl/feint-long-iii",
+        "scrapedAt": "2026-07-19T23:19:00.470Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-felix-lebrun-all",
+      "slug": "felix-lebrun-all",
+      "name": "Felix Lebrun ALL",
+      "brandId": "felix",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/felix-lebrun-all",
+      "images": [
+        {
+          "id": "vpsport-felix-lebrun-all-img-1",
+          "src": "/catalog/abde9010d069aa7c.jpg",
+          "alt": "Felix Lebrun ALL photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-felix-lebrun-all-img-2",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "Felix Lebrun ALL photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/abde9010d069aa7c.jpg",
+        "/catalog/772d75da83cfa7e8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/felix-lebrun-all",
+        "scrapedAt": "2026-07-19T23:15:54.984Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-felix-lebrun-off",
+      "slug": "felix-lebrun-off",
+      "name": "Felix Lebrun OFF",
+      "brandId": "felix",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/felix-lebrun-off",
+      "images": [
+        {
+          "id": "vpsport-felix-lebrun-off-img-1",
+          "src": "/catalog/3b8d8b2ecf668cec.jpg",
+          "alt": "Felix Lebrun OFF photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-felix-lebrun-off-img-2",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "Felix Lebrun OFF photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3b8d8b2ecf668cec.jpg",
+        "/catalog/772d75da83cfa7e8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/felix-lebrun-off",
+        "scrapedAt": "2026-07-19T23:15:59.436Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-franziska-innerforce-zlc",
+      "slug": "franziska-innerforce-zlc",
+      "name": "Franziska Innerforce ZLC",
+      "brandId": "franziska",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/franziska-innerforce-zlc",
+      "images": [
+        {
+          "id": "vpsport-franziska-innerforce-zlc-img-1",
+          "src": "/catalog/f5191282bbab574e.jpg",
+          "alt": "Franziska Innerforce ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-franziska-innerforce-zlc-img-2",
+          "src": "/catalog/bb4a051072957e1e.jpg",
+          "alt": "Franziska Innerforce ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/f5191282bbab574e.jpg",
+        "/catalog/bb4a051072957e1e.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/franziska-innerforce-zlc",
+        "scrapedAt": "2026-07-19T23:16:06.026Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-gewo-aruna-energy-arc-off",
+      "slug": "gewo-aruna-energy-arc-off",
+      "name": "Gewo Aruna Energy ARC OFF",
+      "brandId": "gewo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/madera-gewo-aruna-energy-arc-off",
+      "images": [
+        {
+          "id": "vpsport-gewo-aruna-energy-arc-off-img-1",
+          "src": "/catalog/5dc750dd0371dd3e.jpg",
+          "alt": "Gewo Aruna Energy ARC OFF photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-gewo-aruna-energy-arc-off-img-2",
+          "src": "/catalog/0809e8b52c93b4b5.jpg",
+          "alt": "Gewo Aruna Energy ARC OFF photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/5dc750dd0371dd3e.jpg",
+        "/catalog/0809e8b52c93b4b5.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/madera-gewo-aruna-energy-arc-off",
+        "scrapedAt": "2026-07-19T23:11:29.105Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-gewo-aruna-hinoki-carbon-off",
+      "slug": "gewo-aruna-hinoki-carbon-off",
+      "name": "Gewo Aruna Hinoki Carbon OFF",
+      "brandId": "gewo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/madera-gewo-aruna-hinoki-carbon-off",
+      "images": [
+        {
+          "id": "vpsport-gewo-aruna-hinoki-carbon-off-img-1",
+          "src": "/catalog/1a6ab218062ccfe3.jpg",
+          "alt": "Gewo Aruna Hinoki Carbon OFF photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-gewo-aruna-hinoki-carbon-off-img-2",
+          "src": "/catalog/ee7bee247103b00f.jpg",
+          "alt": "Gewo Aruna Hinoki Carbon OFF photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1a6ab218062ccfe3.jpg",
+        "/catalog/ee7bee247103b00f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/madera-gewo-aruna-hinoki-carbon-off",
+        "scrapedAt": "2026-07-19T23:11:35.168Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-gewo-codexx-el-pro-52",
+      "slug": "gewo-codexx-el-pro-52",
+      "name": "Gewo Codexx El Pro 52",
+      "brandId": "gewo",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/gewo-codexx-el-pro-52",
+      "images": [
+        {
+          "id": "vpsport-gewo-codexx-el-pro-52-img-1",
+          "src": "/catalog/af09ed5a9cf9a316.jpg",
+          "alt": "Gewo Codexx El Pro 52 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-gewo-codexx-el-pro-52-img-2",
+          "src": "/catalog/b039467732cb6b91.jpg",
+          "alt": "Gewo Codexx El Pro 52 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/af09ed5a9cf9a316.jpg",
+        "/catalog/b039467732cb6b91.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/gewo-codexx-el-pro-52",
+        "scrapedAt": "2026-07-19T23:09:15.984Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-gewo-in-force-arc-off",
+      "slug": "gewo-in-force-arc-off",
+      "name": "Gewo In-Force ARC OFF-",
+      "brandId": "gewo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/madera-gewo-in-force-arc-off",
+      "images": [
+        {
+          "id": "vpsport-gewo-in-force-arc-off-img-1",
+          "src": "/catalog/39add5c851780942.jpg",
+          "alt": "Gewo In-Force ARC OFF- photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-gewo-in-force-arc-off-img-2",
+          "src": "/catalog/83159a4ac07c0ea7.jpg",
+          "alt": "Gewo In-Force ARC OFF- photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/39add5c851780942.jpg",
+        "/catalog/83159a4ac07c0ea7.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/madera-gewo-in-force-arc-off",
+        "scrapedAt": "2026-07-19T23:11:41.397Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-dignics-05",
+      "slug": "goma-dignics-05",
+      "name": "Goma Dignics 05",
+      "brandId": "dignics",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/dignics-05-21",
+      "images": [
+        {
+          "id": "vpsport-goma-dignics-05-img-1",
+          "src": "/catalog/b0d748e8ea573d1e.jpg",
+          "alt": "Goma Dignics 05 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-dignics-05-img-2",
+          "src": "/catalog/21c4dcac7e91bda7.jpg",
+          "alt": "Goma Dignics 05 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b0d748e8ea573d1e.jpg",
+        "/catalog/21c4dcac7e91bda7.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/dignics-05-21",
+        "scrapedAt": "2026-07-19T23:05:42.939Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-dignics-09c",
+      "slug": "goma-dignics-09c",
+      "name": "Goma Dignics 09C",
+      "brandId": "dignics",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/dignigs-09c",
+      "images": [
+        {
+          "id": "vpsport-goma-dignics-09c-img-1",
+          "src": "/catalog/21c4dcac7e91bda7.jpg",
+          "alt": "Goma Dignics 09C photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-dignics-09c-img-2",
+          "src": "/catalog/b0d748e8ea573d1e.jpg",
+          "alt": "Goma Dignics 09C photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/21c4dcac7e91bda7.jpg",
+        "/catalog/b0d748e8ea573d1e.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/dignigs-09c",
+        "scrapedAt": "2026-07-19T23:05:59.730Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-dignics-64",
+      "slug": "goma-dignics-64",
+      "name": "Goma Dignics 64",
+      "brandId": "dignics",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/dignics-64-21",
+      "images": [
+        {
+          "id": "vpsport-goma-dignics-64-img-1",
+          "src": "/catalog/5e0caaedf98ba5f1.jpg",
+          "alt": "Goma Dignics 64 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-dignics-64-img-2",
+          "src": "/catalog/0ca79d0d9d7fd747.jpg",
+          "alt": "Goma Dignics 64 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/5e0caaedf98ba5f1.jpg",
+        "/catalog/0ca79d0d9d7fd747.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/dignics-64-21",
+        "scrapedAt": "2026-07-19T23:05:49.912Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-dignics-80",
+      "slug": "goma-dignics-80",
+      "name": "Goma Dignics 80",
+      "brandId": "dignics",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/dignics-80",
+      "images": [
+        {
+          "id": "vpsport-goma-dignics-80-img-1",
+          "src": "/catalog/0ca79d0d9d7fd747.jpg",
+          "alt": "Goma Dignics 80 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-dignics-80-img-2",
+          "src": "/catalog/084288fc8c087a4c.jpg",
+          "alt": "Goma Dignics 80 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/0ca79d0d9d7fd747.jpg",
+        "/catalog/084288fc8c087a4c.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/dignics-80",
+        "scrapedAt": "2026-07-19T23:05:55.268Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-glayzer",
+      "slug": "goma-glayzer",
+      "name": "Goma Glayzer",
+      "brandId": "glayzer",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/glayzer",
+      "images": [
+        {
+          "id": "vpsport-goma-glayzer-img-1",
+          "src": "/catalog/27003e5029e6849b.jpg",
+          "alt": "Goma Glayzer photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-glayzer-img-2",
+          "src": "/catalog/d643789c9e199802.jpg",
+          "alt": "Goma Glayzer photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/27003e5029e6849b.jpg",
+        "/catalog/d643789c9e199802.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/glayzer",
+        "scrapedAt": "2026-07-19T23:09:21.115Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-glayzer-09c",
+      "slug": "goma-glayzer-09c",
+      "name": "Goma Glayzer 09C",
+      "brandId": "glayzer",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/glayzer-09c",
+      "images": [
+        {
+          "id": "vpsport-goma-glayzer-09c-img-1",
+          "src": "/catalog/f431fddc5e18bd95.jpg",
+          "alt": "Goma Glayzer 09C photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-glayzer-09c-img-2",
+          "src": "/catalog/52d76205ec64aa7a.jpg",
+          "alt": "Goma Glayzer 09C photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/f431fddc5e18bd95.jpg",
+        "/catalog/52d76205ec64aa7a.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/glayzer-09c",
+        "scrapedAt": "2026-07-19T23:09:27.031Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-joola-dynaryz-acc",
+      "slug": "goma-joola-dynaryz-acc",
+      "name": "Goma Joola Dynaryz ACC",
+      "brandId": "joola",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-joola-dynaryz-acc",
+      "images": [
+        {
+          "id": "vpsport-goma-joola-dynaryz-acc-img-1",
+          "src": "/catalog/8ac10ff0dae47fac.jpg",
+          "alt": "Goma Joola Dynaryz ACC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-joola-dynaryz-acc-img-2",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "Goma Joola Dynaryz ACC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/8ac10ff0dae47fac.jpg",
+        "/catalog/772d75da83cfa7e8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-joola-dynaryz-acc",
+        "scrapedAt": "2026-07-19T23:09:36.420Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-joola-dynaryz-agr",
+      "slug": "goma-joola-dynaryz-agr",
+      "name": "Goma Joola Dynaryz AGR",
+      "brandId": "joola",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-joola-dynaryz-agr",
+      "images": [
+        {
+          "id": "vpsport-goma-joola-dynaryz-agr-img-1",
+          "src": "/catalog/82f11579f2df1094.jpg",
+          "alt": "Goma Joola Dynaryz AGR photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-joola-dynaryz-agr-img-2",
+          "src": "/catalog/8ac10ff0dae47fac.jpg",
+          "alt": "Goma Joola Dynaryz AGR photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/82f11579f2df1094.jpg",
+        "/catalog/8ac10ff0dae47fac.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-joola-dynaryz-agr",
+        "scrapedAt": "2026-07-19T23:09:40.961Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-joola-dynaryz-cmd",
+      "slug": "goma-joola-dynaryz-cmd",
+      "name": "Goma Joola Dynaryz CMD",
+      "brandId": "joola",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-joola-dynaryz-cmd",
+      "images": [
+        {
+          "id": "vpsport-goma-joola-dynaryz-cmd-img-1",
+          "src": "/catalog/5950fd8447cfb72f.jpg",
+          "alt": "Goma Joola Dynaryz CMD photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-joola-dynaryz-cmd-img-2",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "Goma Joola Dynaryz CMD photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/5950fd8447cfb72f.jpg",
+        "/catalog/772d75da83cfa7e8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-joola-dynaryz-cmd",
+        "scrapedAt": "2026-07-19T23:09:45.362Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-joola-dynaryz-zgr",
+      "slug": "goma-joola-dynaryz-zgr",
+      "name": "Goma Joola Dynaryz ZGR",
+      "brandId": "joola",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-joola-dynaryz-zgr",
+      "images": [
+        {
+          "id": "vpsport-goma-joola-dynaryz-zgr-img-1",
+          "src": "/catalog/3123316def9b7f13.jpg",
+          "alt": "Goma Joola Dynaryz ZGR photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-joola-dynaryz-zgr-img-2",
+          "src": "/catalog/3c1319ac93a94a71.jpg",
+          "alt": "Goma Joola Dynaryz ZGR photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3123316def9b7f13.jpg",
+        "/catalog/3c1319ac93a94a71.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-joola-dynaryz-zgr",
+        "scrapedAt": "2026-07-19T23:09:49.753Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-rozena",
+      "slug": "goma-rozena",
+      "name": "Goma Rozena",
+      "brandId": "rozena",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/rozena",
+      "images": [
+        {
+          "id": "vpsport-goma-rozena-img-1",
+          "src": "/catalog/4c058c7368a9ca31.jpg",
+          "alt": "Goma Rozena photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-rozena-img-2",
+          "src": "/catalog/ccae50dc2fb3efbe.jpg",
+          "alt": "Goma Rozena photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/4c058c7368a9ca31.jpg",
+        "/catalog/ccae50dc2fb3efbe.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/rozena",
+        "scrapedAt": "2026-07-19T23:06:36.400Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-sriver",
+      "slug": "goma-sriver",
+      "name": "Goma Sriver",
+      "brandId": "sriver",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/sriver",
+      "images": [
+        {
+          "id": "vpsport-goma-sriver-img-1",
+          "src": "/catalog/909ab9e161a3a650.jpg",
+          "alt": "Goma Sriver photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-sriver-img-2",
+          "src": "/catalog/01976ac4c1638331.jpg",
+          "alt": "Goma Sriver photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/909ab9e161a3a650.jpg",
+        "/catalog/01976ac4c1638331.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/sriver",
+        "scrapedAt": "2026-07-19T23:08:01.624Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tenergy-05",
+      "slug": "goma-tenergy-05",
+      "name": "Goma Tenergy 05",
+      "brandId": "tenergy",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/tenergy-05",
+      "images": [
+        {
+          "id": "vpsport-goma-tenergy-05-img-1",
+          "src": "/catalog/045c52b63f93d802.jpg",
+          "alt": "Goma Tenergy 05 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tenergy-05-img-2",
+          "src": "/catalog/45ef27e8ceba6849.jpg",
+          "alt": "Goma Tenergy 05 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/045c52b63f93d802.jpg",
+        "/catalog/45ef27e8ceba6849.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/tenergy-05",
+        "scrapedAt": "2026-07-19T23:08:06.793Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tenergy-05-fx",
+      "slug": "goma-tenergy-05-fx",
+      "name": "Goma Tenergy 05 FX",
+      "brandId": "tenergy",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/tenergy-05-fx",
+      "images": [
+        {
+          "id": "vpsport-goma-tenergy-05-fx-img-1",
+          "src": "/catalog/49557b07f7c73338.jpg",
+          "alt": "Goma Tenergy 05 FX photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tenergy-05-fx-img-2",
+          "src": "/catalog/3aadcc868e67e92f.jpg",
+          "alt": "Goma Tenergy 05 FX photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/49557b07f7c73338.jpg",
+        "/catalog/3aadcc868e67e92f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/tenergy-05-fx",
+        "scrapedAt": "2026-07-19T23:08:10.655Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tenergy-05-hard",
+      "slug": "goma-tenergy-05-hard",
+      "name": "Goma Tenergy 05 Hard",
+      "brandId": "tenergy",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/tenergy-05-hard",
+      "images": [
+        {
+          "id": "vpsport-goma-tenergy-05-hard-img-1",
+          "src": "/catalog/45ef27e8ceba6849.jpg",
+          "alt": "Goma Tenergy 05 Hard photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tenergy-05-hard-img-2",
+          "src": "/catalog/045c52b63f93d802.jpg",
+          "alt": "Goma Tenergy 05 Hard photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/45ef27e8ceba6849.jpg",
+        "/catalog/045c52b63f93d802.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/tenergy-05-hard",
+        "scrapedAt": "2026-07-19T23:08:14.538Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tenergy-19",
+      "slug": "goma-tenergy-19",
+      "name": "Goma Tenergy 19",
+      "brandId": "tenergy",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/tenergy-19",
+      "images": [
+        {
+          "id": "vpsport-goma-tenergy-19-img-1",
+          "src": "/catalog/e8bc4a7ec76c4675.jpg",
+          "alt": "Goma Tenergy 19 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tenergy-19-img-2",
+          "src": "/catalog/e2cd3df5d9304c55.jpg",
+          "alt": "Goma Tenergy 19 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/e8bc4a7ec76c4675.jpg",
+        "/catalog/e2cd3df5d9304c55.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/tenergy-19",
+        "scrapedAt": "2026-07-19T23:08:21.285Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tenergy-64",
+      "slug": "goma-tenergy-64",
+      "name": "Goma Tenergy 64",
+      "brandId": "tenergy",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/tenergy-64",
+      "images": [
+        {
+          "id": "vpsport-goma-tenergy-64-img-1",
+          "src": "/catalog/3aadcc868e67e92f.jpg",
+          "alt": "Goma Tenergy 64 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tenergy-64-img-2",
+          "src": "/catalog/49557b07f7c73338.jpg",
+          "alt": "Goma Tenergy 64 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3aadcc868e67e92f.jpg",
+        "/catalog/49557b07f7c73338.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/tenergy-64",
+        "scrapedAt": "2026-07-19T23:08:25.713Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tenergy-80",
+      "slug": "goma-tenergy-80",
+      "name": "Goma Tenergy 80",
+      "brandId": "tenergy",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/tenergy-80",
+      "images": [
+        {
+          "id": "vpsport-goma-tenergy-80-img-1",
+          "src": "/catalog/ce5f3b0c104f0cc1.jpg",
+          "alt": "Goma Tenergy 80 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tenergy-80-img-2",
+          "src": "/catalog/3aadcc868e67e92f.jpg",
+          "alt": "Goma Tenergy 80 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/ce5f3b0c104f0cc1.jpg",
+        "/catalog/3aadcc868e67e92f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/tenergy-80",
+        "scrapedAt": "2026-07-19T23:08:30.313Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tenergy-80fx",
+      "slug": "goma-tenergy-80fx",
+      "name": "Goma Tenergy 80FX",
+      "brandId": "tenergy",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/tenergy-80fx",
+      "images": [
+        {
+          "id": "vpsport-goma-tenergy-80fx-img-1",
+          "src": "/catalog/be948e8f7b8bc04f.jpg",
+          "alt": "Goma Tenergy 80FX photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tenergy-80fx-img-2",
+          "src": "/catalog/ebfe45ddb46e3f07.jpg",
+          "alt": "Goma Tenergy 80FX photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/be948e8f7b8bc04f.jpg",
+        "/catalog/ebfe45ddb46e3f07.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/tenergy-80fx",
+        "scrapedAt": "2026-07-19T23:08:35.787Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tibhar-evolution-mx-p",
+      "slug": "goma-tibhar-evolution-mx-p",
+      "name": "Goma Tibhar Evolution MX-P",
+      "brandId": "tibhar",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-tibhar-evolution-mx-p",
+      "images": [
+        {
+          "id": "vpsport-goma-tibhar-evolution-mx-p-img-1",
+          "src": "/catalog/14bee903d7ceb946.jpg",
+          "alt": "Goma Tibhar Evolution MX-P photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tibhar-evolution-mx-p-img-2",
+          "src": "/catalog/0f8b5c848d52daea.jpg",
+          "alt": "Goma Tibhar Evolution MX-P photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/14bee903d7ceb946.jpg",
+        "/catalog/0f8b5c848d52daea.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-tibhar-evolution-mx-p",
+        "scrapedAt": "2026-07-19T23:07:01.417Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tibhar-evolution-mx-p-50",
+      "slug": "goma-tibhar-evolution-mx-p-50",
+      "name": "Goma Tibhar Evolution MX-P 50°",
+      "brandId": "tibhar",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-tibhar-evolution-mx-p-50",
+      "images": [
+        {
+          "id": "vpsport-goma-tibhar-evolution-mx-p-50-img-1",
+          "src": "/catalog/c8addeac6e54a993.jpg",
+          "alt": "Goma Tibhar Evolution MX-P 50° photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tibhar-evolution-mx-p-50-img-2",
+          "src": "/catalog/eb1163781a959cad.jpg",
+          "alt": "Goma Tibhar Evolution MX-P 50° photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c8addeac6e54a993.jpg",
+        "/catalog/eb1163781a959cad.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-tibhar-evolution-mx-p-50",
+        "scrapedAt": "2026-07-19T23:07:09.207Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-tibhar-hybrid-k3",
+      "slug": "goma-tibhar-hybrid-k3",
+      "name": "Goma Tibhar Hybrid K3",
+      "brandId": "tibhar",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-tibhar-hybrid-k3",
+      "images": [
+        {
+          "id": "vpsport-goma-tibhar-hybrid-k3-img-1",
+          "src": "/catalog/c708fc4f8f988f1d.jpg",
+          "alt": "Goma Tibhar Hybrid K3 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-tibhar-hybrid-k3-img-2",
+          "src": "/catalog/1c4ae2b74c86c416.jpg",
+          "alt": "Goma Tibhar Hybrid K3 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c708fc4f8f988f1d.jpg",
+        "/catalog/1c4ae2b74c86c416.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-tibhar-hybrid-k3",
+        "scrapedAt": "2026-07-19T23:07:15.040Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-yasaka-rakza-7",
+      "slug": "goma-yasaka-rakza-7",
+      "name": "Goma Yasaka Rakza 7",
+      "brandId": "yasaka",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-yasaka-rakza-7",
+      "images": [
+        {
+          "id": "vpsport-goma-yasaka-rakza-7-img-1",
+          "src": "/catalog/5d40eb597e02d3fb.jpg",
+          "alt": "Goma Yasaka Rakza 7 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-yasaka-rakza-7-img-2",
+          "src": "/catalog/045c52b63f93d802.jpg",
+          "alt": "Goma Yasaka Rakza 7 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/5d40eb597e02d3fb.jpg",
+        "/catalog/045c52b63f93d802.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-yasaka-rakza-7",
+        "scrapedAt": "2026-07-19T23:07:19.848Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-yasaka-rakza-9",
+      "slug": "goma-yasaka-rakza-9",
+      "name": "Goma Yasaka Rakza 9",
+      "brandId": "yasaka",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-yasaka-rakza-9",
+      "images": [
+        {
+          "id": "vpsport-goma-yasaka-rakza-9-img-1",
+          "src": "/catalog/925edc8ab5018989.jpg",
+          "alt": "Goma Yasaka Rakza 9 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-yasaka-rakza-9-img-2",
+          "src": "/catalog/045c52b63f93d802.jpg",
+          "alt": "Goma Yasaka Rakza 9 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/925edc8ab5018989.jpg",
+        "/catalog/045c52b63f93d802.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-yasaka-rakza-9",
+        "scrapedAt": "2026-07-19T23:07:24.459Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-goma-zyre-03",
+      "slug": "goma-zyre-03",
+      "name": "Goma Zyre 03",
+      "brandId": "zyre",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/zyre-03",
+      "images": [
+        {
+          "id": "vpsport-goma-zyre-03-img-1",
+          "src": "/catalog/4f58537f8ff313a4.jpg",
+          "alt": "Goma Zyre 03 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-goma-zyre-03-img-2",
+          "src": "/catalog/eaa596939612fa1d.jpg",
+          "alt": "Goma Zyre 03 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/4f58537f8ff313a4.jpg",
+        "/catalog/eaa596939612fa1d.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/zyre-03",
+        "scrapedAt": "2026-07-19T23:06:20.364Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-hadraw-5",
+      "slug": "hadraw-5",
+      "name": "Hadraw 5",
+      "brandId": "hadraw",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/hadraw-5",
+      "images": [
+        {
+          "id": "vpsport-hadraw-5-img-1",
+          "src": "/catalog/073699135c3289f2.jpg",
+          "alt": "Hadraw 5 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-hadraw-5-img-2",
+          "src": "/catalog/26113153e15fa31e.jpg",
+          "alt": "Hadraw 5 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/073699135c3289f2.jpg",
+        "/catalog/26113153e15fa31e.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/hadraw-5",
+        "scrapedAt": "2026-07-19T23:13:10.863Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-hadraw-5-cs",
+      "slug": "hadraw-5-cs",
+      "name": "Hadraw 5 CS",
+      "brandId": "hadraw",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/hadraw-5-1",
+      "images": [
+        {
+          "id": "vpsport-hadraw-5-cs-img-1",
+          "src": "/catalog/dcfa209229589eb5.jpg",
+          "alt": "Hadraw 5 CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-hadraw-5-cs-img-2",
+          "src": "/catalog/5510ad41c7f8ef60.jpg",
+          "alt": "Hadraw 5 CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/dcfa209229589eb5.jpg",
+        "/catalog/5510ad41c7f8ef60.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/hadraw-5-1",
+        "scrapedAt": "2026-07-19T23:17:08.888Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-harimoto-innerforce-alc",
+      "slug": "harimoto-innerforce-alc",
+      "name": "Harimoto Innerforce ALC",
+      "brandId": "harimoto",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/harimoto-innerforce-alc",
+      "images": [
+        {
+          "id": "vpsport-harimoto-innerforce-alc-img-1",
+          "src": "/catalog/06a542329833fba2.jpg",
+          "alt": "Harimoto Innerforce ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-harimoto-innerforce-alc-img-2",
+          "src": "/catalog/608a054bbbed5839.jpg",
+          "alt": "Harimoto Innerforce ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/06a542329833fba2.jpg",
+        "/catalog/608a054bbbed5839.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/harimoto-innerforce-alc",
+        "scrapedAt": "2026-07-19T23:13:16.355Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-harimoto-innerforce-alc-cs-blade",
+      "slug": "harimoto-innerforce-alc-cs-blade",
+      "name": "Harimoto Innerforce ALC CS Blade",
+      "brandId": "harimoto",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/harimoto-innerforce-alc-cs-blade",
+      "images": [
+        {
+          "id": "vpsport-harimoto-innerforce-alc-cs-blade-img-1",
+          "src": "/catalog/186b9a6cffec880f.jpg",
+          "alt": "Harimoto Innerforce ALC CS Blade photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-harimoto-innerforce-alc-cs-blade-img-2",
+          "src": "/catalog/06a542329833fba2.jpg",
+          "alt": "Harimoto Innerforce ALC CS Blade photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/186b9a6cffec880f.jpg",
+        "/catalog/06a542329833fba2.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/harimoto-innerforce-alc-cs-blade",
+        "scrapedAt": "2026-07-19T23:17:13.241Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-harimoto-innerforce-super-zlc",
+      "slug": "harimoto-innerforce-super-zlc",
+      "name": "Harimoto Innerforce Super ZLC",
+      "brandId": "harimoto",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/harimoto-innerforce-super-zlc",
+      "images": [
+        {
+          "id": "vpsport-harimoto-innerforce-super-zlc-img-1",
+          "src": "/catalog/13aaf8e313fa17c7.jpg",
+          "alt": "Harimoto Innerforce Super ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-harimoto-innerforce-super-zlc-img-2",
+          "src": "/catalog/2674f01bcaef8aec.jpg",
+          "alt": "Harimoto Innerforce Super ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/13aaf8e313fa17c7.jpg",
+        "/catalog/2674f01bcaef8aec.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/harimoto-innerforce-super-zlc",
+        "scrapedAt": "2026-07-19T23:13:24.203Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-harimoto-innerforce-zlc-blade",
+      "slug": "harimoto-innerforce-zlc-blade",
+      "name": "Harimoto Innerforce ZLC Blade",
+      "brandId": "harimoto",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/harimoto-innerforce-zlc-blade",
+      "images": [
+        {
+          "id": "vpsport-harimoto-innerforce-zlc-blade-img-1",
+          "src": "/catalog/89e7d55ed70d3361.jpg",
+          "alt": "Harimoto Innerforce ZLC Blade photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-harimoto-innerforce-zlc-blade-img-2",
+          "src": "/catalog/f23d3797d04c1b2e.jpg",
+          "alt": "Harimoto Innerforce ZLC Blade photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/89e7d55ed70d3361.jpg",
+        "/catalog/f23d3797d04c1b2e.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/harimoto-innerforce-zlc-blade",
+        "scrapedAt": "2026-07-19T23:13:29.697Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-harimoto-innerforce-zlc-cs",
+      "slug": "harimoto-innerforce-zlc-cs",
+      "name": "Harimoto Innerforce ZLC CS",
+      "brandId": "harimoto",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/harimoto-innerforce-zlc-cs",
+      "images": [
+        {
+          "id": "vpsport-harimoto-innerforce-zlc-cs-img-1",
+          "src": "/catalog/f23d3797d04c1b2e.jpg",
+          "alt": "Harimoto Innerforce ZLC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-harimoto-innerforce-zlc-cs-img-2",
+          "src": "/catalog/89e7d55ed70d3361.jpg",
+          "alt": "Harimoto Innerforce ZLC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/f23d3797d04c1b2e.jpg",
+        "/catalog/89e7d55ed70d3361.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/harimoto-innerforce-zlc-cs",
+        "scrapedAt": "2026-07-19T23:17:17.145Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-harimoto-super-alc",
+      "slug": "harimoto-super-alc",
+      "name": "Harimoto Super ALC",
+      "brandId": "harimoto",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/harimoto-super-alc",
+      "images": [
+        {
+          "id": "vpsport-harimoto-super-alc-img-1",
+          "src": "/catalog/7ba9d2f516c9afb5.jpg",
+          "alt": "Harimoto Super ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-harimoto-super-alc-img-2",
+          "src": "/catalog/b872c113e5b512ac.jpg",
+          "alt": "Harimoto Super ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/7ba9d2f516c9afb5.jpg",
+        "/catalog/b872c113e5b512ac.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/harimoto-super-alc",
+        "scrapedAt": "2026-07-19T23:13:35.552Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-harimoto-super-alc-cs",
+      "slug": "harimoto-super-alc-cs",
+      "name": "Harimoto Super ALC CS",
+      "brandId": "harimoto",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/harimoto-super-alc-cs",
+      "images": [
+        {
+          "id": "vpsport-harimoto-super-alc-cs-img-1",
+          "src": "/catalog/aa3cfb25153567cd.jpg",
+          "alt": "Harimoto Super ALC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-harimoto-super-alc-cs-img-2",
+          "src": "/catalog/7ba9d2f516c9afb5.jpg",
+          "alt": "Harimoto Super ALC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/aa3cfb25153567cd.jpg",
+        "/catalog/7ba9d2f516c9afb5.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/harimoto-super-alc-cs",
+        "scrapedAt": "2026-07-19T23:17:22.220Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-hybrid-k3-pro",
+      "slug": "hybrid-k3-pro",
+      "name": "Hybrid k3 PRO",
+      "brandId": "hybrid",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/hybrid-k3-pro",
+      "images": [
+        {
+          "id": "vpsport-hybrid-k3-pro-img-1",
+          "src": "/catalog/1d80cf9dbbecfd7f.jpg",
+          "alt": "Hybrid k3 PRO photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-hybrid-k3-pro-img-2",
+          "src": "/catalog/6e3987707e6c5c45.jpg",
+          "alt": "Hybrid k3 PRO photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1d80cf9dbbecfd7f.jpg",
+        "/catalog/6e3987707e6c5c45.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/hybrid-k3-pro",
+        "scrapedAt": "2026-07-19T23:07:29.348Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-ilius-b",
+      "slug": "ilius-b",
+      "name": "Ilius B",
+      "brandId": "ilius",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-poros-largos). Source page: https://www.vpsport.cl/ilius-b",
+      "images": [
+        {
+          "id": "vpsport-ilius-b-img-1",
+          "src": "/catalog/01976ac4c1638331.jpg",
+          "alt": "Ilius B photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-ilius-b-img-2",
+          "src": "/catalog/d1969516e8bead37.jpg",
+          "alt": "Ilius B photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/01976ac4c1638331.jpg",
+        "/catalog/d1969516e8bead37.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-poros-largos",
+        "sourceUrl": "https://www.vpsport.cl/ilius-b",
+        "scrapedAt": "2026-07-19T23:18:46.991Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-ilius-s",
+      "slug": "ilius-s",
+      "name": "Ilius S",
+      "brandId": "ilius",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-poros-largos). Source page: https://www.vpsport.cl/ilius-s",
+      "images": [
+        {
+          "id": "vpsport-ilius-s-img-1",
+          "src": "/catalog/d1969516e8bead37.jpg",
+          "alt": "Ilius S photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-ilius-s-img-2",
+          "src": "/catalog/01976ac4c1638331.jpg",
+          "alt": "Ilius S photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/d1969516e8bead37.jpg",
+        "/catalog/01976ac4c1638331.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-poros-largos",
+        "sourceUrl": "https://www.vpsport.cl/ilius-s",
+        "scrapedAt": "2026-07-19T23:18:51.386Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-imparcial-xb",
+      "slug": "imparcial-xb",
+      "name": "Imparcial XB",
+      "brandId": "imparcial",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-poros-cortos). Source page: https://www.vpsport.cl/imparcial-xb",
+      "images": [
+        {
+          "id": "vpsport-imparcial-xb-img-1",
+          "src": "/catalog/20baf96f095308e0.jpg",
+          "alt": "Imparcial XB photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-imparcial-xb-img-2",
+          "src": "/catalog/3aadcc868e67e92f.jpg",
+          "alt": "Imparcial XB photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/20baf96f095308e0.jpg",
+        "/catalog/3aadcc868e67e92f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-poros-cortos",
+        "sourceUrl": "https://www.vpsport.cl/imparcial-xb",
+        "scrapedAt": "2026-07-19T23:18:33.459Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-imparcial-xs",
+      "slug": "imparcial-xs",
+      "name": "Imparcial XS",
+      "brandId": "imparcial",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-poros-cortos). Source page: https://www.vpsport.cl/imparcial-xs",
+      "images": [
+        {
+          "id": "vpsport-imparcial-xs-img-1",
+          "src": "/catalog/83f829c241344f2a.jpg",
+          "alt": "Imparcial XS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-imparcial-xs-img-2",
+          "src": "/catalog/3aadcc868e67e92f.jpg",
+          "alt": "Imparcial XS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/83f829c241344f2a.jpg",
+        "/catalog/3aadcc868e67e92f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-poros-cortos",
+        "sourceUrl": "https://www.vpsport.cl/imparcial-xs",
+        "scrapedAt": "2026-07-19T23:18:37.317Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-innerforce-layer-alc",
+      "slug": "innerforce-layer-alc",
+      "name": "Innerforce Layer ALC",
+      "brandId": "innerforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/innerforce-layer-alc",
+      "images": [
+        {
+          "id": "vpsport-innerforce-layer-alc-img-1",
+          "src": "/catalog/fc27775d7660165e.jpg",
+          "alt": "Innerforce Layer ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-innerforce-layer-alc-img-2",
+          "src": "/catalog/0ede890db8ee6ae9.jpg",
+          "alt": "Innerforce Layer ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/fc27775d7660165e.jpg",
+        "/catalog/0ede890db8ee6ae9.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/innerforce-layer-alc",
+        "scrapedAt": "2026-07-19T23:13:40.994Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-innerforce-layer-alcs",
+      "slug": "innerforce-layer-alcs",
+      "name": "Innerforce Layer ALC.S",
+      "brandId": "innerforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/innerforce-layer-alcs",
+      "images": [
+        {
+          "id": "vpsport-innerforce-layer-alcs-img-1",
+          "src": "/catalog/5510ad41c7f8ef60.jpg",
+          "alt": "Innerforce Layer ALC.S photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-innerforce-layer-alcs-img-2",
+          "src": "/catalog/c011edd4508756aa.jpg",
+          "alt": "Innerforce Layer ALC.S photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/5510ad41c7f8ef60.jpg",
+        "/catalog/c011edd4508756aa.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/innerforce-layer-alcs",
+        "scrapedAt": "2026-07-19T23:17:26.529Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-innerforce-layer-zlc",
+      "slug": "innerforce-layer-zlc",
+      "name": "Innerforce Layer ZLC",
+      "brandId": "innerforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/innerforce-layer-zlc",
+      "images": [
+        {
+          "id": "vpsport-innerforce-layer-zlc-img-1",
+          "src": "/catalog/f3371706e4733860.jpg",
+          "alt": "Innerforce Layer ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-innerforce-layer-zlc-img-2",
+          "src": "/catalog/8ba23a50540374b4.jpg",
+          "alt": "Innerforce Layer ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/f3371706e4733860.jpg",
+        "/catalog/8ba23a50540374b4.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/innerforce-layer-zlc",
+        "scrapedAt": "2026-07-19T23:13:47.396Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-innerforce-layer-zlc-cs",
+      "slug": "innerforce-layer-zlc-cs",
+      "name": "Innerforce Layer ZLC CS",
+      "brandId": "innerforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/innerforce-layer-zlc-cs",
+      "images": [
+        {
+          "id": "vpsport-innerforce-layer-zlc-cs-img-1",
+          "src": "/catalog/7f2c1e921d1a3efc.jpg",
+          "alt": "Innerforce Layer ZLC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-innerforce-layer-zlc-cs-img-2",
+          "src": "/catalog/1327e5594a1a86ab.jpg",
+          "alt": "Innerforce Layer ZLC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/7f2c1e921d1a3efc.jpg",
+        "/catalog/1327e5594a1a86ab.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/innerforce-layer-zlc-cs",
+        "scrapedAt": "2026-07-19T23:17:32.266Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-inventus-xt-pro-475",
+      "slug": "inventus-xt-pro-475",
+      "name": "Inventus XT Pro 47.5",
+      "brandId": "inventus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/inventus-xt-pro-47-5",
+      "images": [
+        {
+          "id": "vpsport-inventus-xt-pro-475-img-1",
+          "src": "/catalog/3e9f8b1c4f470442.jpg",
+          "alt": "Inventus XT Pro 47.5 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-inventus-xt-pro-475-img-2",
+          "src": "/catalog/0a8696d67c3bd078.jpg",
+          "alt": "Inventus XT Pro 47.5 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3e9f8b1c4f470442.jpg",
+        "/catalog/0a8696d67c3bd078.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/inventus-xt-pro-47-5",
+        "scrapedAt": "2026-07-19T23:07:34.753Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-inventus-xt-pro-50",
+      "slug": "inventus-xt-pro-50",
+      "name": "Inventus XT Pro 50",
+      "brandId": "inventus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/inventus-xt-pro-50",
+      "images": [
+        {
+          "id": "vpsport-inventus-xt-pro-50-img-1",
+          "src": "/catalog/b29edc54b5348f91.jpg",
+          "alt": "Inventus XT Pro 50 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-inventus-xt-pro-50-img-2",
+          "src": "/catalog/0a8696d67c3bd078.jpg",
+          "alt": "Inventus XT Pro 50 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b29edc54b5348f91.jpg",
+        "/catalog/0a8696d67c3bd078.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/inventus-xt-pro-50",
+        "scrapedAt": "2026-07-19T23:07:39.951Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-inventus-xt-xt-pro-525",
+      "slug": "inventus-xt-xt-pro-525",
+      "name": "Inventus XT XT Pro 52.5",
+      "brandId": "inventus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/inventus-xt-xt-pro-52-5",
+      "images": [
+        {
+          "id": "vpsport-inventus-xt-xt-pro-525-img-1",
+          "src": "/catalog/03b99fc77050b82e.jpg",
+          "alt": "Inventus XT XT Pro 52.5 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-inventus-xt-xt-pro-525-img-2",
+          "src": "/catalog/0a8696d67c3bd078.jpg",
+          "alt": "Inventus XT XT Pro 52.5 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/03b99fc77050b82e.jpg",
+        "/catalog/0a8696d67c3bd078.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/inventus-xt-xt-pro-52-5",
+        "scrapedAt": "2026-07-19T23:07:44.773Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-joola-dynaryz-inferno",
+      "slug": "joola-dynaryz-inferno",
+      "name": "Joola Dynaryz Inferno",
+      "brandId": "joola",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/joola-dynaryz-inferno",
+      "images": [
+        {
+          "id": "vpsport-joola-dynaryz-inferno-img-1",
+          "src": "/catalog/7d63f3f5ca439c07.jpg",
+          "alt": "Joola Dynaryz Inferno photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-joola-dynaryz-inferno-img-2",
+          "src": "/catalog/85f2dacf85185296.jpg",
+          "alt": "Joola Dynaryz Inferno photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/7d63f3f5ca439c07.jpg",
+        "/catalog/85f2dacf85185296.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/joola-dynaryz-inferno",
+        "scrapedAt": "2026-07-19T23:07:50.698Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-joola-dynaryz-zgx",
+      "slug": "joola-dynaryz-zgx",
+      "name": "Joola Dynaryz ZGX",
+      "brandId": "joola",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/joola-dynaryz-zgx",
+      "images": [
+        {
+          "id": "vpsport-joola-dynaryz-zgx-img-1",
+          "src": "/catalog/8dddd61a9447c93f.jpg",
+          "alt": "Joola Dynaryz ZGX photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-joola-dynaryz-zgx-img-2",
+          "src": "/catalog/97847883c9ff353b.jpg",
+          "alt": "Joola Dynaryz ZGX photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/8dddd61a9447c93f.jpg",
+        "/catalog/97847883c9ff353b.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/joola-dynaryz-zgx",
+        "scrapedAt": "2026-07-19T23:07:56.289Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-korbel-sk7",
+      "slug": "korbel-sk7",
+      "name": "Korbel SK7",
+      "brandId": "korbel",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/korbel-sk7",
+      "images": [
+        {
+          "id": "vpsport-korbel-sk7-img-1",
+          "src": "/catalog/34ddfe33506f8c99.jpg",
+          "alt": "Korbel SK7 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-korbel-sk7-img-2",
+          "src": "/catalog/6ac1f364848b5b56.jpg",
+          "alt": "Korbel SK7 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/34ddfe33506f8c99.jpg",
+        "/catalog/6ac1f364848b5b56.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/korbel-sk7",
+        "scrapedAt": "2026-07-19T23:13:52.500Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-lin-yun-ju-super-zlc",
+      "slug": "lin-yun-ju-super-zlc",
+      "name": "Lin Yun-Ju Super ZLC",
+      "brandId": "lin",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/lin-yun-ju-super-zlc",
+      "images": [
+        {
+          "id": "vpsport-lin-yun-ju-super-zlc-img-1",
+          "src": "/catalog/ca7983b2aed7bf2c.jpg",
+          "alt": "Lin Yun-Ju Super ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-lin-yun-ju-super-zlc-img-2",
+          "src": "/catalog/6c1af4f2e1a7daeb.jpg",
+          "alt": "Lin Yun-Ju Super ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/ca7983b2aed7bf2c.jpg",
+        "/catalog/6c1af4f2e1a7daeb.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/lin-yun-ju-super-zlc",
+        "scrapedAt": "2026-07-19T23:11:23.094Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-madera-gewo-sensus-carbo-speed",
+      "slug": "madera-gewo-sensus-carbo-speed",
+      "name": "Madera Gewo Sensus Carbo Speed",
+      "brandId": "madera",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/madera-gewo-sensus-carbo-speed",
+      "images": [
+        {
+          "id": "vpsport-madera-gewo-sensus-carbo-speed-img-1",
+          "src": "/catalog/d418080dd5ecd26e.jpg",
+          "alt": "Madera Gewo Sensus Carbo Speed photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-madera-gewo-sensus-carbo-speed-img-2",
+          "src": "/catalog/259254b5831ce262.jpg",
+          "alt": "Madera Gewo Sensus Carbo Speed photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/d418080dd5ecd26e.jpg",
+        "/catalog/259254b5831ce262.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/madera-gewo-sensus-carbo-speed",
+        "scrapedAt": "2026-07-19T23:11:50.378Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-marcos-freitas-alc",
+      "slug": "marcos-freitas-alc",
+      "name": "Marcos Freitas ALC",
+      "brandId": "marcos",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/freitas-alc",
+      "images": [
+        {
+          "id": "vpsport-marcos-freitas-alc-img-1",
+          "src": "/catalog/b7c102874b043f9d.jpg",
+          "alt": "Marcos Freitas ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-marcos-freitas-alc-img-2",
+          "src": "/catalog/ed7fbfed54262d16.jpg",
+          "alt": "Marcos Freitas ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b7c102874b043f9d.jpg",
+        "/catalog/ed7fbfed54262d16.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/freitas-alc",
+        "scrapedAt": "2026-07-19T23:16:11.230Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-maze-advance-blade",
+      "slug": "maze-advance-blade",
+      "name": "Maze Advance Blade",
+      "brandId": "maze",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/maze-advance-blade",
+      "images": [
+        {
+          "id": "vpsport-maze-advance-blade-img-1",
+          "src": "/catalog/394106b753e8692f.jpg",
+          "alt": "Maze Advance Blade photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-maze-advance-blade-img-2",
+          "src": "/catalog/ca7983b2aed7bf2c.jpg",
+          "alt": "Maze Advance Blade photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/394106b753e8692f.jpg",
+        "/catalog/ca7983b2aed7bf2c.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/maze-advance-blade",
+        "scrapedAt": "2026-07-19T23:11:55.377Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-maze-magic",
+      "slug": "maze-magic",
+      "name": "Maze Magic",
+      "brandId": "maze",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/maze-magic",
+      "images": [
+        {
+          "id": "vpsport-maze-magic-img-1",
+          "src": "/catalog/5b44822d742c2e4e.jpg",
+          "alt": "Maze Magic photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-maze-magic-img-2",
+          "src": "/catalog/54f946708bc94db6.jpg",
+          "alt": "Maze Magic photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/5b44822d742c2e4e.jpg",
+        "/catalog/54f946708bc94db6.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/maze-magic",
+        "scrapedAt": "2026-07-19T23:12:02.286Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-mega-flex-control",
+      "slug": "mega-flex-control",
+      "name": "Mega Flex Control",
+      "brandId": "mega",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/mega-flex-control",
+      "images": [
+        {
+          "id": "vpsport-mega-flex-control-img-1",
+          "src": "/catalog/4e2c033605926728.jpg",
+          "alt": "Mega Flex Control photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-mega-flex-control-img-2",
+          "src": "/catalog/b29edc54b5348f91.jpg",
+          "alt": "Mega Flex Control photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/4e2c033605926728.jpg",
+        "/catalog/b29edc54b5348f91.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/mega-flex-control",
+        "scrapedAt": "2026-07-19T23:06:40.848Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-mizutani-jun-super-zlc",
+      "slug": "mizutani-jun-super-zlc",
+      "name": "Mizutani Jun Super ZLC",
+      "brandId": "mizutani",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/mizutani-jun-super-zlc",
+      "images": [
+        {
+          "id": "vpsport-mizutani-jun-super-zlc-img-1",
+          "src": "/catalog/51ce769e8cc17f65.jpg",
+          "alt": "Mizutani Jun Super ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-mizutani-jun-super-zlc-img-2",
+          "src": "/catalog/9c3bef0363d12a42.jpg",
+          "alt": "Mizutani Jun Super ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/51ce769e8cc17f65.jpg",
+        "/catalog/9c3bef0363d12a42.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/mizutani-jun-super-zlc",
+        "scrapedAt": "2026-07-19T23:12:10.206Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-mizutani-jun-zlc",
+      "slug": "mizutani-jun-zlc",
+      "name": "Mizutani Jun ZLC",
+      "brandId": "mizutani",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/mizutani-jun-zlc",
+      "images": [
+        {
+          "id": "vpsport-mizutani-jun-zlc-img-1",
+          "src": "/catalog/a7f561f40624c6da.jpg",
+          "alt": "Mizutani Jun ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-mizutani-jun-zlc-img-2",
+          "src": "/catalog/92171548bf68c892.jpg",
+          "alt": "Mizutani Jun ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/a7f561f40624c6da.jpg",
+        "/catalog/92171548bf68c892.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/mizutani-jun-zlc",
+        "scrapedAt": "2026-07-19T23:12:22.372Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nakama-s-10",
+      "slug": "nakama-s-10",
+      "name": "Nakama S-10",
+      "brandId": "nakama",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/nakama-s-10",
+      "images": [
+        {
+          "id": "vpsport-nakama-s-10-img-1",
+          "src": "/catalog/cdbf429f1f2de5ef.jpg",
+          "alt": "Nakama S-10 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nakama-s-10-img-2",
+          "src": "/catalog/cf994ae156743ac7.jpg",
+          "alt": "Nakama S-10 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/cdbf429f1f2de5ef.jpg",
+        "/catalog/cf994ae156743ac7.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/nakama-s-10",
+        "scrapedAt": "2026-07-19T23:16:26.695Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-neoflexx-eft-45",
+      "slug": "neoflexx-eft-45",
+      "name": "Neoflexx eFT 45",
+      "brandId": "neoflexx",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/neoflexx-eft-45",
+      "images": [
+        {
+          "id": "vpsport-neoflexx-eft-45-img-1",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "Neoflexx eFT 45 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-neoflexx-eft-45-img-2",
+          "src": "/catalog/b039467732cb6b91.jpg",
+          "alt": "Neoflexx eFT 45 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/772d75da83cfa7e8.jpg",
+        "/catalog/b039467732cb6b91.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/neoflexx-eft-45",
+        "scrapedAt": "2026-07-19T23:08:44.712Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-neoflexx-eft-48",
+      "slug": "neoflexx-eft-48",
+      "name": "Neoflexx eFT 48",
+      "brandId": "neoflexx",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/neoflexx-de-caucho-eft-48",
+      "images": [
+        {
+          "id": "vpsport-neoflexx-eft-48-img-1",
+          "src": "/catalog/b039467732cb6b91.jpg",
+          "alt": "Neoflexx eFT 48 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-neoflexx-eft-48-img-2",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "Neoflexx eFT 48 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b039467732cb6b91.jpg",
+        "/catalog/772d75da83cfa7e8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/neoflexx-de-caucho-eft-48",
+        "scrapedAt": "2026-07-19T23:08:40.721Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nexxus-el-pro-43",
+      "slug": "nexxus-el-pro-43",
+      "name": "Nexxus EL Pro 43",
+      "brandId": "nexxus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/nexxus-el-pro-43",
+      "images": [
+        {
+          "id": "vpsport-nexxus-el-pro-43-img-1",
+          "src": "/catalog/eaa596939612fa1d.jpg",
+          "alt": "Nexxus EL Pro 43 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nexxus-el-pro-43-img-2",
+          "src": "/catalog/3c1319ac93a94a71.jpg",
+          "alt": "Nexxus EL Pro 43 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/eaa596939612fa1d.jpg",
+        "/catalog/3c1319ac93a94a71.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/nexxus-el-pro-43",
+        "scrapedAt": "2026-07-19T23:08:48.586Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nexxus-el-pro-48",
+      "slug": "nexxus-el-pro-48",
+      "name": "Nexxus EL Pro 48",
+      "brandId": "nexxus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/nexxus-el-pro-49",
+      "images": [
+        {
+          "id": "vpsport-nexxus-el-pro-48-img-1",
+          "src": "/catalog/3c1319ac93a94a71.jpg",
+          "alt": "Nexxus EL Pro 48 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nexxus-el-pro-48-img-2",
+          "src": "/catalog/eaa596939612fa1d.jpg",
+          "alt": "Nexxus EL Pro 48 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3c1319ac93a94a71.jpg",
+        "/catalog/eaa596939612fa1d.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/nexxus-el-pro-49",
+        "scrapedAt": "2026-07-19T23:08:52.395Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nexxus-el-pro-48-superselect",
+      "slug": "nexxus-el-pro-48-superselect",
+      "name": "Nexxus EL Pro 48 SuperSelect",
+      "brandId": "nexxus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/goma-gewo-nexxus-el-pro-48-superselect",
+      "images": [
+        {
+          "id": "vpsport-nexxus-el-pro-48-superselect-img-1",
+          "src": "/catalog/c2627810e1cd774d.jpg",
+          "alt": "Nexxus EL Pro 48 SuperSelect photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nexxus-el-pro-48-superselect-img-2",
+          "src": "/catalog/62152c36221280e0.jpg",
+          "alt": "Nexxus EL Pro 48 SuperSelect photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c2627810e1cd774d.jpg",
+        "/catalog/62152c36221280e0.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/goma-gewo-nexxus-el-pro-48-superselect",
+        "scrapedAt": "2026-07-19T23:09:31.945Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nexxus-el-pro-50",
+      "slug": "nexxus-el-pro-50",
+      "name": "Nexxus EL Pro 50",
+      "brandId": "nexxus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/nexxus-el-pro-50",
+      "images": [
+        {
+          "id": "vpsport-nexxus-el-pro-50-img-1",
+          "src": "/catalog/27c90905fffa3ca0.jpg",
+          "alt": "Nexxus EL Pro 50 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nexxus-el-pro-50-img-2",
+          "src": "/catalog/5afc49ebdbe9bea5.jpg",
+          "alt": "Nexxus EL Pro 50 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/27c90905fffa3ca0.jpg",
+        "/catalog/5afc49ebdbe9bea5.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/nexxus-el-pro-50",
+        "scrapedAt": "2026-07-19T23:08:57.841Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nexxus-el-pro-53-hard",
+      "slug": "nexxus-el-pro-53-hard",
+      "name": "Nexxus EL Pro 53 Hard",
+      "brandId": "nexxus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/nexxus-el-pro-53",
+      "images": [
+        {
+          "id": "vpsport-nexxus-el-pro-53-hard-img-1",
+          "src": "/catalog/62152c36221280e0.jpg",
+          "alt": "Nexxus EL Pro 53 Hard photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nexxus-el-pro-53-hard-img-2",
+          "src": "/catalog/3c1319ac93a94a71.jpg",
+          "alt": "Nexxus EL Pro 53 Hard photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/62152c36221280e0.jpg",
+        "/catalog/3c1319ac93a94a71.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/nexxus-el-pro-53",
+        "scrapedAt": "2026-07-19T23:09:02.758Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nexxus-el-pro-53-superselect",
+      "slug": "nexxus-el-pro-53-superselect",
+      "name": "Nexxus EL Pro 53 SuperSelect",
+      "brandId": "nexxus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/nexxus-el-pro-53-superselect",
+      "images": [
+        {
+          "id": "vpsport-nexxus-el-pro-53-superselect-img-1",
+          "src": "/catalog/5afc49ebdbe9bea5.jpg",
+          "alt": "Nexxus EL Pro 53 SuperSelect photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nexxus-el-pro-53-superselect-img-2",
+          "src": "/catalog/27c90905fffa3ca0.jpg",
+          "alt": "Nexxus EL Pro 53 SuperSelect photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/5afc49ebdbe9bea5.jpg",
+        "/catalog/27c90905fffa3ca0.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/nexxus-el-pro-53-superselect",
+        "scrapedAt": "2026-07-19T23:09:06.859Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nexxus-xt-pro-48",
+      "slug": "nexxus-xt-pro-48",
+      "name": "Nexxus XT Pro 48",
+      "brandId": "nexxus",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/nexxus-xt-pro-49",
+      "images": [
+        {
+          "id": "vpsport-nexxus-xt-pro-48-img-1",
+          "src": "/catalog/ccae50dc2fb3efbe.jpg",
+          "alt": "Nexxus XT Pro 48 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nexxus-xt-pro-48-img-2",
+          "src": "/catalog/3c1319ac93a94a71.jpg",
+          "alt": "Nexxus XT Pro 48 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/ccae50dc2fb3efbe.jpg",
+        "/catalog/3c1319ac93a94a71.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/nexxus-xt-pro-49",
+        "scrapedAt": "2026-07-19T23:09:11.625Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-nobilis-pbo-c-joola",
+      "slug": "nobilis-pbo-c-joola",
+      "name": "Nobilis PBO-c Joola",
+      "brandId": "nobilis",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/nobilis-pbo-c-joola",
+      "images": [
+        {
+          "id": "vpsport-nobilis-pbo-c-joola-img-1",
+          "src": "/catalog/ba447b3bf2aa8356.jpg",
+          "alt": "Nobilis PBO-c Joola photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-nobilis-pbo-c-joola-img-2",
+          "src": "/catalog/60e1bc9cc13133b4.jpg",
+          "alt": "Nobilis PBO-c Joola photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/ba447b3bf2aa8356.jpg",
+        "/catalog/60e1bc9cc13133b4.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/nobilis-pbo-c-joola",
+        "scrapedAt": "2026-07-19T23:14:51.622Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-outerforce-alc",
+      "slug": "outerforce-alc",
+      "name": "Outerforce ALC",
+      "brandId": "outerforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/outerforce-alc",
+      "images": [
+        {
+          "id": "vpsport-outerforce-alc-img-1",
+          "src": "/catalog/7856e9815076ad02.jpg",
+          "alt": "Outerforce ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-outerforce-alc-img-2",
+          "src": "/catalog/8dce2409a864f1e4.jpg",
+          "alt": "Outerforce ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/7856e9815076ad02.jpg",
+        "/catalog/8dce2409a864f1e4.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/outerforce-alc",
+        "scrapedAt": "2026-07-19T23:14:56.823Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-outerforce-alc-cs",
+      "slug": "outerforce-alc-cs",
+      "name": "Outerforce ALC CS",
+      "brandId": "outerforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/outerforce-alc-cs",
+      "images": [
+        {
+          "id": "vpsport-outerforce-alc-cs-img-1",
+          "src": "/catalog/9ada3e5091d14e8b.jpg",
+          "alt": "Outerforce ALC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-outerforce-alc-cs-img-2",
+          "src": "/catalog/9ada3e5091d14e8b.jpg",
+          "alt": "Outerforce ALC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/9ada3e5091d14e8b.jpg",
+        "/catalog/9ada3e5091d14e8b.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/outerforce-alc-cs",
+        "scrapedAt": "2026-07-19T23:17:50.779Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-outerforce-caf",
+      "slug": "outerforce-caf",
+      "name": "Outerforce CAF",
+      "brandId": "outerforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/outerforce-caf",
+      "images": [
+        {
+          "id": "vpsport-outerforce-caf-img-1",
+          "src": "/catalog/3f0ea63fed01ceb2.jpg",
+          "alt": "Outerforce CAF photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-outerforce-caf-img-2",
+          "src": "/catalog/5e93716f99f92c38.jpg",
+          "alt": "Outerforce CAF photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3f0ea63fed01ceb2.jpg",
+        "/catalog/5e93716f99f92c38.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/outerforce-caf",
+        "scrapedAt": "2026-07-19T23:15:02.045Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-outerforce-caf-cs",
+      "slug": "outerforce-caf-cs",
+      "name": "Outerforce CAF CS",
+      "brandId": "outerforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/outerforce-caf-cs",
+      "images": [
+        {
+          "id": "vpsport-outerforce-caf-cs-img-1",
+          "src": "/catalog/22c0b46471cdf8f7.jpg",
+          "alt": "Outerforce CAF CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-outerforce-caf-cs-img-2",
+          "src": "/catalog/3f0ea63fed01ceb2.jpg",
+          "alt": "Outerforce CAF CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/22c0b46471cdf8f7.jpg",
+        "/catalog/3f0ea63fed01ceb2.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/outerforce-caf-cs",
+        "scrapedAt": "2026-07-19T23:17:55.639Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-outforce-zlc",
+      "slug": "outforce-zlc",
+      "name": "Outforce ZLC",
+      "brandId": "outforce",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/outforce-zlc",
+      "images": [
+        {
+          "id": "vpsport-outforce-zlc-img-1",
+          "src": "/catalog/c011edd4508756aa.jpg",
+          "alt": "Outforce ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-outforce-zlc-img-2",
+          "src": "/catalog/5510ad41c7f8ef60.jpg",
+          "alt": "Outforce ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c011edd4508756aa.jpg",
+        "/catalog/5510ad41c7f8ef60.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/outforce-zlc",
+        "scrapedAt": "2026-07-19T23:16:21.507Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-ovtcharov-innerforce-alc",
+      "slug": "ovtcharov-innerforce-alc",
+      "name": "Ovtcharov Innerforce ALC",
+      "brandId": "ovtcharov",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/ovtcharov-innerforce-alc-1",
+      "images": [
+        {
+          "id": "vpsport-ovtcharov-innerforce-alc-img-1",
+          "src": "/catalog/1c440bca3f9ebde4.jpg",
+          "alt": "Ovtcharov Innerforce ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-ovtcharov-innerforce-alc-img-2",
+          "src": "/catalog/2c0c19f0afae84d3.jpg",
+          "alt": "Ovtcharov Innerforce ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1c440bca3f9ebde4.jpg",
+        "/catalog/2c0c19f0afae84d3.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/ovtcharov-innerforce-alc-1",
+        "scrapedAt": "2026-07-19T23:15:07.431Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-paleta-4008-xushaofa",
+      "slug": "paleta-4008-xushaofa",
+      "name": "Paleta 4008 Xushaofa",
+      "brandId": "paleta",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/paleta-xushaofa-4008",
+      "images": [
+        {
+          "id": "vpsport-paleta-4008-xushaofa-img-1",
+          "src": "/catalog/1631d8b7e9815836.jpg",
+          "alt": "Paleta 4008 Xushaofa photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-paleta-4008-xushaofa-img-2",
+          "src": "/catalog/3848ade81eb6418e.jpg",
+          "alt": "Paleta 4008 Xushaofa photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1631d8b7e9815836.jpg",
+        "/catalog/3848ade81eb6418e.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/paleta-xushaofa-4008",
+        "scrapedAt": "2026-07-19T23:15:12.841Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-paleta-xushaofa-5008",
+      "slug": "paleta-xushaofa-5008",
+      "name": "Paleta Xushaofa 5008",
+      "brandId": "paleta",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/paleta-xushaofa-5008",
+      "images": [
+        {
+          "id": "vpsport-paleta-xushaofa-5008-img-1",
+          "src": "/catalog/3848ade81eb6418e.jpg",
+          "alt": "Paleta Xushaofa 5008 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-paleta-xushaofa-5008-img-2",
+          "src": "/catalog/1631d8b7e9815836.jpg",
+          "alt": "Paleta Xushaofa 5008 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3848ade81eb6418e.jpg",
+        "/catalog/1631d8b7e9815836.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/paleta-xushaofa-5008",
+        "scrapedAt": "2026-07-19T23:15:17.292Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-persson-off-world-champion-89",
+      "slug": "persson-off-world-champion-89",
+      "name": "Persson Off World Champion 89",
+      "brandId": "persson",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/persson-off-world-champion-89-1",
+      "images": [
+        {
+          "id": "vpsport-persson-off-world-champion-89-img-1",
+          "src": "/catalog/3cf272909005445f.jpg",
+          "alt": "Persson Off World Champion 89 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-persson-off-world-champion-89-img-2",
+          "src": "/catalog/dcfa209229589eb5.jpg",
+          "alt": "Persson Off World Champion 89 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3cf272909005445f.jpg",
+        "/catalog/dcfa209229589eb5.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/persson-off-world-champion-89-1",
+        "scrapedAt": "2026-07-19T23:16:16.688Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-petr-korbel",
+      "slug": "petr-korbel",
+      "name": "Petr Korbel",
+      "brandId": "petr",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/petr-korbel",
+      "images": [
+        {
+          "id": "vpsport-petr-korbel-img-1",
+          "src": "/catalog/22fbdef90a0f1022.jpg",
+          "alt": "Petr Korbel photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-petr-korbel-img-2",
+          "src": "/catalog/8cbe5c83c3a7875c.jpg",
+          "alt": "Petr Korbel photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/22fbdef90a0f1022.jpg",
+        "/catalog/8cbe5c83c3a7875c.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/petr-korbel",
+        "scrapedAt": "2026-07-19T23:15:22.040Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-power-carbon",
+      "slug": "power-carbon",
+      "name": "Power Carbon",
+      "brandId": "power",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/power-carbon",
+      "images": [
+        {
+          "id": "vpsport-power-carbon-img-1",
+          "src": "/catalog/0ab624e5f86d1fa8.jpg",
+          "alt": "Power Carbon photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-power-carbon-img-2",
+          "src": "/catalog/6a0b79c93eeb32b0.jpg",
+          "alt": "Power Carbon photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/0ab624e5f86d1fa8.jpg",
+        "/catalog/6a0b79c93eeb32b0.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/power-carbon",
+        "scrapedAt": "2026-07-19T23:10:38.555Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-power-off",
+      "slug": "power-off",
+      "name": "Power OFF",
+      "brandId": "power",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/power-off",
+      "images": [
+        {
+          "id": "vpsport-power-off-img-1",
+          "src": "/catalog/36ba6d1e1de79ef1.jpg",
+          "alt": "Power OFF photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-power-off-img-2",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "Power OFF photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/36ba6d1e1de79ef1.jpg",
+        "/catalog/772d75da83cfa7e8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/power-off",
+        "scrapedAt": "2026-07-19T23:10:43.856Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-primorac-blade",
+      "slug": "primorac-blade",
+      "name": "Primorac Blade",
+      "brandId": "primorac",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/primorac-blade",
+      "images": [
+        {
+          "id": "vpsport-primorac-blade-img-1",
+          "src": "/catalog/d7724d0921ff7cee.jpg",
+          "alt": "Primorac Blade photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-primorac-blade-img-2",
+          "src": "/catalog/c6b7b20a761f29d1.jpg",
+          "alt": "Primorac Blade photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/d7724d0921ff7cee.jpg",
+        "/catalog/c6b7b20a761f29d1.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/primorac-blade",
+        "scrapedAt": "2026-07-19T23:10:48.751Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-primorac-carbon",
+      "slug": "primorac-carbon",
+      "name": "Primorac Carbon",
+      "brandId": "primorac",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/primorac-carbon",
+      "images": [
+        {
+          "id": "vpsport-primorac-carbon-img-1",
+          "src": "/catalog/192b133d418c3b16.jpg",
+          "alt": "Primorac Carbon photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-primorac-carbon-img-2",
+          "src": "/catalog/fa8451a3918e4f11.jpg",
+          "alt": "Primorac Carbon photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/192b133d418c3b16.jpg",
+        "/catalog/fa8451a3918e4f11.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/primorac-carbon",
+        "scrapedAt": "2026-07-19T23:10:54.446Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-prithika-pavade-arc-off",
+      "slug": "prithika-pavade-arc-off",
+      "name": "Prithika Pavade ARC OFF",
+      "brandId": "prithika",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/prithika-pavade-arc-off",
+      "images": [
+        {
+          "id": "vpsport-prithika-pavade-arc-off-img-1",
+          "src": "/catalog/14122c7b75168142.jpg",
+          "alt": "Prithika Pavade ARC OFF photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-prithika-pavade-arc-off-img-2",
+          "src": "/catalog/609c562d0360e3e5.jpg",
+          "alt": "Prithika Pavade ARC OFF photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/14122c7b75168142.jpg",
+        "/catalog/609c562d0360e3e5.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/prithika-pavade-arc-off",
+        "scrapedAt": "2026-07-19T23:11:00.586Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-prithika-pavade-blaze-off",
+      "slug": "prithika-pavade-blaze-off",
+      "name": "Prithika Pavade Blaze Off",
+      "brandId": "prithika",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/prithika-pavade-blaze-off",
+      "images": [
+        {
+          "id": "vpsport-prithika-pavade-blaze-off-img-1",
+          "src": "/catalog/8cedc58c9f82d3a6.jpg",
+          "alt": "Prithika Pavade Blaze Off photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-prithika-pavade-blaze-off-img-2",
+          "src": "/catalog/19923bd77206d918.jpg",
+          "alt": "Prithika Pavade Blaze Off photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/8cedc58c9f82d3a6.jpg",
+        "/catalog/19923bd77206d918.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/prithika-pavade-blaze-off",
+        "scrapedAt": "2026-07-19T23:11:06.678Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-prithika-pavade-sense-all",
+      "slug": "prithika-pavade-sense-all",
+      "name": "Prithika Pavade Sense All+",
+      "brandId": "prithika",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/prithika-pavade-sense-all",
+      "images": [
+        {
+          "id": "vpsport-prithika-pavade-sense-all-img-1",
+          "src": "/catalog/ce5ca18347b80261.jpg",
+          "alt": "Prithika Pavade Sense All+ photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-prithika-pavade-sense-all-img-2",
+          "src": "/catalog/987ba52a45a00a0f.jpg",
+          "alt": "Prithika Pavade Sense All+ photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/ce5ca18347b80261.jpg",
+        "/catalog/987ba52a45a00a0f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/prithika-pavade-sense-all",
+        "scrapedAt": "2026-07-19T23:11:12.884Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-proton-neo-375",
+      "slug": "proton-neo-375",
+      "name": "Proton Neo 375",
+      "brandId": "proton",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/proton-neo-375",
+      "images": [
+        {
+          "id": "vpsport-proton-neo-375-img-1",
+          "src": "/catalog/835bb616e6ca4776.jpg",
+          "alt": "Proton Neo 375 photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-proton-neo-375-img-2",
+          "src": "/catalog/49557b07f7c73338.jpg",
+          "alt": "Proton Neo 375 photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/835bb616e6ca4776.jpg",
+        "/catalog/49557b07f7c73338.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/proton-neo-375",
+        "scrapedAt": "2026-07-19T23:06:26.198Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-revolver-garaydia-r-hoja",
+      "slug": "revolver-garaydia-r-hoja",
+      "name": "Revólver Garaydia-R Hoja",
+      "brandId": "revolver",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-japones). Source page: https://www.vpsport.cl/revolver-garaydia-r-hoja",
+      "images": [
+        {
+          "id": "vpsport-revolver-garaydia-r-hoja-img-1",
+          "src": "/catalog/3fde72958537be00.jpg",
+          "alt": "Revólver Garaydia-R Hoja photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-revolver-garaydia-r-hoja-img-2",
+          "src": "/catalog/c6b7b20a761f29d1.jpg",
+          "alt": "Revólver Garaydia-R Hoja photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3fde72958537be00.jpg",
+        "/catalog/c6b7b20a761f29d1.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-japones",
+        "sourceUrl": "https://www.vpsport.cl/revolver-garaydia-r-hoja",
+        "scrapedAt": "2026-07-19T23:16:45.138Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-rhyzen-fire",
+      "slug": "rhyzen-fire",
+      "name": "Rhyzen Fire",
+      "brandId": "rhyzen",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/rhyzen-fire",
+      "images": [
+        {
+          "id": "vpsport-rhyzen-fire-img-1",
+          "src": "/catalog/93fcd1cc9805ff5e.jpg",
+          "alt": "Rhyzen Fire photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-rhyzen-fire-img-2",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "Rhyzen Fire photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/93fcd1cc9805ff5e.jpg",
+        "/catalog/772d75da83cfa7e8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/rhyzen-fire",
+        "scrapedAt": "2026-07-19T23:06:31.587Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-sardius",
+      "slug": "sardius",
+      "name": "Sardius",
+      "brandId": "sardius",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/sardius",
+      "images": [
+        {
+          "id": "vpsport-sardius-img-1",
+          "src": "/catalog/23c426183e203617.jpg",
+          "alt": "Sardius photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-sardius-img-2",
+          "src": "/catalog/c6b7b20a761f29d1.jpg",
+          "alt": "Sardius photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/23c426183e203617.jpg",
+        "/catalog/c6b7b20a761f29d1.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/sardius",
+        "scrapedAt": "2026-07-19T23:11:17.848Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-servicio-armado-de-paleta",
+      "slug": "servicio-armado-de-paleta",
+      "name": "Servicio Armado de paleta",
+      "brandId": "servicio",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/montaje-de-gomas",
+      "images": [
+        {
+          "id": "vpsport-servicio-armado-de-paleta-img-1",
+          "src": "/catalog/14b9fe22cb92fa58.jpg",
+          "alt": "Servicio Armado de paleta photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-servicio-armado-de-paleta-img-2",
+          "src": "/catalog/045c52b63f93d802.jpg",
+          "alt": "Servicio Armado de paleta photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/14b9fe22cb92fa58.jpg",
+        "/catalog/045c52b63f93d802.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/montaje-de-gomas",
+        "scrapedAt": "2026-07-19T23:06:45.781Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-sk-carbon",
+      "slug": "sk-carbon",
+      "name": "SK Carbon",
+      "brandId": "sk",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/sk-carbon",
+      "images": [
+        {
+          "id": "vpsport-sk-carbon-img-1",
+          "src": "/catalog/88cb5871ff465b3c.jpg",
+          "alt": "SK Carbon photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-sk-carbon-img-2",
+          "src": "/catalog/b7976042f36a2086.jpg",
+          "alt": "SK Carbon photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/88cb5871ff465b3c.jpg",
+        "/catalog/b7976042f36a2086.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/sk-carbon",
+        "scrapedAt": "2026-07-19T23:14:03.839Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-sk-carbon-cs",
+      "slug": "sk-carbon-cs",
+      "name": "SK Carbon CS",
+      "brandId": "sk",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/sk-carbon-cs",
+      "images": [
+        {
+          "id": "vpsport-sk-carbon-cs-img-1",
+          "src": "/catalog/d450940fe83c957f.jpg",
+          "alt": "SK Carbon CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-sk-carbon-cs-img-2",
+          "src": "/catalog/88cb5871ff465b3c.jpg",
+          "alt": "SK Carbon CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/d450940fe83c957f.jpg",
+        "/catalog/88cb5871ff465b3c.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/sk-carbon-cs",
+        "scrapedAt": "2026-07-19T23:17:41.787Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-sk7-classic",
+      "slug": "sk7-classic",
+      "name": "SK7 Classic",
+      "brandId": "sk7",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/sk7-classic",
+      "images": [
+        {
+          "id": "vpsport-sk7-classic-img-1",
+          "src": "/catalog/deb8fdc60ad980d5.jpg",
+          "alt": "SK7 Classic photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-sk7-classic-img-2",
+          "src": "/catalog/12856531efd0a71f.jpg",
+          "alt": "SK7 Classic photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/deb8fdc60ad980d5.jpg",
+        "/catalog/12856531efd0a71f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/sk7-classic",
+        "scrapedAt": "2026-07-19T23:13:57.406Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-sk7-classic-cs",
+      "slug": "sk7-classic-cs",
+      "name": "SK7 Classic CS",
+      "brandId": "sk7",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/sk7-classic-cs",
+      "images": [
+        {
+          "id": "vpsport-sk7-classic-cs-img-1",
+          "src": "/catalog/909c25a62d500922.jpg",
+          "alt": "SK7 Classic CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-sk7-classic-cs-img-2",
+          "src": "/catalog/deb8fdc60ad980d5.jpg",
+          "alt": "SK7 Classic CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/909c25a62d500922.jpg",
+        "/catalog/deb8fdc60ad980d5.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/sk7-classic-cs",
+        "scrapedAt": "2026-07-19T23:17:37.311Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
       "id": "dandoy-blade-stiga-allround-classic",
       "slug": "stiga-allround-classic",
       "name": "Stiga Allround Classic",
@@ -4925,6 +9155,40 @@
         "sourceUrl": "https://www.dandoy-sports.com/stiga-cybershape-carbon-cwt-truls-edition.html",
         "scrapedAt": "2026-07-19T22:29:33.664Z",
         "attribution": "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-stiga-cybershape-carbon-cwt-truls-edition",
+      "slug": "stiga-cybershape-carbon-cwt-truls-edition",
+      "name": "Stiga Cybershape Carbón CWT Truls Edition",
+      "brandId": "stiga",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/stiga-cybershape-carbon-cwt-truls-edition",
+      "images": [
+        {
+          "id": "vpsport-stiga-cybershape-carbon-cwt-truls-edition-img-1",
+          "src": "/catalog/e2cd3df5d9304c55.jpg",
+          "alt": "Stiga Cybershape Carbón CWT Truls Edition photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-stiga-cybershape-carbon-cwt-truls-edition-img-2",
+          "src": "/catalog/b60d34d3355ac06d.jpg",
+          "alt": "Stiga Cybershape Carbón CWT Truls Edition photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/e2cd3df5d9304c55.jpg",
+        "/catalog/b60d34d3355ac06d.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/stiga-cybershape-carbon-cwt-truls-edition",
+        "scrapedAt": "2026-07-19T23:14:08.558Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
         "license": "unknown — review before redistribution",
         "mediaRights": "unknown"
       }
@@ -7807,6 +12071,618 @@
         "sourceUrl": "https://www.dandoy-sports.com/stiga-wavy-cybershape.html",
         "scrapedAt": "2026-07-19T22:28:36.974Z",
         "attribution": "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-super-anti-tospin",
+      "slug": "super-anti-tospin",
+      "name": "Super anti Tospin",
+      "brandId": "super",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-anti-topspin). Source page: https://www.vpsport.cl/super-anti-tospin",
+      "images": [
+        {
+          "id": "vpsport-super-anti-tospin-img-1",
+          "src": "/catalog/b2771fc1b031e02e.jpg",
+          "alt": "Super anti Tospin photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-super-anti-tospin-img-2",
+          "src": "/catalog/eaa596939612fa1d.jpg",
+          "alt": "Super anti Tospin photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b2771fc1b031e02e.jpg",
+        "/catalog/eaa596939612fa1d.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-anti-topspin",
+        "sourceUrl": "https://www.vpsport.cl/super-anti-tospin",
+        "scrapedAt": "2026-07-19T23:19:09.558Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-tibhar-felix-lebrun-hyper-carbon-inner",
+      "slug": "tibhar-felix-lebrun-hyper-carbon-inner",
+      "name": "Tibhar Felix Lebrun Hyper Carbon Inner",
+      "brandId": "tibhar",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/tibhar-felix-lebrun-hyper-carbon-inner",
+      "images": [
+        {
+          "id": "vpsport-tibhar-felix-lebrun-hyper-carbon-inner-img-1",
+          "src": "/catalog/d62dc4107dd6be28.jpg",
+          "alt": "Tibhar Felix Lebrun Hyper Carbon Inner photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-tibhar-felix-lebrun-hyper-carbon-inner-img-2",
+          "src": "/catalog/e2d33bbcadfd859f.jpg",
+          "alt": "Tibhar Felix Lebrun Hyper Carbon Inner photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/d62dc4107dd6be28.jpg",
+        "/catalog/e2d33bbcadfd859f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/tibhar-felix-lebrun-hyper-carbon-inner",
+        "scrapedAt": "2026-07-19T23:14:13.348Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-tibhar-grass-dtecs-black",
+      "slug": "tibhar-grass-dtecs-black",
+      "name": "TIBHAR Grass D.TecS black",
+      "brandId": "tibhar",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-poros-largos). Source page: https://www.vpsport.cl/tibhar-grass-d-tecs-black",
+      "images": [
+        {
+          "id": "vpsport-tibhar-grass-dtecs-black-img-1",
+          "src": "/catalog/219bc6a58c6c83f1.jpg",
+          "alt": "TIBHAR Grass D.TecS black photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-tibhar-grass-dtecs-black-img-2",
+          "src": "/catalog/772d75da83cfa7e8.jpg",
+          "alt": "TIBHAR Grass D.TecS black photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/219bc6a58c6c83f1.jpg",
+        "/catalog/772d75da83cfa7e8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-poros-largos",
+        "sourceUrl": "https://www.vpsport.cl/tibhar-grass-d-tecs-black",
+        "scrapedAt": "2026-07-19T23:18:55.771Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-timo-boll-alc",
+      "slug": "timo-boll-alc",
+      "name": "Timo Boll ALC",
+      "brandId": "timo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/timo-boll-alc",
+      "images": [
+        {
+          "id": "vpsport-timo-boll-alc-img-1",
+          "src": "/catalog/1d3faf195e1769cd.jpg",
+          "alt": "Timo Boll ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-timo-boll-alc-img-2",
+          "src": "/catalog/aaad9fac361abac1.jpg",
+          "alt": "Timo Boll ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1d3faf195e1769cd.jpg",
+        "/catalog/aaad9fac361abac1.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/timo-boll-alc",
+        "scrapedAt": "2026-07-19T23:14:18.669Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-timo-boll-caf",
+      "slug": "timo-boll-caf",
+      "name": "Timo Boll CAF",
+      "brandId": "timo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/timo-boll-caf",
+      "images": [
+        {
+          "id": "vpsport-timo-boll-caf-img-1",
+          "src": "/catalog/115da914a5088a79.jpg",
+          "alt": "Timo Boll CAF photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-timo-boll-caf-img-2",
+          "src": "/catalog/9d91a3177c465294.jpg",
+          "alt": "Timo Boll CAF photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/115da914a5088a79.jpg",
+        "/catalog/9d91a3177c465294.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/timo-boll-caf",
+        "scrapedAt": "2026-07-19T23:14:23.950Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-timo-boll-caf-cs",
+      "slug": "timo-boll-caf-cs",
+      "name": "Timo Boll Caf CS",
+      "brandId": "timo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/timo-boll-caf-cs",
+      "images": [
+        {
+          "id": "vpsport-timo-boll-caf-cs-img-1",
+          "src": "/catalog/9d91a3177c465294.jpg",
+          "alt": "Timo Boll Caf CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-timo-boll-caf-cs-img-2",
+          "src": "/catalog/115da914a5088a79.jpg",
+          "alt": "Timo Boll Caf CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/9d91a3177c465294.jpg",
+        "/catalog/115da914a5088a79.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/timo-boll-caf-cs",
+        "scrapedAt": "2026-07-19T23:17:45.667Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-timo-boll-junior",
+      "slug": "timo-boll-junior",
+      "name": "Timo Boll Junior",
+      "brandId": "timo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/timo-boll-junior",
+      "images": [
+        {
+          "id": "vpsport-timo-boll-junior-img-1",
+          "src": "/catalog/8200ee51914a8896.jpg",
+          "alt": "Timo Boll Junior photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-timo-boll-junior-img-2",
+          "src": "/catalog/107c0ab4cd6116d4.jpg",
+          "alt": "Timo Boll Junior photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/8200ee51914a8896.jpg",
+        "/catalog/107c0ab4cd6116d4.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/timo-boll-junior",
+        "scrapedAt": "2026-07-19T23:14:29.235Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-timo-boll-spirit",
+      "slug": "timo-boll-spirit",
+      "name": "Timo Boll Spirit",
+      "brandId": "timo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/timo-boll-spirit",
+      "images": [
+        {
+          "id": "vpsport-timo-boll-spirit-img-1",
+          "src": "/catalog/c6b7b20a761f29d1.jpg",
+          "alt": "Timo Boll Spirit photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-timo-boll-spirit-img-2",
+          "src": "/catalog/11835f912bea8033.jpg",
+          "alt": "Timo Boll Spirit photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c6b7b20a761f29d1.jpg",
+        "/catalog/11835f912bea8033.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/timo-boll-spirit",
+        "scrapedAt": "2026-07-19T23:14:35.807Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-timo-boll-zlc",
+      "slug": "timo-boll-zlc",
+      "name": "Timo Boll ZLC",
+      "brandId": "timo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/timo-boll-zlc",
+      "images": [
+        {
+          "id": "vpsport-timo-boll-zlc-img-1",
+          "src": "/catalog/9f3982923691211c.jpg",
+          "alt": "Timo Boll ZLC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-timo-boll-zlc-img-2",
+          "src": "/catalog/0926706f78ebb714.jpg",
+          "alt": "Timo Boll ZLC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/9f3982923691211c.jpg",
+        "/catalog/0926706f78ebb714.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/timo-boll-zlc",
+        "scrapedAt": "2026-07-19T23:14:40.800Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-timo-boll-zlf-blade",
+      "slug": "timo-boll-zlf-blade",
+      "name": "Timo Boll ZLF Blade",
+      "brandId": "timo",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/timo-boll-zlf-blade",
+      "images": [
+        {
+          "id": "vpsport-timo-boll-zlf-blade-img-1",
+          "src": "/catalog/11a6fbba539933dc.jpg",
+          "alt": "Timo Boll ZLF Blade photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-timo-boll-zlf-blade-img-2",
+          "src": "/catalog/fb36ec9c5bb32533.jpg",
+          "alt": "Timo Boll ZLF Blade photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/11a6fbba539933dc.jpg",
+        "/catalog/fb36ec9c5bb32533.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/timo-boll-zlf-blade",
+        "scrapedAt": "2026-07-19T23:14:46.008Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-viscaria-alc",
+      "slug": "viscaria-alc",
+      "name": "Viscaria Alc",
+      "brandId": "viscaria",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/detalles-excelente-equilibrio-para-flexibilidad-y-rebote-estilo-ataque-reaccion-118-vibracion-103-la-pala-viscaria-alc-combina-las-caracteristicas-de-ligereza-flexibilidad-y-absorcion-de-i",
+      "images": [
+        {
+          "id": "vpsport-viscaria-alc-img-1",
+          "src": "/catalog/08014056ebc6fd9f.jpg",
+          "alt": "Viscaria Alc photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-viscaria-alc-img-2",
+          "src": "/catalog/5dc08dc7747ab8e3.jpg",
+          "alt": "Viscaria Alc photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/08014056ebc6fd9f.jpg",
+        "/catalog/5dc08dc7747ab8e3.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/detalles-excelente-equilibrio-para-flexibilidad-y-rebote-estilo-ataque-reaccion-118-vibracion-103-la-pala-viscaria-alc-combina-las-caracteristicas-de-ligereza-flexibilidad-y-absorcion-de-i",
+        "scrapedAt": "2026-07-19T23:10:02.318Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-viscaria-cs",
+      "slug": "viscaria-cs",
+      "name": "Viscaria CS",
+      "brandId": "viscaria",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/viscaria-cs",
+      "images": [
+        {
+          "id": "vpsport-viscaria-cs-img-1",
+          "src": "/catalog/575f0e7c63868aba.jpg",
+          "alt": "Viscaria CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-viscaria-cs-img-2",
+          "src": "/catalog/08014056ebc6fd9f.jpg",
+          "alt": "Viscaria CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/575f0e7c63868aba.jpg",
+        "/catalog/08014056ebc6fd9f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/viscaria-cs",
+        "scrapedAt": "2026-07-19T23:16:59.584Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-viscaria-super-alc",
+      "slug": "viscaria-super-alc",
+      "name": "Viscaria Super ALC",
+      "brandId": "viscaria",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/viscaria-super-alc",
+      "images": [
+        {
+          "id": "vpsport-viscaria-super-alc-img-1",
+          "src": "/catalog/a42a10475f0869e3.jpg",
+          "alt": "Viscaria Super ALC photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-viscaria-super-alc-img-2",
+          "src": "/catalog/0fa9addc71a3ef3b.jpg",
+          "alt": "Viscaria Super ALC photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/a42a10475f0869e3.jpg",
+        "/catalog/0fa9addc71a3ef3b.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/viscaria-super-alc",
+        "scrapedAt": "2026-07-19T23:10:26.113Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-viscaria-super-alc-cs",
+      "slug": "viscaria-super-alc-cs",
+      "name": "Viscaria Super ALC CS",
+      "brandId": "viscaria",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-lapiceros). Source page: https://www.vpsport.cl/viscaria-super-alc-cs",
+      "images": [
+        {
+          "id": "vpsport-viscaria-super-alc-cs-img-1",
+          "src": "/catalog/2167eec01ff104e6.jpg",
+          "alt": "Viscaria Super ALC CS photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-viscaria-super-alc-cs-img-2",
+          "src": "/catalog/808c52760a29b474.jpg",
+          "alt": "Viscaria Super ALC CS photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/2167eec01ff104e6.jpg",
+        "/catalog/808c52760a29b474.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-lapiceros",
+        "sourceUrl": "https://www.vpsport.cl/viscaria-super-alc-cs",
+        "scrapedAt": "2026-07-19T23:17:04.329Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-xiom-omega-vii-tour",
+      "slug": "xiom-omega-vii-tour",
+      "name": "XIOM Omega VII Tour",
+      "brandId": "xiom",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/xiom-omega-vii-tour",
+      "images": [
+        {
+          "id": "vpsport-xiom-omega-vii-tour-img-1",
+          "src": "/catalog/0a8288ef2e2269f0.jpg",
+          "alt": "XIOM Omega VII Tour photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-xiom-omega-vii-tour-img-2",
+          "src": "/catalog/ccae50dc2fb3efbe.jpg",
+          "alt": "XIOM Omega VII Tour photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/0a8288ef2e2269f0.jpg",
+        "/catalog/ccae50dc2fb3efbe.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/xiom-omega-vii-tour",
+        "scrapedAt": "2026-07-19T23:06:04.642Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-xiom-vega-pro",
+      "slug": "xiom-vega-pro",
+      "name": "XIOM Vega Pro",
+      "brandId": "xiom",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/xiom-vega-pro",
+      "images": [
+        {
+          "id": "vpsport-xiom-vega-pro-img-1",
+          "src": "/catalog/539a1bddf71f7fba.jpg",
+          "alt": "XIOM Vega Pro photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-xiom-vega-pro-img-2",
+          "src": "/catalog/b29edc54b5348f91.jpg",
+          "alt": "XIOM Vega Pro photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/539a1bddf71f7fba.jpg",
+        "/catalog/b29edc54b5348f91.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/xiom-vega-pro",
+        "scrapedAt": "2026-07-19T23:06:09.798Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-xiom-vega-x",
+      "slug": "xiom-vega-x",
+      "name": "XIOM Vega X",
+      "brandId": "xiom",
+      "category": "rubber",
+      "description": "Imported from VP Sport (vpsport-gomas-lisas). Source page: https://www.vpsport.cl/xiom-vega-x",
+      "images": [
+        {
+          "id": "vpsport-xiom-vega-x-img-1",
+          "src": "/catalog/ada7aa6bd4681541.jpg",
+          "alt": "XIOM Vega X photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-xiom-vega-x-img-2",
+          "src": "/catalog/539a1bddf71f7fba.jpg",
+          "alt": "XIOM Vega X photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/ada7aa6bd4681541.jpg",
+        "/catalog/539a1bddf71f7fba.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-gomas-lisas",
+        "sourceUrl": "https://www.vpsport.cl/xiom-vega-x",
+        "scrapedAt": "2026-07-19T23:06:14.864Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "vpsport-xstar-v",
+      "slug": "xstar-v",
+      "name": "Xstar V",
+      "brandId": "xstar",
+      "category": "blade",
+      "description": "Imported from VP Sport (vpsport-maderos-clasicos). Source page: https://www.vpsport.cl/xstar-v",
+      "images": [
+        {
+          "id": "vpsport-xstar-v-img-1",
+          "src": "/catalog/906409679271460e.jpg",
+          "alt": "Xstar V photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "vpsport-xstar-v-img-2",
+          "src": "/catalog/549656a255850241.jpg",
+          "alt": "Xstar V photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/906409679271460e.jpg",
+        "/catalog/549656a255850241.jpg"
+      ],
+      "provenance": {
+        "sourceId": "vpsport-maderos-clasicos",
+        "sourceUrl": "https://www.vpsport.cl/xstar-v",
+        "scrapedAt": "2026-07-19T23:10:32.671Z",
+        "attribution": "VP Sport (imported for TTSetupBuilder offline catalog)",
         "license": "unknown — review before redistribution",
         "mediaRights": "unknown"
       }
