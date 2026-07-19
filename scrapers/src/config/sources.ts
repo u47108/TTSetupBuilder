@@ -130,20 +130,22 @@ export const SOURCE_CONFIGS: readonly SourceConfig[] = [
     categories: ['blade'],
     role: 'catalog-photos-primary',
     selectorNotes: [
-      'LIVE: li.product-item → a.product-item-link + img.product-image-photo',
-      'LIVE PDP: Mage gallery JSON "full" image URLs (multi-image)',
-      'Pagination: blades.html?p=N',
+      'LIVE: Magento li.product-item + PDP gallery "full" URLs',
+      'Pagination: blades.html?p=N (≈5 pages)',
     ],
-    rateLimitMs: 2000,
+    rateLimitMs: 1000,
   },
   {
     id: 'dandoy-rubbers',
     name: 'Dandoy Sports — rubbers',
     listingUrl: 'https://www.dandoy-sports.com/rubbers.html',
     categories: ['rubber'],
-    role: 'catalog-photos-secondary',
-    selectorNotes: ['TODO: rubbers.html product anchors', 'TODO: image src for owned download'],
-    rateLimitMs: 2000,
+    role: 'catalog-photos-primary',
+    selectorNotes: [
+      'LIVE: same Magento pattern as dandoy-blades',
+      'Pagination: rubbers.html?p=N (≈5 pages)',
+    ],
+    rateLimitMs: 1000,
   },
 ] as const;
 

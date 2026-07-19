@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Live scraper for **Dandoy blades** (`dandoy-blades`) with owned multi-image download and `--publish`
-- Seed catalog (6 blades, 24 local images) powering Products + Search
+- Live scrapers for **Dandoy blades + rubbers** with multi-page crawl and merged SPA catalog publish
+- Seed catalog: **120 blades + 120 rubbers** (240 products, 450+ owned images)
 - Products grid and product detail gallery from local catalog
 - Multi-source ingestion registry (`docs/DATA_SOURCES.md`) and `@ttsetupbuilder/scrapers` CLI
 - Catalog contract extensions in `@ttsetupbuilder/types` (`CatalogProduct`, `CatalogDocument`, provenance + `imageLocalPaths`)
@@ -34,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Catalog publish **merges by sourceId** (blades + rubbers coexist in one `catalog.json`)
 - TT11 sources marked `cloudflareBlocked` (automated GET fails challenge); prefer Dandoy for live ingestion
 - ADR-009 amended: multi-source related registry (not TT11-only); links `docs/DATA_SOURCES.md` and `scrapers/`
 - ADR-002 stack table lists Fuse.js as accepted catalog search dependency (per ADR-010)

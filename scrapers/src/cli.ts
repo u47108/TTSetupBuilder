@@ -81,9 +81,12 @@ Flags:
 
 Live parsers today:
   dandoy-blades
+  dandoy-rubbers
 
 Blocked / stub:
   tt11-* (Cloudflare challenge on automated GET)
+
+Publish merges into catalog.json by sourceId (replaces that source’s rows, keeps others).
 
 Ethics: respect robots.txt and ToS. Identify as TTSetupBuilderResearchBot. No auth bypass.
 `);
@@ -142,7 +145,11 @@ async function main(): Promise<void> {
     `Done mode=${result.mode} products=${result.productCount} images=${result.imagesDownloaded} → ${result.outputPath}`,
   );
   if (result.catalogPath) {
-    console.info(`SPA catalog: ${result.catalogPath}`);
+    console.info(
+      `SPA catalog: ${result.catalogPath}${
+        result.catalogTotalProducts != null ? ` (total ${result.catalogTotalProducts})` : ''
+      }`,
+    );
   }
 }
 

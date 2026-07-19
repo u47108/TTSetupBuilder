@@ -1,6 +1,7 @@
 import { getSourceConfig } from '../config/sources.js';
 import { createListingStub } from './createListingStub.js';
 import { dandoyBlades } from './dandoy-blades.js';
+import { dandoyRubbers } from './dandoy-rubbers.js';
 import type { SourceModule } from './types.js';
 
 function requireConfig(id: string) {
@@ -21,8 +22,7 @@ export const ittfRacketCoverings = createListingStub(requireConfig('ittf-racket-
 export const ttSpinRubbers = createListingStub(requireConfig('tt-spin-rubbers'));
 export const prottRubbers = createListingStub(requireConfig('prott-rubbers'));
 export const prottBlades = createListingStub(requireConfig('prott-blades'));
-export { dandoyBlades };
-export const dandoyRubbers = createListingStub(requireConfig('dandoy-rubbers'));
+export { dandoyBlades, dandoyRubbers };
 
 const MODULES: readonly SourceModule[] = [
   tt11BladesPenholder,

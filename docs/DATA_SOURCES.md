@@ -38,8 +38,8 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 | `tt-spin-rubbers` | https://www.tt-spin.com/table-tennis-rubbers/ | Rubber catalog / photos | **Catalog photos** — rubbers (secondary) | Respect robots and commercial ToS; rate-limit strictly. |
 | `prott-rubbers` | https://www.prott.vip/Product-List.aspx?producttype=2 | Rubber product list | **Catalog photos** — rubbers | ASP.NET list pages; may need pagination query params. |
 | `prott-blades` | https://www.prott.vip/Product-List.aspx?producttype=12 | Blade product list | **Catalog photos** — blades | Same as rubbers list pattern. |
-| `dandoy-blades` | https://www.dandoy-sports.com/blades.html | Blade catalog | **Primary live photos** — blades | **Live parser** (`pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-images --publish`). |
-| `dandoy-rubbers` | https://www.dandoy-sports.com/rubbers.html | Rubber catalog | **Catalog photos** — rubbers (secondary) | Same Magento pattern as blades; parser TODO. |
+| `dandoy-blades` | https://www.dandoy-sports.com/blades.html | Blade catalog | **Primary live photos** — blades | **Live** — multi-page Magento crawl (`--max-pages=5`). |
+| `dandoy-rubbers` | https://www.dandoy-sports.com/rubbers.html | Rubber catalog | **Primary live photos** — rubbers | **Live** — same Magento pattern; publish merges with blades. |
 
 ### Role legend
 

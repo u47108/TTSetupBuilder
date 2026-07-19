@@ -1,5 +1,6 @@
+import { readFile } from 'node:fs/promises';
 import path from 'node:path';
-import type { CatalogDocument } from '@ttsetupbuilder/types';
+import type { CatalogDocument, CatalogProduct } from '@ttsetupbuilder/types';
 import { getSourceModule } from '../sources/registry.js';
 import type { ScrapeContext } from '../sources/types.js';
 import { normalizeProduct } from './normalizeProduct.js';
@@ -13,7 +14,46 @@ export type RunSourceResult = {
   productCount: number;
   imagesDownloaded: number;
   catalogPath?: string;
+  catalogTotalProducts?: number;
 };
+
+function toPublicProduct(product: CatalogProduct): CatalogProduct {
+  return {
+    ...product,
+    imageLocalPaths: product.images.map((image) => image.src),
+  };
+}
+
+/**
+ * Replace all products from this sourceId, keep other sources (multi-source catalog).
+ */
+async function mergePublishCatalog(
+  catalogPath: string,
+  sourceId: string,
+  incoming: CatalogProduct[],
+  scrapedAt: string,
+): Promise<CatalogDocument> {
+  let existing: CatalogDocument = { version: 1, generatedAt: scrapedAt, products: [] };
+  try {
+    const raw = await readFile(catalogPath, 'utf8');
+    existing = JSON.parse(raw) as CatalogDocument;
+  } catch {
+    /* first publish */
+  }
+
+  const kept = (existing.products ?? []).filter(
+    (product) => product.provenance?.sourceId !== sourceId,
+  );
+  const merged: CatalogDocument = {
+    version: 1,
+    generatedAt: scrapedAt,
+    products: [...kept, ...incoming.map(toPublicProduct)].sort((a, b) =>
+      a.name.localeCompare(b.name),
+    ),
+  };
+  await writeJsonFile(catalogPath, merged);
+  return merged;
+}
 
 /**
  * Loads source config, plans listing URLs, optionally runs live scrape + image download.
@@ -37,14 +77,11 @@ export async function runSource(sourceId: string, ctx: ScrapeContext): Promise<R
   if (wantLive && source.scrapeLive) {
     const live = await source.scrapeLive(ctx);
     const scrapedAt = new Date().toISOString();
+    const publicProducts = live.products.map(toPublicProduct);
     const catalog: CatalogDocument = {
       version: 1,
       generatedAt: scrapedAt,
-      products: live.products.map((product) => ({
-        ...product,
-        // Keep SPA-relative paths only — never absolute machine paths in published JSON
-        imageLocalPaths: product.images.map((image) => image.src),
-      })),
+      products: publicProducts,
     };
 
     const outputPath = path.join(
@@ -56,10 +93,19 @@ export async function runSource(sourceId: string, ctx: ScrapeContext): Promise<R
     await writeJsonFile(outputPath, catalog);
 
     let catalogPath: string | undefined;
+    let catalogTotalProducts: number | undefined;
     if (ctx.publishCatalog) {
       catalogPath = path.resolve(ctx.packageRoot, '../apps/web/public/data/catalog.json');
-      await writeJsonFile(catalogPath, catalog);
-      console.info(`[${sourceId}] published SPA catalog → ${catalogPath}`);
+      const merged = await mergePublishCatalog(
+        catalogPath,
+        source.config.id,
+        publicProducts,
+        scrapedAt,
+      );
+      catalogTotalProducts = merged.products.length;
+      console.info(
+        `[${sourceId}] merged SPA catalog → ${catalogPath} (source=${publicProducts.length}, total=${merged.products.length})`,
+      );
     }
 
     return {
@@ -70,6 +116,7 @@ export async function runSource(sourceId: string, ctx: ScrapeContext): Promise<R
       productCount: live.products.length,
       imagesDownloaded: live.imagesDownloaded,
       catalogPath,
+      catalogTotalProducts,
     };
   }
 
@@ -125,7 +172,7 @@ export async function runSource(sourceId: string, ctx: ScrapeContext): Promise<R
 
   if (ctx.downloadImages && !wantLive) {
     console.warn(
-      `[${sourceId}] --download-images ignored without a live parser run. Try: dandoy-blades with --no-dry-run --fetch-listing --download-images --publish`,
+      `[${sourceId}] --download-images ignored without a live parser run.`,
     );
   }
 
