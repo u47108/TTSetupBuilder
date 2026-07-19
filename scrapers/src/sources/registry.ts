@@ -1,0 +1,48 @@
+import { getSourceConfig } from '../config/sources.js';
+import { createListingStub } from './createListingStub.js';
+import { dandoyBlades } from './dandoy-blades.js';
+import type { SourceModule } from './types.js';
+
+function requireConfig(id: string) {
+  const config = getSourceConfig(id);
+  if (!config) {
+    throw new Error(`Missing source config: ${id}`);
+  }
+  return config;
+}
+
+export const tt11BladesPenholder = createListingStub(requireConfig('tt11-blades-penholder'));
+export const tt11Blades = createListingStub(requireConfig('tt11-blades'));
+export const tt11Rubbers = createListingStub(requireConfig('tt11-rubbers'));
+export const tabletennisReviews = createListingStub(requireConfig('tabletennis-reviews'));
+export const ttgearlabDatabase = createListingStub(requireConfig('ttgearlab-database'));
+export const ittfEquipmentApproval = createListingStub(requireConfig('ittf-equipment-approval'));
+export const ittfRacketCoverings = createListingStub(requireConfig('ittf-racket-coverings'));
+export const ttSpinRubbers = createListingStub(requireConfig('tt-spin-rubbers'));
+export const prottRubbers = createListingStub(requireConfig('prott-rubbers'));
+export const prottBlades = createListingStub(requireConfig('prott-blades'));
+export { dandoyBlades };
+export const dandoyRubbers = createListingStub(requireConfig('dandoy-rubbers'));
+
+const MODULES: readonly SourceModule[] = [
+  tt11BladesPenholder,
+  tt11Blades,
+  tt11Rubbers,
+  tabletennisReviews,
+  ttgearlabDatabase,
+  ittfEquipmentApproval,
+  ittfRacketCoverings,
+  ttSpinRubbers,
+  prottRubbers,
+  prottBlades,
+  dandoyBlades,
+  dandoyRubbers,
+];
+
+export function getSourceModule(id: string): SourceModule | undefined {
+  return MODULES.find((module) => module.config.id === id);
+}
+
+export function listSourceModules(): readonly SourceModule[] {
+  return MODULES;
+}

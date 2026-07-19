@@ -1,0 +1,24 @@
+{
+  "name": "@ttsetupbuilder/scrapers",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline/batch catalog and image ingestion for TTSetupBuilder",
+  "scripts": {
+    "scrape": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ttsetupbuilder/types": "workspace:*",
+    "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^1.0.0",
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
+    "typescript": "~5.8.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

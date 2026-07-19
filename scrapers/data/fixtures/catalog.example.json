@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-19T00:00:00.000Z",
+  "products": [
+    {
+      "id": "fixture-blade-example",
+      "slug": "example-allwood-blade",
+      "name": "Example Allwood Blade",
+      "brandId": "example-brand",
+      "category": "blade",
+      "description": "Fixture only — demonstrates CatalogProduct multiplicity and provenance. Not a real scrape.",
+      "images": [
+        {
+          "id": "fixture-blade-example-img-1",
+          "src": "/catalog/.gitkeep",
+          "alt": "Example Allwood Blade photo 1",
+          "isPrimary": true
+        },
+        {
+          "id": "fixture-blade-example-img-2",
+          "src": "/catalog/.gitkeep",
+          "alt": "Example Allwood Blade photo 2",
+          "isPrimary": false
+        }
+      ],
+      "imageLocalPaths": [
+        "apps/web/public/catalog/.gitkeep",
+        "apps/web/public/catalog/.gitkeep"
+      ],
+      "provenance": {
+        "sourceId": "tt11-blades",
+        "sourceUrl": "https://tabletennis11.com/en/blades",
+        "scrapedAt": "2026-07-19T00:00:00.000Z",
+        "attribution": "Fixture — not sourced live",
+        "mediaRights": "unknown"
+      }
+    }
+  ]
+}

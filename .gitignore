@@ -48,3 +48,11 @@ coverage/
 .cache/
 tmp/
 temp/
+
+# Scraper dumps (ADR-008 owned media published to apps/web/public/catalog is committed)
+scrapers/data/raw/**
+!scrapers/data/raw/.gitkeep
+scrapers/data/normalized/**
+!scrapers/data/normalized/.gitkeep
+scrapers/images/**
+!scrapers/images/.gitkeep

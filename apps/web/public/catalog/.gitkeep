@@ -1,0 +1,2 @@
+# Owned catalog images for the SPA (ADR-008). Scrapers write content-hash filenames here.
+# Do not hotlink third-party URLs at runtime.

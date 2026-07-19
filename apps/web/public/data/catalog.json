@@ -1,0 +1,294 @@
+{
+    "version":  1,
+    "generatedAt":  "2026-07-19T21:17:53.474Z",
+    "products":  [
+                     {
+                         "id":  "dandoy-blade-banda-by-stiga-allround-future",
+                         "slug":  "banda-by-stiga-allround-future",
+                         "name":  "Banda By Stiga Allround Future",
+                         "brandId":  "stiga",
+                         "category":  "blade",
+                         "description":  "Imported from Dandoy Sports blades listing. Source page: https://www.dandoy-sports.com/banda-by-stiga-allround-future.html",
+                         "images":  [
+                                        {
+                                            "id":  "dandoy-blade-banda-by-stiga-allround-future-img-1",
+                                            "src":  "/catalog/efeaa9671d0878b8.jpg",
+                                            "alt":  "Banda By Stiga Allround Future photo 1",
+                                            "isPrimary":  true
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-banda-by-stiga-allround-future-img-2",
+                                            "src":  "/catalog/dfe227ac585aed27.jpg",
+                                            "alt":  "Banda By Stiga Allround Future photo 2",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-banda-by-stiga-allround-future-img-3",
+                                            "src":  "/catalog/d184566a7c26296b.jpg",
+                                            "alt":  "Banda By Stiga Allround Future photo 3",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-banda-by-stiga-allround-future-img-4",
+                                            "src":  "/catalog/669fc83172348dbe.jpg",
+                                            "alt":  "Banda By Stiga Allround Future photo 4",
+                                            "isPrimary":  false
+                                        }
+                                    ],
+                         "imageLocalPaths":  [
+                                                 "/catalog/efeaa9671d0878b8.jpg",
+                                                 "/catalog/dfe227ac585aed27.jpg",
+                                                 "/catalog/d184566a7c26296b.jpg",
+                                                 "/catalog/669fc83172348dbe.jpg"
+                                             ],
+                         "provenance":  {
+                                            "sourceId":  "dandoy-blades",
+                                            "sourceUrl":  "https://www.dandoy-sports.com/banda-by-stiga-allround-future.html",
+                                            "scrapedAt":  "2026-07-19T21:16:08.974Z",
+                                            "attribution":  "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+                                            "license":  "unknown â€” review before redistribution",
+                                            "mediaRights":  "unknown"
+                                        }
+                     },
+                     {
+                         "id":  "dandoy-blade-banda-by-stiga-allround-future-cybershape",
+                         "slug":  "banda-by-stiga-allround-future-cybershape",
+                         "name":  "Banda By Stiga Allround Future Cybershape",
+                         "brandId":  "stiga",
+                         "category":  "blade",
+                         "description":  "Imported from Dandoy Sports blades listing. Source page: https://www.dandoy-sports.com/banda-by-stiga-allround-future-cybershape.html",
+                         "images":  [
+                                        {
+                                            "id":  "dandoy-blade-banda-by-stiga-allround-future-cybershape-img-1",
+                                            "src":  "/catalog/8e6456abcd34cd47.jpg",
+                                            "alt":  "Banda By Stiga Allround Future Cybershape photo 1",
+                                            "isPrimary":  true
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-banda-by-stiga-allround-future-cybershape-img-2",
+                                            "src":  "/catalog/62f34a83ba657b98.jpg",
+                                            "alt":  "Banda By Stiga Allround Future Cybershape photo 2",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-banda-by-stiga-allround-future-cybershape-img-3",
+                                            "src":  "/catalog/20d329ae05c56028.jpg",
+                                            "alt":  "Banda By Stiga Allround Future Cybershape photo 3",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-banda-by-stiga-allround-future-cybershape-img-4",
+                                            "src":  "/catalog/0658cd4d392f53fe.jpg",
+                                            "alt":  "Banda By Stiga Allround Future Cybershape photo 4",
+                                            "isPrimary":  false
+                                        }
+                                    ],
+                         "imageLocalPaths":  [
+                                                 "/catalog/8e6456abcd34cd47.jpg",
+                                                 "/catalog/62f34a83ba657b98.jpg",
+                                                 "/catalog/20d329ae05c56028.jpg",
+                                                 "/catalog/0658cd4d392f53fe.jpg"
+                                             ],
+                         "provenance":  {
+                                            "sourceId":  "dandoy-blades",
+                                            "sourceUrl":  "https://www.dandoy-sports.com/banda-by-stiga-allround-future-cybershape.html",
+                                            "scrapedAt":  "2026-07-19T21:16:26.862Z",
+                                            "attribution":  "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+                                            "license":  "unknown â€” review before redistribution",
+                                            "mediaRights":  "unknown"
+                                        }
+                     },
+                     {
+                         "id":  "dandoy-blade-dandoy-allround",
+                         "slug":  "dandoy-allround",
+                         "name":  "Dandoy Allround",
+                         "brandId":  "dandoy",
+                         "category":  "blade",
+                         "description":  "Imported from Dandoy Sports blades listing. Source page: https://www.dandoy-sports.com/dandoy-allround.html",
+                         "images":  [
+                                        {
+                                            "id":  "dandoy-blade-dandoy-allround-img-1",
+                                            "src":  "/catalog/68c8049c2af56d89.jpg",
+                                            "alt":  "Dandoy Allround photo 1",
+                                            "isPrimary":  true
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-dandoy-allround-img-2",
+                                            "src":  "/catalog/919afa3c6e1513ec.jpg",
+                                            "alt":  "Dandoy Allround photo 2",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-dandoy-allround-img-3",
+                                            "src":  "/catalog/b83f8a928e7bd30d.jpg",
+                                            "alt":  "Dandoy Allround photo 3",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-dandoy-allround-img-4",
+                                            "src":  "/catalog/514c6b4b57fb55d0.jpg",
+                                            "alt":  "Dandoy Allround photo 4",
+                                            "isPrimary":  false
+                                        }
+                                    ],
+                         "imageLocalPaths":  [
+                                                 "/catalog/68c8049c2af56d89.jpg",
+                                                 "/catalog/919afa3c6e1513ec.jpg",
+                                                 "/catalog/b83f8a928e7bd30d.jpg",
+                                                 "/catalog/514c6b4b57fb55d0.jpg"
+                                             ],
+                         "provenance":  {
+                                            "sourceId":  "dandoy-blades",
+                                            "sourceUrl":  "https://www.dandoy-sports.com/dandoy-allround.html",
+                                            "scrapedAt":  "2026-07-19T21:16:45.312Z",
+                                            "attribution":  "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+                                            "license":  "unknown â€” review before redistribution",
+                                            "mediaRights":  "unknown"
+                                        }
+                     },
+                     {
+                         "id":  "dandoy-blade-stiga-l1-hybrid-carbon",
+                         "slug":  "stiga-l1-hybrid-carbon",
+                         "name":  "Stiga l1 Hybrid Carbon",
+                         "brandId":  "stiga",
+                         "category":  "blade",
+                         "description":  "Imported from Dandoy Sports blades listing. Source page: https://www.dandoy-sports.com/stiga-l1-hybrid-carbon.html",
+                         "images":  [
+                                        {
+                                            "id":  "dandoy-blade-stiga-l1-hybrid-carbon-img-1",
+                                            "src":  "/catalog/3f90a2cf6456da89.jpg",
+                                            "alt":  "Stiga l1 Hybrid Carbon photo 1",
+                                            "isPrimary":  true
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-l1-hybrid-carbon-img-2",
+                                            "src":  "/catalog/3c4ae54a281bc200.jpg",
+                                            "alt":  "Stiga l1 Hybrid Carbon photo 2",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-l1-hybrid-carbon-img-3",
+                                            "src":  "/catalog/9de8f0655e838198.jpg",
+                                            "alt":  "Stiga l1 Hybrid Carbon photo 3",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-l1-hybrid-carbon-img-4",
+                                            "src":  "/catalog/2bcd2da4426801c6.jpg",
+                                            "alt":  "Stiga l1 Hybrid Carbon photo 4",
+                                            "isPrimary":  false
+                                        }
+                                    ],
+                         "imageLocalPaths":  [
+                                                 "/catalog/3f90a2cf6456da89.jpg",
+                                                 "/catalog/3c4ae54a281bc200.jpg",
+                                                 "/catalog/9de8f0655e838198.jpg",
+                                                 "/catalog/2bcd2da4426801c6.jpg"
+                                             ],
+                         "provenance":  {
+                                            "sourceId":  "dandoy-blades",
+                                            "sourceUrl":  "https://www.dandoy-sports.com/stiga-l1-hybrid-carbon.html",
+                                            "scrapedAt":  "2026-07-19T21:17:16.026Z",
+                                            "attribution":  "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+                                            "license":  "unknown â€” review before redistribution",
+                                            "mediaRights":  "unknown"
+                                        }
+                     },
+                     {
+                         "id":  "dandoy-blade-stiga-l1-hybrid-carbon-cybershape",
+                         "slug":  "stiga-l1-hybrid-carbon-cybershape",
+                         "name":  "Stiga l1 Hybrid Carbon Cybershape",
+                         "brandId":  "stiga",
+                         "category":  "blade",
+                         "description":  "Imported from Dandoy Sports blades listing. Source page: https://www.dandoy-sports.com/stiga-l1-hybrid-carbon-cybershape.html",
+                         "images":  [
+                                        {
+                                            "id":  "dandoy-blade-stiga-l1-hybrid-carbon-cybershape-img-1",
+                                            "src":  "/catalog/2334ae5b296d5e7e.jpg",
+                                            "alt":  "Stiga l1 Hybrid Carbon Cybershape photo 1",
+                                            "isPrimary":  true
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-l1-hybrid-carbon-cybershape-img-2",
+                                            "src":  "/catalog/134db1795a8d78f4.jpg",
+                                            "alt":  "Stiga l1 Hybrid Carbon Cybershape photo 2",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-l1-hybrid-carbon-cybershape-img-3",
+                                            "src":  "/catalog/acf86b739ccf932f.jpg",
+                                            "alt":  "Stiga l1 Hybrid Carbon Cybershape photo 3",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-l1-hybrid-carbon-cybershape-img-4",
+                                            "src":  "/catalog/42e0f447c31b7fe6.jpg",
+                                            "alt":  "Stiga l1 Hybrid Carbon Cybershape photo 4",
+                                            "isPrimary":  false
+                                        }
+                                    ],
+                         "imageLocalPaths":  [
+                                                 "/catalog/2334ae5b296d5e7e.jpg",
+                                                 "/catalog/134db1795a8d78f4.jpg",
+                                                 "/catalog/acf86b739ccf932f.jpg",
+                                                 "/catalog/42e0f447c31b7fe6.jpg"
+                                             ],
+                         "provenance":  {
+                                            "sourceId":  "dandoy-blades",
+                                            "sourceUrl":  "https://www.dandoy-sports.com/stiga-l1-hybrid-carbon-cybershape.html",
+                                            "scrapedAt":  "2026-07-19T21:17:33.680Z",
+                                            "attribution":  "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+                                            "license":  "unknown â€” review before redistribution",
+                                            "mediaRights":  "unknown"
+                                        }
+                     },
+                     {
+                         "id":  "dandoy-blade-stiga-carbon-soft-touch",
+                         "slug":  "stiga-carbon-soft-touch",
+                         "name":  "Stiga Carbon Soft Touch",
+                         "brandId":  "stiga",
+                         "category":  "blade",
+                         "description":  "Imported from Dandoy Sports blades listing. Source page: https://www.dandoy-sports.com/stiga-carbon-soft-touch.html",
+                         "images":  [
+                                        {
+                                            "id":  "dandoy-blade-stiga-carbon-soft-touch-img-1",
+                                            "src":  "/catalog/00de8ce7bc3869da.jpg",
+                                            "alt":  "Stiga Carbon Soft Touch photo 1",
+                                            "isPrimary":  true
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-carbon-soft-touch-img-2",
+                                            "src":  "/catalog/f9995d3c25f09703.jpg",
+                                            "alt":  "Stiga Carbon Soft Touch photo 2",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-carbon-soft-touch-img-3",
+                                            "src":  "/catalog/54bad1ffedcb9838.jpg",
+                                            "alt":  "Stiga Carbon Soft Touch photo 3",
+                                            "isPrimary":  false
+                                        },
+                                        {
+                                            "id":  "dandoy-blade-stiga-carbon-soft-touch-img-4",
+                                            "src":  "/catalog/9de2ff8ce7a90923.jpg",
+                                            "alt":  "Stiga Carbon Soft Touch photo 4",
+                                            "isPrimary":  false
+                                        }
+                                    ],
+                         "imageLocalPaths":  [
+                                                 "/catalog/00de8ce7bc3869da.jpg",
+                                                 "/catalog/f9995d3c25f09703.jpg",
+                                                 "/catalog/54bad1ffedcb9838.jpg",
+                                                 "/catalog/9de2ff8ce7a90923.jpg"
+                                             ],
+                         "provenance":  {
+                                            "sourceId":  "dandoy-blades",
+                                            "sourceUrl":  "https://www.dandoy-sports.com/stiga-carbon-soft-touch.html",
+                                            "scrapedAt":  "2026-07-19T21:17:53.474Z",
+                                            "attribution":  "Dandoy Sports (imported for TTSetupBuilder offline catalog)",
+                                            "license":  "unknown â€” review before redistribution",
+                                            "mediaRights":  "unknown"
+                                        }
+                     }
+                 ]
+}

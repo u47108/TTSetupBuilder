@@ -11,6 +11,7 @@
     "dev": "pnpm --filter web dev",
     "build": "pnpm --filter web build",
     "lint": "pnpm --filter web lint",
+    "scrape": "pnpm --filter @ttsetupbuilder/scrapers scrape",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

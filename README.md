@@ -57,7 +57,14 @@ pnpm install
 pnpm --filter web dev
 ```
 
-Build: `pnpm --filter web build`. Details: [`apps/web/README.md`](./apps/web/README.md).
+Scrapers (default dry-run, no site hammering):
+
+```bash
+pnpm scrape -- --list
+pnpm scrape -- --source=tt11-blades
+```
+
+Build: `pnpm --filter web build`. Details: [`apps/web/README.md`](./apps/web/README.md), [`scrapers/README.md`](./scrapers/README.md).
 
 ---
 
@@ -91,6 +98,8 @@ SPA — no SSR required. Compatible with GitHub Pages and Cloudflare Pages.
 | [Component Library](./docs/ui/COMPONENT_LIBRARY.md) | Intended React component inventory (`packages/ui` vs `apps/web`) |
 | [Functional Requirements](./docs/FUNCTIONAL_REQUIREMENTS.md) | Personas, user stories, FR/NFR for every feature area |
 | [Data Model](./docs/DATA_MODEL.md) | Normalized relational model for catalog, players, media, setups |
+| [Data Sources](./docs/DATA_SOURCES.md) | Approved scrape sources, roles, ethics — feeds local catalog / search |
+| [Scrapers](./scrapers/README.md) | Offline ingestion package (`@ttsetupbuilder/scrapers`) |
 | [Navigation & IA](./docs/NAVIGATION.md) | App navigation, routes, and screen-level information architecture |
 | [Frontend Architecture](./docs/architecture/FRONTEND_ARCHITECTURE.md) | Historical Next.js-oriented notes — **superseded by ADRs where conflicting** |
 | [Architecture index](./docs/architecture/README.md) | Architecture docs folder |

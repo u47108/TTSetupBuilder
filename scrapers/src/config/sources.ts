@@ -1,0 +1,152 @@
+import type { SourceConfig } from '../sources/types.js';
+
+/** Canonical registry entries — mirrored in docs/DATA_SOURCES.md. */
+export const SOURCE_CONFIGS: readonly SourceConfig[] = [
+  {
+    id: 'tt11-blades-penholder',
+    name: 'TableTennis11 — penholder blades',
+    listingUrl: 'https://tabletennis11.com/en/blades-penholder',
+    categories: ['blade'],
+    role: 'catalog-photos-secondary',
+    selectorNotes: [
+      'Cloudflare challenge blocks automated GET (2026-07).',
+      'Prefer dandoy-blades / prott for live ingestion until browser export exists.',
+    ],
+    rateLimitMs: 1500,
+    cloudflareBlocked: true,
+  },
+  {
+    id: 'tt11-blades',
+    name: 'TableTennis11 — blades',
+    listingUrl: 'https://tabletennis11.com/en/blades',
+    categories: ['blade'],
+    role: 'catalog-photos-primary',
+    selectorNotes: [
+      'Cloudflare challenge blocks automated GET (2026-07).',
+      'Manual HTML export or alternate source required for live scrape.',
+    ],
+    rateLimitMs: 1500,
+    cloudflareBlocked: true,
+  },
+  {
+    id: 'tt11-rubbers',
+    name: 'TableTennis11 — rubbers',
+    listingUrl: 'https://tabletennis11.com/en/rubbers',
+    categories: ['rubber'],
+    role: 'catalog-photos-primary',
+    selectorNotes: [
+      'Cloudflare challenge blocks automated GET (2026-07).',
+    ],
+    rateLimitMs: 1500,
+    cloudflareBlocked: true,
+  },
+  {
+    id: 'tabletennis-reviews',
+    name: 'Table Tennis Reviews',
+    listingUrl: 'https://tabletennis-reviews.com/',
+    categories: ['blade', 'rubber', 'other'],
+    role: 'reviews',
+    selectorNotes: [
+      'TODO: review index / post links',
+      'TODO: extract product mentions; media only if rights allow download',
+    ],
+    rateLimitMs: 2000,
+  },
+  {
+    id: 'ttgearlab-database',
+    name: 'TTGearLab — database category',
+    listingUrl: 'https://ttgearlab.com/category/database/',
+    categories: ['blade', 'rubber', 'other'],
+    role: 'specs-lab',
+    selectorNotes: [
+      'TODO: category pagination',
+      'TODO: measured attributes → provenance bags',
+    ],
+    rateLimitMs: 2000,
+  },
+  {
+    id: 'ittf-equipment-approval',
+    name: 'ITTF — equipment approval',
+    listingUrl: 'https://equipment.ittf.com/#/equipment/approval',
+    categories: ['blade', 'rubber', 'ball', 'other'],
+    role: 'official-approval',
+    selectorNotes: [
+      'SPA shell only via naive GET — discover XHR/JSON in DevTools',
+      'TODO: record approval API base + pagination once known',
+    ],
+    requiresApiDiscovery: true,
+    rateLimitMs: 2500,
+  },
+  {
+    id: 'ittf-racket-coverings',
+    name: 'ITTF — racket coverings',
+    listingUrl: 'https://equipment.ittf.com/#/equipment/racket_coverings',
+    categories: ['rubber'],
+    role: 'official-approval',
+    selectorNotes: [
+      'SPA # route — same API discovery as ittf-equipment-approval',
+      'TODO: covering list endpoint + brand/model fields',
+    ],
+    requiresApiDiscovery: true,
+    rateLimitMs: 2500,
+  },
+  {
+    id: 'tt-spin-rubbers',
+    name: 'TT-Spin — rubbers',
+    listingUrl: 'https://www.tt-spin.com/table-tennis-rubbers/',
+    categories: ['rubber'],
+    role: 'catalog-photos-secondary',
+    selectorNotes: ['TODO: rubber grid / pagination', 'TODO: product image URLs for download'],
+    rateLimitMs: 2000,
+  },
+  {
+    id: 'prott-rubbers',
+    name: 'ProTT — rubbers',
+    listingUrl: 'https://www.prott.vip/Product-List.aspx?producttype=2',
+    categories: ['rubber'],
+    role: 'catalog-photos-secondary',
+    selectorNotes: [
+      'ASP.NET Product-List.aspx — watch ViewState / page index query params',
+      'TODO: product detail links + images',
+    ],
+    rateLimitMs: 2000,
+  },
+  {
+    id: 'prott-blades',
+    name: 'ProTT — blades',
+    listingUrl: 'https://www.prott.vip/Product-List.aspx?producttype=12',
+    categories: ['blade'],
+    role: 'catalog-photos-secondary',
+    selectorNotes: [
+      'Same list pattern as prott-rubbers with producttype=12',
+      'TODO: product detail links + images',
+    ],
+    rateLimitMs: 2000,
+  },
+  {
+    id: 'dandoy-blades',
+    name: 'Dandoy Sports — blades',
+    listingUrl: 'https://www.dandoy-sports.com/blades.html',
+    categories: ['blade'],
+    role: 'catalog-photos-primary',
+    selectorNotes: [
+      'LIVE: li.product-item → a.product-item-link + img.product-image-photo',
+      'LIVE PDP: Mage gallery JSON "full" image URLs (multi-image)',
+      'Pagination: blades.html?p=N',
+    ],
+    rateLimitMs: 2000,
+  },
+  {
+    id: 'dandoy-rubbers',
+    name: 'Dandoy Sports — rubbers',
+    listingUrl: 'https://www.dandoy-sports.com/rubbers.html',
+    categories: ['rubber'],
+    role: 'catalog-photos-secondary',
+    selectorNotes: ['TODO: rubbers.html product anchors', 'TODO: image src for owned download'],
+    rateLimitMs: 2000,
+  },
+] as const;
+
+export function getSourceConfig(id: string): SourceConfig | undefined {
+  return SOURCE_CONFIGS.find((source) => source.id === id);
+}

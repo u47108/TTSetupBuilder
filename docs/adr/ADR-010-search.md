@@ -39,5 +39,6 @@ Server-side or hosted search may be proposed later via a new ADR if scale demand
 - [ADR-006](./ADR-006-routing.md)
 - [ADR-009](./ADR-009-data-source-strategy.md)
 - [ADR-014](./ADR-014-offline-first-data-ownership.md)
+- [`docs/DATA_SOURCES.md`](../DATA_SOURCES.md) — ingestion registry that feeds the local Fuse.js index
 - [`docs/NAVIGATION.md`](../NAVIGATION.md)
 - [`docs/FUNCTIONAL_REQUIREMENTS.md`](../FUNCTIONAL_REQUIREMENTS.md)

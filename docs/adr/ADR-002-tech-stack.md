@@ -26,6 +26,7 @@ We adopt the following stack for the web application:
 | Client UI state | **Zustand** |
 | Routing | **React Router** |
 | Motion | **Framer Motion** |
+| Catalog search (client) | **Fuse.js** (canonical per [ADR-010](./ADR-010-search.md); offline over owned JSON) |
 | Runtime | **Node.js 22 LTS** |
 | Package manager | **pnpm** |
 
