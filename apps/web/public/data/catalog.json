@@ -616,13 +616,13 @@
       "images": [
         {
           "id": "dandoy-rubber-donic-bluefire-m-serie-34-img-1",
-          "src": "/catalog/d1f1b66a606dd386.png",
+          "src": "/catalog/d1f1b66a606dd386.jpg",
           "alt": "Donic Bluefire M Serie 3=4 photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/d1f1b66a606dd386.png"
+        "/catalog/d1f1b66a606dd386.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-rubbers",
@@ -1877,13 +1877,13 @@
       "images": [
         {
           "id": "dandoy-rubber-donic-desto-f-serie-34-img-1",
-          "src": "/catalog/a7e7d8b9b5b9e96d.png",
+          "src": "/catalog/a7e7d8b9b5b9e96d.jpg",
           "alt": "Donic Desto F serie 3=4 photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/a7e7d8b9b5b9e96d.png"
+        "/catalog/a7e7d8b9b5b9e96d.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-rubbers",
@@ -3434,7 +3434,7 @@
       "images": [
         {
           "id": "dandoy-rubber-donic-vario-serie-34-img-1",
-          "src": "/catalog/43ab7d648aa98645.png",
+          "src": "/catalog/43ab7d648aa98645.jpg",
           "alt": "Donic Vario Serie 3=4 photo 1",
           "isPrimary": true
         },
@@ -3452,7 +3452,7 @@
         }
       ],
       "imageLocalPaths": [
-        "/catalog/43ab7d648aa98645.png",
+        "/catalog/43ab7d648aa98645.jpg",
         "/catalog/27551891eed35cc4.jpg",
         "/catalog/0344d2a83a257725.jpg"
       ],
@@ -4284,13 +4284,13 @@
       "images": [
         {
           "id": "dandoy-rubber-stiga-calibra-lt-serie-34-img-1",
-          "src": "/catalog/5e4801fe90505322.png",
+          "src": "/catalog/5e4801fe90505322.jpg",
           "alt": "Stiga Calibra LT Serie 3=4 photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/5e4801fe90505322.png"
+        "/catalog/5e4801fe90505322.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-rubbers",

@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { optimizeCatalogImage } from './optimizeImage.js';
 
 /** Polite research User-Agent — operators must still obey robots.txt / ToS. */
 export const RESEARCH_USER_AGENT =
@@ -15,7 +16,7 @@ export type DownloadImageResult = {
 };
 
 /**
- * Downloads a remote image to owned disk using a content-hash filename.
+ * Downloads a remote image, optimizes to catalog JPEG (max ~720px), stores by content-hash.
  * Never use the remote URL as a runtime <img src> (ADR-008).
  */
 export async function downloadImageToOwnedStorage(options: {
@@ -43,17 +44,14 @@ export async function downloadImageToOwnedStorage(options: {
     throw new Error(`Image download failed (${response.status}) for ${url}`);
   }
 
-  const buffer = Buffer.from(await response.arrayBuffer());
-  const contentHash = createHash('sha256').update(buffer).digest('hex');
-  const ext =
-    extensionFromContentType(response.headers.get('content-type')) ??
-    extensionFromUrl(url) ??
-    '.bin';
-  const filename = `${contentHash.slice(0, 16)}${ext}`;
+  const raw = Buffer.from(await response.arrayBuffer());
+  const optimized = await optimizeCatalogImage(raw);
+  const contentHash = createHash('sha256').update(optimized.buffer).digest('hex');
+  const filename = `${contentHash.slice(0, 16)}${optimized.extension}`;
 
   await mkdir(outputDir, { recursive: true });
   const localPath = path.join(outputDir, filename);
-  await writeFile(localPath, buffer);
+  await writeFile(localPath, optimized.buffer);
 
   const publicSrc = `${publicPrefix.replace(/\/$/, '')}/${filename}`;
 
@@ -61,8 +59,8 @@ export async function downloadImageToOwnedStorage(options: {
     localPath,
     publicSrc,
     contentHash,
-    contentType: response.headers.get('content-type'),
-    bytes: buffer.length,
+    contentType: optimized.contentType,
+    bytes: optimized.buffer.length,
   };
 }
 
@@ -91,34 +89,4 @@ export async function fetchHtml(url: string, rateLimitMs = 1500): Promise<string
   }
 
   return text;
-}
-
-function extensionFromContentType(contentType: string | null): string | undefined {
-  if (!contentType) return undefined;
-  const normalized = contentType.split(';')[0]?.trim().toLowerCase();
-  switch (normalized) {
-    case 'image/jpeg':
-      return '.jpg';
-    case 'image/png':
-      return '.png';
-    case 'image/webp':
-      return '.webp';
-    case 'image/gif':
-      return '.gif';
-    case 'image/avif':
-      return '.avif';
-    default:
-      return undefined;
-  }
-}
-
-function extensionFromUrl(url: string): string | undefined {
-  try {
-    const pathname = new URL(url).pathname;
-    const ext = path.extname(pathname).toLowerCase();
-    if (ext && ext.length <= 5) return ext;
-  } catch {
-    /* ignore */
-  }
-  return undefined;
 }

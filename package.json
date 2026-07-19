@@ -12,6 +12,7 @@
     "build": "pnpm --filter web build",
     "lint": "pnpm --filter web lint",
     "scrape": "pnpm --filter @ttsetupbuilder/scrapers scrape",
+    "optimize-images": "pnpm --filter @ttsetupbuilder/scrapers optimize-images",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

@@ -64,15 +64,25 @@ function parseListingCards(html: string): ListingCard[] {
   return cards;
 }
 
-function extractGalleryFullUrls(html: string): string[] {
+function extractGalleryUrls(html: string): string[] {
+  // Prefer Magento "img" (display) over "full" (master) — smaller downloads (ADR-008).
+  const imgs = [
+    ...html.matchAll(
+      /"img":"(https:\\\/\\\/www\.dandoy-sports\.com\\\/media\\\/catalog\\\/product\\\/[^"]+)"/g,
+    ),
+  ].map((match) => match[1]!.replace(/\\\//g, '/'));
+
+  const uniqueImg = [...new Set(imgs)];
+  if (uniqueImg.length > 0) return uniqueImg;
+
   const fulls = [
     ...html.matchAll(
       /"full":"(https:\\\/\\\/www\.dandoy-sports\.com\\\/media\\\/catalog\\\/product\\\/[^"]+)"/g,
     ),
   ].map((match) => match[1]!.replace(/\\\//g, '/'));
 
-  const unique = [...new Set(fulls)];
-  if (unique.length > 0) return unique;
+  const uniqueFull = [...new Set(fulls)];
+  if (uniqueFull.length > 0) return uniqueFull;
 
   const loose = [
     ...html.matchAll(
@@ -95,7 +105,7 @@ export type DandoyMagentoOptions = {
  * Shared Magento listing + PDP gallery scraper for Dandoy Sports.
  */
 export function createDandoyMagentoSource(options: DandoyMagentoOptions): SourceModule {
-  const { config, category, idPrefix, maxImagesPerProduct = 3 } = options;
+  const { config, category, idPrefix, maxImagesPerProduct = 2 } = options;
   const logPrefix = config.id;
 
   async function scrapeLive(ctx: ScrapeContext): Promise<LiveScrapeResult> {
@@ -126,7 +136,7 @@ export function createDandoyMagentoSource(options: DandoyMagentoOptions): Source
         let galleryUrls: string[] = [];
         try {
           const pdpHtml = await fetchHtml(card.url, ctx.rateLimitMs);
-          galleryUrls = extractGalleryFullUrls(pdpHtml);
+          galleryUrls = extractGalleryUrls(pdpHtml);
         } catch (error) {
           console.warn(`[${logPrefix}] PDP failed for ${card.url}:`, error);
         }

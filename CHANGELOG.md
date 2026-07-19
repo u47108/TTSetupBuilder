@@ -34,6 +34,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Catalog images optimized to **max 720px JPEG q72** (`pnpm optimize-images`); scrape prefers Magento `img` over `full`
 - Catalog publish **merges by sourceId** (blades + rubbers coexist in one `catalog.json`)
 - TT11 sources marked `cloudflareBlocked` (automated GET fails challenge); prefer Dandoy for live ingestion
 - ADR-009 amended: multi-source related registry (not TT11-only); links `docs/DATA_SOURCES.md` and `scrapers/`

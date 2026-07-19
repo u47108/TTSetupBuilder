@@ -68,6 +68,12 @@ pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-im
 | `--limit=<n>` | Max products (default 8) |
 | `--max-pages=<n>` | Max listing pages (default 1) |
 
+Images are stored as **owned JPEG ≤720px** (sharp). Re-optimize existing files:
+
+```bash
+pnpm optimize-images
+```
+
 Dry-run (without `--no-dry-run --fetch-listing`) writes a URL plan under `data/normalized/<sourceId>.dry-run.json` without requesting product pages or images.
 
 ## Normalized contract
