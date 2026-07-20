@@ -5,6 +5,7 @@ import { LOCALES } from '@/shared/i18n/translate';
 import { useT } from '@/shared/i18n/useT';
 import type { AppLocale, MessageKey } from '@/shared/i18n/types';
 import { useUiStore } from '@/shared/stores/ui-store';
+import { CatalogHeaderCount } from '@/features/catalog/CatalogHeaderCount';
 import { cn } from '@/shared/lib/cn';
 
 const NAV_KEYS: ReadonlyArray<{ to: string; labelKey: MessageKey; end?: boolean }> = [
@@ -34,13 +35,16 @@ export function AppShell() {
 
       <header className="relative z-20 border-b border-[var(--color-border-subtle)] bg-[color-mix(in_srgb,var(--color-canvas)_82%,transparent)] backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-          <NavLink
-            to="/"
-            className="font-[family-name:var(--font-display)] text-lg tracking-tight text-[var(--color-text-primary)]"
-            onClick={closeNav}
-          >
-            TTSetupBuilder
-          </NavLink>
+          <div className="flex min-w-0 items-baseline gap-3">
+            <NavLink
+              to="/"
+              className="shrink-0 font-[family-name:var(--font-display)] text-lg tracking-tight text-[var(--color-text-primary)]"
+              onClick={closeNav}
+            >
+              TTSetupBuilder
+            </NavLink>
+            <CatalogHeaderCount />
+          </div>
 
           <div className="flex items-center gap-2">
             <nav className="hidden items-center gap-1 md:flex" aria-label={t('nav.primary')}>

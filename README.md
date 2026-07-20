@@ -168,7 +168,7 @@ UI captures and visual references live in [`docs/screenshots/`](./docs/screensho
 
 ## Status
 
-🚧 **Early development** — web app **v0.1.0** · SPA + local catalog + builder
+🚧 **Early development** — web app **v0.1.0** (auto-bumped on commit; see [CHANGELOG](./CHANGELOG.md)) · SPA + local catalog + builder
 
 - Vite + React SPA (`apps/web`), Feature First layout, dark-only shell, EN/ES i18n
 - Local catalog **1669** products with owned images under `public/catalog/`

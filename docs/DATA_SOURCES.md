@@ -43,7 +43,7 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 | `prott-blades` | https://www.prott.vip/Product-List.aspx?producttype=12 | Blade product list | **Catalog photos** — blades | Same as rubbers list pattern. |
 | `dandoy-blades` | https://www.dandoy-sports.com/blades.html | Blade catalog | **Primary live photos** — blades | **Live** — multi-page Magento crawl (`--max-pages=5`). |
 | `dandoy-rubbers` | https://www.dandoy-sports.com/rubbers.html | Rubber catalog | **Primary live photos** — rubbers | **Live** — same Magento pattern; publish merges with blades. |
-| `vpsport-gomas-lisas` | https://www.vpsport.cl/gomas-lisas | Inverted rubbers | **Primary live** — rubbers (CL) | **Live** — Jumpseller; `?page=N`; thumbs ≤720. |
+| `vpsport-gomas-lisas` | https://www.vpsport.cl/gomas-lisas | Inverted rubbers | **Primary live** — rubbers (CL) | **Live** — Jumpseller; Butterfly-only retailer (CL); `?page=N`; thumbs ≤720. |
 | `vpsport-maderos-clasicos` | https://www.vpsport.cl/maderos-clasicos | Classic blades | **Primary live** — blades (CL) | **Live** — Jumpseller. |
 | `vpsport-maderos-japones` | https://www.vpsport.cl/maderos-japones | Japanese-style blades | **Secondary live** — blades | **Live** — Jumpseller. |
 | `vpsport-maderos-lapiceros` | https://www.vpsport.cl/maderos-lapiceros | Penhold blades | **Secondary live** — blades | **Live** — Jumpseller. |

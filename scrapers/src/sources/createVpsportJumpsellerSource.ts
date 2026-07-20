@@ -31,14 +31,16 @@ function slugify(value: string): string {
     .replace(/^-|-$/g, '');
 }
 
-function inferBrand(name: string): { brandId: string } {
-  const cleaned = name
+/** VP Sport (vpsport.cl) is a Butterfly-only retailer — never infer brand from product line names. */
+export const VPSPORT_BRAND_ID = 'butterfly';
+
+/** Strip VP Sport category prefixes so names align with catalog rows (e.g. "Dignics 05", not "Goma Dignics 05"). */
+export function normalizeVpsportProductName(name: string): string {
+  return name
     .replace(/^Goma\s+/i, '')
     .replace(/^Madero\s+/i, '')
     .replace(/\s+/g, ' ')
     .trim();
-  const first = cleaned.split(/\s+/)[0] ?? 'Unknown';
-  return { brandId: slugify(first) };
 }
 
 function absoluteUrl(href: string): string {
@@ -190,17 +192,17 @@ export function createVpsportJumpsellerSource(options: VpsportOptions): SourceMo
           }
         }
 
-        const { brandId } = inferBrand(card.name);
+        const displayName = normalizeVpsportProductName(card.name);
         const productSlug: string =
-          slugify(card.name) || `vpsport-${String(products.length + 1)}`;
+          slugify(displayName) || `vpsport-${String(products.length + 1)}`;
         const scrapedAt = new Date().toISOString();
 
         products.push(
           normalizeProduct({
             id: `vpsport-${productSlug}`,
             slug: productSlug,
-            name: card.name,
-            brandId,
+            name: displayName,
+            brandId: VPSPORT_BRAND_ID,
             category,
             handleTypes,
             description: `Imported from VP Sport (${config.id}). Source page: ${card.url}`,

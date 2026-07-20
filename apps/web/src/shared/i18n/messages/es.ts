@@ -5,6 +5,8 @@ export const es: MessageTree = {
     footerBy: 'por',
     footerContact: 'Contacto',
     github: 'GitHub',
+    catalogCount: '{blades} maderos · {rubbers} gomas',
+    catalogCountAria: 'Catálogo: {blades} maderos y {rubbers} gomas',
   },
   nav: {
     primary: 'Principal',

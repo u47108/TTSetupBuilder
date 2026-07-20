@@ -79,7 +79,7 @@ Details: [`docs/DATA_SOURCES.md`](../docs/DATA_SOURCES.md#ittf-api--racket-cover
 | Source id | Status |
 |-----------|--------|
 | `dandoy-blades` / `dandoy-rubbers` | **Live** — Magento |
-| `vpsport-*` | **Live** — Jumpseller |
+| `vpsport-*` | **Live** — Jumpseller (Butterfly-only retailer, CL) |
 | `zonatt-maderas` | **Live** — ZonaTT blades via **sitemap** (incl. OOS) + PDP `og:image`; listing/ajax for mango hints |
 | `zonatt-gomas` | **Live** — ZonaTT rubbers via **sitemap** (incl. OOS) + PDP `og:image` |
 | `cl-rubber-seeds` | **Live** — Bushido / Foxhara WooCommerce PDP seeds |

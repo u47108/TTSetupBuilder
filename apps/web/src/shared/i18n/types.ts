@@ -5,6 +5,8 @@ export type MessageTree = {
     footerBy: string;
     footerContact: string;
     github: string;
+    catalogCount: string;
+    catalogCountAria: string;
   };
   nav: {
     primary: string;

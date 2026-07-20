@@ -10,6 +10,7 @@
     "optimize-images": "tsx src/optimize-catalog-images.ts",
     "repair-blade-images": "tsx src/repair-blade-images.ts",
     "guard:optimize-image": "tsx src/pipeline/optimizeImage.guard.ts",
+    "guard:vpsport": "tsx src/sources/createVpsportJumpsellerSource.guard.ts",
     "enrich-handles": "tsx src/enrich-blade-handles.ts",
     "typecheck": "tsc --noEmit"
   },

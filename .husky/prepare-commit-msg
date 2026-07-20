@@ -1,0 +1,1 @@
+node scripts/bump-version-changelog.mjs "$1" "$2"

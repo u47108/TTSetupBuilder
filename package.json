@@ -1,7 +1,7 @@
 {
   "name": "ttsetupbuilder",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Visual table tennis equipment database and setup builder",
   "author": {
     "name": "Luis Nuñez",
@@ -22,9 +22,11 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test:e2e": "pnpm --filter web test:e2e",
-    "test:e2e:report": "pnpm --filter web test:e2e:report"
+    "test:e2e:report": "pnpm --filter web test:e2e:report",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "husky": "^9.1.7",
     "prettier": "^3.5.3"
   }
 }
