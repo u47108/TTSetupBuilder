@@ -89,7 +89,7 @@ export function BuilderIttfAlert({
       <ul className="space-y-2.5">
         {entries.map(({ sideKey, product, tone }) => {
           const info = product.ittfApproval!;
-          const name = [product.brand, product.name].filter(Boolean).join(' · ');
+          const name = [product.brandId, product.name].filter(Boolean).join(' · ');
           const alertTone = tone === 'alert';
           return (
             <li

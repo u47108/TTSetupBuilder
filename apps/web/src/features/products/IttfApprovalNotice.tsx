@@ -14,9 +14,14 @@ const ALERT_STATUSES: ReadonlySet<IttfApprovalStatus> = new Set([
   'inactive',
 ]);
 
+/** Non-approved ITTF rows that warrant an amber alert in the UI. */
+export type IttfAlertApprovalInfo = IttfApprovalInfo & {
+  status: Exclude<IttfApprovalStatus, 'approved'>;
+};
+
 export function shouldShowIttfApprovalAlert(
   info: IttfApprovalInfo | undefined,
-): info is IttfApprovalInfo {
+): info is IttfAlertApprovalInfo {
   return Boolean(info && ALERT_STATUSES.has(info.status));
 }
 

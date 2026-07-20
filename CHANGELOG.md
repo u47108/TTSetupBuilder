@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - GitHub Pages workflow: bump Actions to Node 24–compatible majors (`checkout`/`setup-node`/`pnpm` v6, `upload-pages-artifact`/`deploy-pages` v5); app build stays on Node 22 LTS
 
+### Fixed
+
+- ITTF builder/detail alerts: narrow `shouldShowIttfApprovalAlert` type guard and use `brandId` on catalog products (fixes CI `tsc` build)
+
 ## [0.1.0] - 2026-07-20
 
 Web app (`apps/web`) **v0.1.0** — first functional SPA release: local catalog, builder, search, compare, EN/ES i18n, ITTF offline notices, GitHub Pages deploy.
