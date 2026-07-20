@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-07-20
+
 ### Added
 
 - Automatic patch version bump and changelog entry on each commit (Husky `prepare-commit-msg` + `scripts/bump-version-changelog.mjs`); documented in `CONTRIBUTING.md`
@@ -22,13 +24,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ITTF builder/detail alerts: narrow `shouldShowIttfApprovalAlert` type guard and use `brandId` on catalog products (fixes CI `tsc` build)
 - Catalog: remove 25 VP Sport `vpsport-goma-*` rubber duplicates — mis-prefixed “Goma …” entries with wrong `brandId` (e.g. `dignics`, `tenergy`, `zyre`) that failed ITTF lookup; canonical rows kept from ZonaTT/Dandoy (e.g. `Butterfly ZYRE 03`, `Butterfly DIGNICS 05`)
 - VP Sport scraper: always set `brandId` to `butterfly` (Butterfly-only CL retailer); strip “Goma ”/“Madero ” from product names on normalize so re-scrape does not recreate mis-branded rubber duplicates
-
-
-## [0.1.1] - 2026-07-20
-
-### Changed
-
-- add automatic version and changelog on commit
 
 ## [0.1.0] - 2026-07-20
 
