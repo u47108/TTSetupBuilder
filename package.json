@@ -1,7 +1,7 @@
 {
   "name": "ttsetupbuilder",
   "private": true,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Visual table tennis equipment database and setup builder",
   "author": {
     "name": "Luis Nuñez",

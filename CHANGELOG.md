@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Clarify discontinued-product copy in builder alerts and product detail (EN/ES)
 
+
+## [0.1.3] - 2026-07-20
+
+### Fixed
+
+- clarify discontinued product alert copy
+
 ## [0.1.2] - 2026-07-20
 
 ### Changed
