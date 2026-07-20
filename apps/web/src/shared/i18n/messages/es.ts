@@ -113,7 +113,7 @@ export const es: MessageTree = {
     ariaLabel: 'Aviso de producto descatalogado',
     eyebrow: 'Estado en catálogo',
     title: 'Modelo descatalogado',
-    body: 'La fuente marca este modelo como descatalogado. Sigue en el archivo — el stock no es el catálogo.',
+    body: 'El fabricante marcó este modelo como descatalogado. Sigue en la base de datos porque muchos jugadores aún lo usan; no indica si está a la venta.',
     badge: 'Descatalogado',
   },
   search: {
@@ -205,7 +205,7 @@ export const es: MessageTree = {
     discontinuedAlertBh: 'Izquierda · {name}',
     discontinuedAlertTitle: 'Descatalogado',
     discontinuedAlertBody:
-      'Sigue en el archivo visual — la disponibilidad retail no es el catálogo.',
+      'Descatalogado por el fabricante. Sigue en la base de datos; no indica si está a la venta.',
     photo: {
       label: '5 · Foto del jugador',
       hint: 'Opcional · sube tu foto, ajusta zoom y arrastra para encuadrar.',

@@ -113,7 +113,7 @@ export const en: MessageTree = {
     ariaLabel: 'Discontinued product notice',
     eyebrow: 'Catalog status',
     title: 'Discontinued model',
-    body: 'This model is marked discontinued by the source. It stays in the archive — stock is not the catalog.',
+    body: 'The manufacturer marked this model as discontinued. It stays in the database because many players still use it; this does not indicate retail availability.',
     badge: 'Discontinued',
   },
   search: {
@@ -205,7 +205,7 @@ export const en: MessageTree = {
     discontinuedAlertBh: 'Left · {name}',
     discontinuedAlertTitle: 'Discontinued',
     discontinuedAlertBody:
-      'Still shown in the visual archive — retail availability is not the catalog.',
+      'Discontinued by the manufacturer. It stays in the database; this does not mean it is for sale.',
     photo: {
       label: '5 · Player photo',
       hint: 'Optional · upload your photo, adjust zoom, and drag to frame.',
