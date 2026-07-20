@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Footer author credit — Luis Nuñez (EN/ES i18n) and GitHub contact link ([u47108](https://github.com/u47108)) alongside app version in AppShell
 
+### Changed
+
+- GitHub Pages workflow: bump Actions to Node 24–compatible majors (`checkout`/`setup-node`/`pnpm` v6, `upload-pages-artifact`/`deploy-pages` v5); app build stays on Node 22 LTS
+
 ## [0.1.0] - 2026-07-20
 
 Web app (`apps/web`) **v0.1.0** — first functional SPA release: local catalog, builder, search, compare, EN/ES i18n, ITTF offline notices, GitHub Pages deploy.
