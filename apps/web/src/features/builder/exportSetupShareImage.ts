@@ -48,8 +48,24 @@ function drawCover(
   ctx.drawImage(img, dx, dy, dw, dh);
 }
 
-/** Knock out near-white studio backgrounds when the asset still has a white plate. */
-function knockoutWhiteToCanvas(img: HTMLImageElement): HTMLCanvasElement {
+type StudioBgMode = 'white' | 'black';
+
+function nearWhite(r: number, g: number, b: number, threshold = 220) {
+  return r >= threshold && g >= threshold && b >= threshold;
+}
+
+function nearBlack(r: number, g: number, b: number, threshold = 36) {
+  return r <= threshold && g <= threshold && b <= threshold;
+}
+
+function luminance(r: number, g: number, b: number) {
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+/**
+ * Knock out studio white/black plates; scrub milky white fringe for dark UI.
+ */
+function knockoutStudioBgToCanvas(img: HTMLImageElement): HTMLCanvasElement {
   const c = document.createElement('canvas');
   c.width = img.naturalWidth;
   c.height = img.naturalHeight;
@@ -58,28 +74,106 @@ function knockoutWhiteToCanvas(img: HTMLImageElement): HTMLCanvasElement {
   cctx.drawImage(img, 0, 0);
   const imageData = cctx.getImageData(0, 0, c.width, c.height);
   const d = imageData.data;
+  const w = c.width;
+  const h = c.height;
   const sample = (x: number, y: number) => {
-    const i = (y * c.width + x) * 4;
-    return [d[i]!, d[i + 1]!, d[i + 2]!] as const;
+    const i = (y * w + x) * 4;
+    return [d[i]!, d[i + 1]!, d[i + 2]!, d[i + 3]!] as const;
   };
-  const nearWhite = (r: number, g: number, b: number) => r >= 242 && g >= 242 && b >= 242;
   const corners = [
     sample(2, 2),
-    sample(c.width - 3, 2),
-    sample(2, c.height - 3),
-    sample(c.width - 3, c.height - 3),
+    sample(w - 3, 2),
+    sample(2, h - 3),
+    sample(w - 3, h - 3),
   ];
-  if (corners.filter(([r, g, b]) => nearWhite(r, g, b)).length < 3) {
-    return c;
+  const opaqueCorners = corners.filter(([, , , a]) => a >= 200);
+  const whiteCorners = opaqueCorners.filter(([r, g, b]) => nearWhite(r, g, b)).length;
+  const blackCorners = opaqueCorners.filter(([r, g, b]) => nearBlack(r, g, b)).length;
+
+  let mode: StudioBgMode | null = null;
+  if (opaqueCorners.length >= 3) {
+    if (whiteCorners >= 3) mode = 'white';
+    else if (blackCorners >= 3) mode = 'black';
   }
+
+  const matches = (mode: StudioBgMode, r: number, g: number, b: number) =>
+    mode === 'white'
+      ? nearWhite(r, g, b, 215) || luminance(r, g, b) >= 232
+      : nearBlack(r, g, b);
+
+  if (mode) {
+    const pixelCount = w * h;
+    const visited = new Uint8Array(pixelCount);
+    const queue = new Int32Array(pixelCount);
+    let head = 0;
+    let tail = 0;
+
+    const enqueueIfBg = (x: number, y: number) => {
+      if (x < 0 || y < 0 || x >= w || y >= h) return;
+      const idx = y * w + x;
+      if (visited[idx]) return;
+      const i = idx * 4;
+      if (d[i + 3]! < 8) {
+        visited[idx] = 1;
+        return;
+      }
+      if (!matches(mode, d[i]!, d[i + 1]!, d[i + 2]!)) return;
+      visited[idx] = 1;
+      queue[tail++] = idx;
+    };
+
+    for (let x = 0; x < w; x += 1) {
+      enqueueIfBg(x, 0);
+      enqueueIfBg(x, h - 1);
+    }
+    for (let y = 0; y < h; y += 1) {
+      enqueueIfBg(0, y);
+      enqueueIfBg(w - 1, y);
+    }
+
+    while (head < tail) {
+      const idx = queue[head++]!;
+      const x = idx % w;
+      const y = (idx / w) | 0;
+      const i = idx * 4;
+      const r = d[i]!;
+      const g = d[i + 1]!;
+      const b = d[i + 2]!;
+      if (mode === 'white') {
+        const dist = Math.hypot(255 - r, 255 - g, 255 - b);
+        d[i + 3] = dist < 48 || luminance(r, g, b) >= 225 ? 0 : dist < 72 ? 120 : 0;
+      } else {
+        const dist = Math.hypot(r, g, b);
+        d[i + 3] = dist < 36 ? 0 : dist < 60 ? Math.round(((dist - 36) / 24) * 200) : 0;
+      }
+      enqueueIfBg(x + 1, y);
+      enqueueIfBg(x - 1, y);
+      enqueueIfBg(x, y + 1);
+      enqueueIfBg(x, y - 1);
+    }
+  }
+
+  // Scrub milky fringe (partial alpha + light, or light next to holes).
   for (let i = 0; i < d.length; i += 4) {
-    const r = d[i]!;
-    const g = d[i + 1]!;
-    const b = d[i + 2]!;
-    const dist = Math.hypot(255 - r, 255 - g, 255 - b);
-    if (dist < 26) d[i + 3] = 0;
-    else if (dist < 52) d[i + 3] = Math.round(((dist - 26) / 26) * 255);
+    const a = d[i + 3]!;
+    if (a === 0 || a === 255) continue;
+    if (luminance(d[i]!, d[i + 1]!, d[i + 2]!) >= 200 || nearWhite(d[i]!, d[i + 1]!, d[i + 2]!, 200)) {
+      d[i + 3] = 0;
+    }
   }
+  for (let y = 1; y < h - 1; y += 1) {
+    for (let x = 1; x < w - 1; x += 1) {
+      const idx = y * w + x;
+      const i = idx * 4;
+      if (d[i + 3]! < 200) continue;
+      if (!(nearWhite(d[i]!, d[i + 1]!, d[i + 2]!, 210) || luminance(d[i]!, d[i + 1]!, d[i + 2]!) >= 230)) {
+        continue;
+      }
+      const neighbors = [d[(idx - 1) * 4 + 3]!, d[(idx + 1) * 4 + 3]!, d[(idx - w) * 4 + 3]!, d[(idx + w) * 4 + 3]!];
+      if (neighbors.some((a) => a < 40)) d[i + 3] = 0;
+    }
+  }
+
   cctx.putImageData(imageData, 0, 0);
   return c;
 }
@@ -108,7 +202,7 @@ function drawContainKnockoutWhite(
   w: number,
   h: number,
 ) {
-  drawContain(ctx, knockoutWhiteToCanvas(img), x, y, w, h);
+  drawContain(ctx, knockoutStudioBgToCanvas(img), x, y, w, h);
 }
 
 function roundRect(

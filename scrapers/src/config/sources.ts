@@ -220,11 +220,38 @@ export const SOURCE_CONFIGS: readonly SourceConfig[] = [
     categories: ['blade'],
     role: 'catalog-photos-primary',
     selectorNotes: [
-      'LIVE: div.producto + PDP og:image (/img/zonatt/…)',
-      'Mango handles on listing: AN, FL, ST, PH (penhold)',
-      'Category listing is typically a single HTML page',
+      'LIVE: inventory from sitemap.php (all maderas PDPs, incl. OOS/discontinued)',
+      'Listing HTML + ajax show-list only for mango/thumb hints (not stock filter)',
+      'PDP og:image (/img/zonatt/…); mango AN/FL/ST/PH',
+      'EXTRA_PRODUCT_URLS for PDPs missing from sitemap (e.g. Ai Fukuhara Pro ZLF)',
     ],
     rateLimitMs: 1200,
+  },
+  {
+    id: 'zonatt-gomas',
+    name: 'ZonaTT — gomas',
+    listingUrl: 'https://www.zonatt.com/es/gomas-de-tenis-de-mesa',
+    categories: ['rubber'],
+    role: 'catalog-photos-primary',
+    selectorNotes: [
+      'LIVE: inventory from sitemap.php (all gomas PDPs, incl. OOS/discontinued)',
+      'Ajax category Id=1 for listing hints; PDP og:image',
+      'Priority EXTRA: Hurricane 3 Neo Provincial Blue Sponge 39, Dr.Neubauer Killer Pro',
+    ],
+    rateLimitMs: 1200,
+  },
+  {
+    id: 'cl-rubber-seeds',
+    name: 'CL shop rubber seeds (Bushido / Foxhara)',
+    listingUrl: 'https://www.bushido.cl/producto/dhs-hurricane-3-neo/',
+    categories: ['rubber'],
+    role: 'catalog-photos-secondary',
+    selectorNotes: [
+      'LIVE: explicit WooCommerce PDP URLs only (no category crawl yet)',
+      'Seeds: Bushido H3 Neo; Foxhara H3 Neo Soft blue Provincial Team',
+      'tabletennis11.com PDPs remain Cloudflare-blocked — do not rely on automated GET',
+    ],
+    rateLimitMs: 1000,
   },
 ] as const;
 

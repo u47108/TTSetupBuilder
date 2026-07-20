@@ -21,6 +21,7 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 | **Rate limit** | Default delay between requests; never parallel-hammer listings. Default CLI mode is **dry-run**. |
 | **robots.txt / ToS** | Operators **must** check robots.txt and site Terms before enabling live fetches. Scrapers do not bypass auth or paywalls. |
 | **Images** | Download to owned disk (`apps/web/public/catalog/` or `scrapers/images/`); content-hash filenames; never use remote URLs as `<img src>` in the app. |
+| **Stock ≠ catalog** | TTSetupBuilder is **not** a shop. Keep discontinued / “no disponible” / long-out-of-stock gear when a product page still exists — players still use blades bought years ago. Do not filter ingestion by buyability. |
 
 ---
 
@@ -47,7 +48,9 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 | `vpsport-poros-cortos` | https://www.vpsport.cl/poros-cortos | Short pips | **Secondary live** — rubbers | **Live** — Jumpseller. |
 | `vpsport-poros-largos` | https://www.vpsport.cl/poros-largos | Long pips | **Secondary live** — rubbers | **Live** — Jumpseller. |
 | `vpsport-gomas-anti-topspin` | https://www.vpsport.cl/gomas/anti-topspin | Anti-topspin rubbers | **Secondary live** — rubbers | **Live** — Jumpseller. |
-| `zonatt-maderas` | https://www.zonatt.com/es/maderas-de-tenis-de-mesa | Blades (ES) | **Primary live** — blades | **Live** — `div.producto` + PDP `og:image`; mango AN/FL/ST/PH. |
+| `zonatt-maderas` | https://www.zonatt.com/sitemap.php (+ category) | Blades (ES) | **Primary live** — blades | **Live** — inventory from **sitemap** (~175 PDPs, incl. OOS); listing/ajax only for mango hints; extras for PDPs missing from sitemap; PDP `og:image`. |
+| `zonatt-gomas` | https://www.zonatt.com/sitemap.php (+ category) | Rubbers (ES) | **Primary live** — rubbers | **Live** — sitemap (~441 PDPs, incl. OOS); ajax `Id=1`; priority Hurricane 3 Neo Provincial Blue Sponge 39 + Killer Pro. |
+| `cl-rubber-seeds` | Bushido / Foxhara PDPs | Rubbers (CL) | **Secondary** — seeds | **Live** — explicit WooCommerce PDPs only (H3 Neo variants). TT11 remains Cloudflare-blocked. |
 
 ### Role legend
 

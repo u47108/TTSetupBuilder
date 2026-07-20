@@ -1,8 +1,10 @@
 import { getSourceConfig } from '../config/sources.js';
 import { createListingStub } from './createListingStub.js';
+import { clRubberSeeds } from './cl-rubber-seeds.js';
 import { dandoyBlades } from './dandoy-blades.js';
 import { dandoyRubbers } from './dandoy-rubbers.js';
 import { VPSPORT_MODULES } from './vpsport.js';
+import { zonattGomas } from './zonatt-gomas.js';
 import { zonattMaderas } from './zonatt-maderas.js';
 import type { SourceModule } from './types.js';
 
@@ -24,7 +26,7 @@ export const ittfRacketCoverings = createListingStub(requireConfig('ittf-racket-
 export const ttSpinRubbers = createListingStub(requireConfig('tt-spin-rubbers'));
 export const prottRubbers = createListingStub(requireConfig('prott-rubbers'));
 export const prottBlades = createListingStub(requireConfig('prott-blades'));
-export { dandoyBlades, dandoyRubbers, zonattMaderas };
+export { clRubberSeeds, dandoyBlades, dandoyRubbers, zonattGomas, zonattMaderas };
 export * from './vpsport.js';
 
 const MODULES: readonly SourceModule[] = [
@@ -42,6 +44,8 @@ const MODULES: readonly SourceModule[] = [
   dandoyRubbers,
   ...VPSPORT_MODULES,
   zonattMaderas,
+  zonattGomas,
+  clRubberSeeds,
 ];
 
 export function getSourceModule(id: string): SourceModule | undefined {

@@ -56,7 +56,9 @@ pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-im
 |-----------|--------|
 | `dandoy-blades` / `dandoy-rubbers` | **Live** — Magento |
 | `vpsport-*` | **Live** — Jumpseller |
-| `zonatt-maderas` | **Live** — ZonaTT blades (`div.producto` + `og:image`) |
+| `zonatt-maderas` | **Live** — ZonaTT blades via **sitemap** (incl. OOS) + PDP `og:image`; listing/ajax for mango hints |
+| `zonatt-gomas` | **Live** — ZonaTT rubbers via **sitemap** (incl. OOS) + PDP `og:image` |
+| `cl-rubber-seeds` | **Live** — Bushido / Foxhara WooCommerce PDP seeds |
 | `tt11-*` | Stub — Cloudflare blocks automated GET |
 | Others | Stub / dry-run only |
 
@@ -70,7 +72,7 @@ pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-im
 | `--limit=<n>` | Max products (default 8) |
 | `--max-pages=<n>` | Max listing pages (default 1) |
 
-Images are stored as **owned JPEG ≤720px** or **WebP with alpha** when a studio white background is detected (`pnpm optimize-images`).
+Images are stored as **owned JPEG ≤720px** or **WebP with alpha** when a studio white/black background is detected (`pnpm optimize-images`). Black plates use edge flood-fill so dark handles stay opaque.
 
 ```bash
 pnpm optimize-images

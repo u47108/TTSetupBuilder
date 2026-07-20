@@ -65,7 +65,7 @@ pnpm scrape -- --source=zonatt-maderas
 pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-images --publish --limit=50
 ```
 
-Live catalog sources today: **Dandoy**, **VP Sport**, **ZonaTT** (`docs/DATA_SOURCES.md`).
+Live catalog sources today: **Dandoy**, **VP Sport**, **ZonaTT** (maderas + gomas), **CL rubber seeds** (`docs/DATA_SOURCES.md`). The catalog is **not** a shop inventory — discontinued / out-of-stock blades stay when players still use them.
 
 Build: `pnpm --filter web build`. Details: [`apps/web/README.md`](./apps/web/README.md), [`scrapers/README.md`](./scrapers/README.md).
 
@@ -126,7 +126,7 @@ SPA — no SSR required. Compatible with GitHub Pages and Cloudflare Pages.
 🚧 Early Development — SPA + local catalog + builder
 
 - Vite + React SPA (`apps/web`) with Feature First layout and dark-only shell
-- Local catalog ~**434** products (Dandoy + VP Sport + ZonaTT), owned images under `public/catalog/`
+- Local catalog ~**997** products (Dandoy + VP Sport + ZonaTT maderas/gomas + CL seeds), owned images under `public/catalog/`
 - Builder: blade + tomada + rubbers + optional player photo / share PNG
 - Deploy target: GitHub Pages (see Quick start)
 
