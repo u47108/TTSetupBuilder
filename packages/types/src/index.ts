@@ -24,8 +24,8 @@ export type ProductImage = {
   isPrimary?: boolean;
 };
 
-/** Shakehand / penhold handle shapes (VP Sport “Tomada”, etc.). */
-export type BladeHandleType = 'FL' | 'ST' | 'AN' | 'CS';
+/** Shakehand / penhold handle shapes (VP Sport “Tomada”, ZonaTT “Mango”, etc.). */
+export type BladeHandleType = 'FL' | 'ST' | 'AN' | 'CS' | 'PH';
 
 /**
  * Catalog product. Images are a collection (ADR-004), not a singleton URL.

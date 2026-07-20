@@ -6,6 +6,7 @@ const HANDLE_LABELS: Record<BladeHandleType, string> = {
   ST: 'ST · Recta',
   AN: 'AN · Anatómica',
   CS: 'CS · Chinese',
+  PH: 'PH · Penhold',
 };
 
 type BladeHandlePickerProps = {

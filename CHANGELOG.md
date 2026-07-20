@@ -9,13 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Live scraper **`zonatt-maderas`** ([ZonaTT](https://www.zonatt.com/es/maderas-de-tenis-de-mesa)) — 51 blades with mango AN/FL/ST/PH
+- Blade handle type **`PH`** (penhold) in `@ttsetupbuilder/types` and builder picker
 - **GitHub Pages** deploy via Actions (`deploy-pages.yml`); URL `https://u47108.github.io/TTSetupBuilder/`
-- Builder: tomada FL/ST, foto del jugador con zoom/pan, poster share PNG
+- Builder: tomada FL/ST/AN/CS/PH, foto del jugador con zoom/pan, poster share PNG
 - Catalog images: studio white backgrounds → transparent WebP (`pnpm optimize-images`)
 - Live scrapers for **VP Sport (Jumpseller)** — 7 categories (gomas lisas, maderos, poros, anti-topspin)
 - Live scrapers for **Dandoy blades + rubbers** with multi-page crawl and merged SPA catalog publish
-- Seed catalog expanded (Dandoy + VP Sport): **~380 products**, owned JPEG ≤720px
-- Products grid and product detail gallery from local catalog
 - Multi-source ingestion registry (`docs/DATA_SOURCES.md`) and `@ttsetupbuilder/scrapers` CLI
 - Catalog contract extensions in `@ttsetupbuilder/types` (`CatalogProduct`, `CatalogDocument`, provenance + `imageLocalPaths`)
 - Local Fuse.js search over `apps/web/public/data/catalog.json` (ADR-010)
@@ -38,18 +38,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Catalog images optimized to **max 720px JPEG q72** (`pnpm optimize-images`); scrape prefers Magento `img` over `full`
+- Local SPA catalog (~**434** products) merges Dandoy + VP Sport + ZonaTT by `sourceId`
+- Catalog images optimized to **max 720px JPEG q72** or **WebP+alpha** when studio white bg detected
 - Catalog publish **merges by sourceId** (blades + rubbers coexist in one `catalog.json`)
-- TT11 sources marked `cloudflareBlocked` (automated GET fails challenge); prefer Dandoy for live ingestion
+- TT11 sources marked `cloudflareBlocked` (automated GET fails challenge); prefer Dandoy / VP Sport / ZonaTT for live ingestion
 - ADR-009 amended: multi-source related registry (not TT11-only); links `docs/DATA_SOURCES.md` and `scrapers/`
 - ADR-002 stack table lists Fuse.js as accepted catalog search dependency (per ADR-010)
-- Root `README.md` Technology section aligned with ADR-002 (Vite + React 19 SPA, not Next.js); status updated for M1 bootstrap
+- Root `README.md` Technology section aligned with ADR-002 (Vite + React 19 SPA, not Next.js); status updated for catalog + builder
 - `docs/decisions/README.md` now points to canonical `docs/adr/`
 
 ### Planned
 
 - System architecture (`docs/architecture/ARCHITECTURE.md`)
-- Additional live parsers (ProTT, Dandoy rubbers, etc.) after robots/ToS review
+- Additional live parsers (ProTT, etc.) after robots/ToS review
 
 ## [0.1.0] - 2026-07-19
 

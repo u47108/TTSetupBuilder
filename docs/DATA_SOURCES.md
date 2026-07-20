@@ -47,6 +47,7 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 | `vpsport-poros-cortos` | https://www.vpsport.cl/poros-cortos | Short pips | **Secondary live** — rubbers | **Live** — Jumpseller. |
 | `vpsport-poros-largos` | https://www.vpsport.cl/poros-largos | Long pips | **Secondary live** — rubbers | **Live** — Jumpseller. |
 | `vpsport-gomas-anti-topspin` | https://www.vpsport.cl/gomas/anti-topspin | Anti-topspin rubbers | **Secondary live** — rubbers | **Live** — Jumpseller. |
+| `zonatt-maderas` | https://www.zonatt.com/es/maderas-de-tenis-de-mesa | Blades (ES) | **Primary live** — blades | **Live** — `div.producto` + PDP `og:image`; mango AN/FL/ST/PH. |
 
 ### Role legend
 

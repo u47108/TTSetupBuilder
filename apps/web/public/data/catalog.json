@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-19T23:56:43.614Z",
+  "generatedAt": "2026-07-20T00:40:52.992Z",
   "products": [
     {
       "id": "vpsport-all-round",
@@ -375,6 +375,1598 @@
       }
     },
     {
+      "id": "zonatt-madera-buterfly-korbel-made-in-japan",
+      "slug": "madera-buterfly-korbel-made-in-japan",
+      "name": "Buterfly Korbel 'Made in Japan'",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-buterfly-korbel-made-in-japan",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-buterfly-korbel-made-in-japan-img-1",
+          "src": "/catalog/bafc630c899209ad.jpg",
+          "alt": "Buterfly Korbel 'Made in Japan' photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/bafc630c899209ad.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-buterfly-korbel-made-in-japan",
+        "scrapedAt": "2026-07-20T00:39:26.010Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-allround-new-logo",
+      "slug": "madera-butterfly-allround-new-logo",
+      "name": "Butterfly Allround NEW LOGO",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-allround-new-logo",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-allround-new-logo-img-1",
+          "src": "/catalog/d160eff0e55e36ae.webp",
+          "alt": "Butterfly Allround NEW LOGO photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/d160eff0e55e36ae.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-allround-new-logo",
+        "scrapedAt": "2026-07-20T00:37:37.026Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-allround-xxs",
+      "slug": "madera-butterfly-allround-xxs",
+      "name": "Butterfly Allround XXS",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-allround-xxs",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-allround-xxs-img-1",
+          "src": "/catalog/2d257eced3998dca.webp",
+          "alt": "Butterfly Allround XXS photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/2d257eced3998dca.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-allround-xxs",
+        "scrapedAt": "2026-07-20T00:37:40.724Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-balsa-carbo-x5-22",
+      "slug": "madera-butterfly-balsa-carbo-x5-22",
+      "name": "Butterfly Balsa Carbo X5 22",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-balsa-carbo-x5-22",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-balsa-carbo-x5-22-img-1",
+          "src": "/catalog/9050f52d35b1b26b.webp",
+          "alt": "Butterfly Balsa Carbo X5 22 photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/9050f52d35b1b26b.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-balsa-carbo-x5-22",
+        "scrapedAt": "2026-07-20T00:38:35.675Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-balsa-carbo-x7",
+      "slug": "madera-butterfly-balsa-carbo-x7",
+      "name": "Butterfly Balsa Carbo X7",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-balsa-carbo-x7",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-balsa-carbo-x7-img-1",
+          "src": "/catalog/0650732aade3bc1b.webp",
+          "alt": "Butterfly Balsa Carbo X7 photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/0650732aade3bc1b.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-balsa-carbo-x7",
+        "scrapedAt": "2026-07-20T00:38:51.275Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-boll-mezzoforte",
+      "slug": "madera-butterfly-boll-mezzoforte",
+      "name": "Butterfly Boll MEZZOFORTE",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-boll-mezzoforte",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-boll-mezzoforte-img-1",
+          "src": "/catalog/3d2f8ae72511abe4.jpg",
+          "alt": "Butterfly Boll MEZZOFORTE photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3d2f8ae72511abe4.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-boll-mezzoforte",
+        "scrapedAt": "2026-07-20T00:38:16.703Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-boll-spirit",
+      "slug": "madera-butterfly-boll-spirit",
+      "name": "Butterfly Boll Spirit",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-boll-spirit",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-boll-spirit-img-1",
+          "src": "/catalog/746f3cc764f98d0c.jpg",
+          "alt": "Butterfly Boll Spirit photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/746f3cc764f98d0c.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-boll-spirit",
+        "scrapedAt": "2026-07-20T00:40:28.637Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-dimitrij-ovtcharov-innerforce-alc",
+      "slug": "madera-butterfly-dimitrij-ovtcharov-innerforce-alc",
+      "name": "Butterfly Dimitrij Ovtcharov Innerforce ALC",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-dimitrij-ovtcharov-innerforce-alc",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-dimitrij-ovtcharov-innerforce-alc-img-1",
+          "src": "/catalog/a8fc2af71c0e17d5.jpg",
+          "alt": "Butterfly Dimitrij Ovtcharov Innerforce ALC photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/a8fc2af71c0e17d5.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-dimitrij-ovtcharov-innerforce-alc",
+        "scrapedAt": "2026-07-20T00:40:52.992Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-diode-pro",
+      "slug": "madera-butterfly-diode-pro",
+      "name": "Butterfly Diode PRO",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-diode-pro",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-diode-pro-img-1",
+          "src": "/catalog/955e5cf155019ea6.webp",
+          "alt": "Butterfly Diode PRO photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/955e5cf155019ea6.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-diode-pro",
+        "scrapedAt": "2026-07-20T00:39:18.084Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-diode-v",
+      "slug": "madera-butterfly-diode-v",
+      "name": "Butterfly DIODE V",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-diode-v",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-diode-v-img-1",
+          "src": "/catalog/1f7f41b584d527d6.webp",
+          "alt": "Butterfly DIODE V photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1f7f41b584d527d6.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-diode-v",
+        "scrapedAt": "2026-07-20T00:39:02.608Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-falcima",
+      "slug": "madera-butterfly-falcima",
+      "name": "Butterfly Falcima",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-falcima",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-falcima-img-1",
+          "src": "/catalog/947352202998210f.webp",
+          "alt": "Butterfly Falcima photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/947352202998210f.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-falcima",
+        "scrapedAt": "2026-07-20T00:39:10.204Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-forte-iii",
+      "slug": "madera-butterfly-forte-iii",
+      "name": "Butterfly FORTE III",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-forte-iii",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-forte-iii-img-1",
+          "src": "/catalog/14f198518a20a7c8.jpg",
+          "alt": "Butterfly FORTE III photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/14f198518a20a7c8.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-forte-iii",
+        "scrapedAt": "2026-07-20T00:38:24.342Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-fortissimo",
+      "slug": "madera-butterfly-fortissimo",
+      "name": "Butterfly FORTISSIMO",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-fortissimo",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-fortissimo-img-1",
+          "src": "/catalog/4cb5c1edb8be8e96.jpg",
+          "alt": "Butterfly FORTISSIMO photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/4cb5c1edb8be8e96.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-fortissimo",
+        "scrapedAt": "2026-07-20T00:38:47.544Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-freitas-alc",
+      "slug": "madera-butterfly-freitas-alc",
+      "name": "Butterfly Freitas ALC",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-freitas-alc",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-freitas-alc-img-1",
+          "src": "/catalog/2315c124fd54e2bc.jpg",
+          "alt": "Butterfly Freitas ALC photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/2315c124fd54e2bc.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-freitas-alc",
+        "scrapedAt": "2026-07-20T00:40:40.693Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-hadraw-5",
+      "slug": "madera-butterfly-hadraw-5",
+      "name": "Butterfly Hadraw 5",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-hadraw-5",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-hadraw-5-img-1",
+          "src": "/catalog/7013543a92d6c945.webp",
+          "alt": "Butterfly Hadraw 5 photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/7013543a92d6c945.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-hadraw-5",
+        "scrapedAt": "2026-07-20T00:39:14.162Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-harimoto-innerforce-alc",
+      "slug": "madera-butterfly-harimoto-innerforce-alc",
+      "name": "Butterfly Harimoto Innerforce ALC",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-harimoto-innerforce-alc",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "PH",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-harimoto-innerforce-alc-img-1",
+          "src": "/catalog/86ee071067ed31e5.jpg",
+          "alt": "Butterfly Harimoto Innerforce ALC photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/86ee071067ed31e5.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-harimoto-innerforce-alc",
+        "scrapedAt": "2026-07-20T00:40:48.572Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-innerforce-layer-alc",
+      "slug": "madera-butterfly-innerforce-layer-alc",
+      "name": "Butterfly Innerforce Layer ALC",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innerforce-layer-alc",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-innerforce-layer-alc-img-1",
+          "src": "/catalog/0d37335430edef9f.jpg",
+          "alt": "Butterfly Innerforce Layer ALC photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/0d37335430edef9f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innerforce-layer-alc",
+        "scrapedAt": "2026-07-20T00:39:56.846Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-innerforce-layer-alcs",
+      "slug": "madera-butterfly-innerforce-layer-alcs",
+      "name": "Butterfly Innerforce Layer ALC.S",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innerforce-layer-alcs",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "PH",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-innerforce-layer-alcs-img-1",
+          "src": "/catalog/471c45920674a008.jpg",
+          "alt": "Butterfly Innerforce Layer ALC.S photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/471c45920674a008.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innerforce-layer-alcs",
+        "scrapedAt": "2026-07-20T00:40:01.021Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-innerforce-layer-alcs-ph",
+      "slug": "madera-butterfly-innerforce-layer-alcs-ph",
+      "name": "Butterfly Innerforce Layer ALC.S PH",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innerforce-layer-alcs-ph",
+      "handleTypes": [
+        "PH"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-innerforce-layer-alcs-ph-img-1",
+          "src": "/catalog/b74661ca40362996.webp",
+          "alt": "Butterfly Innerforce Layer ALC.S PH photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b74661ca40362996.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innerforce-layer-alcs-ph",
+        "scrapedAt": "2026-07-20T00:40:04.995Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-innerforce-layer-zlf",
+      "slug": "madera-butterfly-innerforce-layer-zlf",
+      "name": "Butterfly Innerforce Layer ZLF",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innerforce-layer-zlf",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-innerforce-layer-zlf-img-1",
+          "src": "/catalog/0021bb5a7a41025f.jpg",
+          "alt": "Butterfly Innerforce Layer ZLF photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/0021bb5a7a41025f.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innerforce-layer-zlf",
+        "scrapedAt": "2026-07-20T00:40:44.891Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-innershield-layer",
+      "slug": "madera-butterfly-innershield-layer",
+      "name": "Butterfly Innershield Layer",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innershield-layer",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-innershield-layer-img-1",
+          "src": "/catalog/a6255f39d2d4d3ac.jpg",
+          "alt": "Butterfly Innershield Layer photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/a6255f39d2d4d3ac.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-innershield-layer",
+        "scrapedAt": "2026-07-20T00:40:36.506Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-korbel-sk7",
+      "slug": "madera-butterfly-korbel-sk7",
+      "name": "Butterfly Korbel SK7",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-korbel-sk7",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-korbel-sk7-img-1",
+          "src": "/catalog/b2a235a65a8388db.jpg",
+          "alt": "Butterfly Korbel SK7 photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b2a235a65a8388db.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-korbel-sk7",
+        "scrapedAt": "2026-07-20T00:38:58.904Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-maze-advance",
+      "slug": "madera-butterfly-maze-advance",
+      "name": "Butterfly Maze Advance",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-maze-advance-1",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-maze-advance-img-1",
+          "src": "/catalog/1a7bbbbc12540a7a.jpg",
+          "alt": "Butterfly Maze Advance photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1a7bbbbc12540a7a.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-maze-advance-1",
+        "scrapedAt": "2026-07-20T00:39:06.304Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-maze-magic",
+      "slug": "madera-butterfly-maze-magic",
+      "name": "Butterfly Maze Magic",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-maze-magic",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-maze-magic-img-1",
+          "src": "/catalog/268246483eff414a.jpg",
+          "alt": "Butterfly Maze Magic photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/268246483eff414a.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-maze-magic",
+        "scrapedAt": "2026-07-20T00:37:52.065Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-new-andrzej-grubba",
+      "slug": "madera-butterfly-new-andrzej-grubba",
+      "name": "Butterfly New Andrzej Grubba",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-new-andrzej-grubba",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-new-andrzej-grubba-img-1",
+          "src": "/catalog/0254c464fcd414aa.jpg",
+          "alt": "Butterfly New Andrzej Grubba photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/0254c464fcd414aa.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-new-andrzej-grubba",
+        "scrapedAt": "2026-07-20T00:38:04.349Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-offensive-new-logo",
+      "slug": "madera-butterfly-offensive-new-logo",
+      "name": "Butterfly Offensive NEW LOGO",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-offensive-new-logo",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-offensive-new-logo-img-1",
+          "src": "/catalog/1692cbc5b7b81e01.webp",
+          "alt": "Butterfly Offensive NEW LOGO photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1692cbc5b7b81e01.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-offensive-new-logo",
+        "scrapedAt": "2026-07-20T00:37:44.447Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-offensive-xxs",
+      "slug": "madera-butterfly-offensive-xxs",
+      "name": "Butterfly Offensive XXS",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-offensive-xxs",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-offensive-xxs-img-1",
+          "src": "/catalog/b140cfc6e47df1a5.webp",
+          "alt": "Butterfly Offensive XXS photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b140cfc6e47df1a5.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-offensive-xxs",
+        "scrapedAt": "2026-07-20T00:37:48.148Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-omar-assar",
+      "slug": "madera-butterfly-omar-assar",
+      "name": "Butterfly OMAR ASSAR",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-omar-assar",
+      "handleTypes": [
+        "AN"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-omar-assar-img-1",
+          "src": "/catalog/2c47e54ac5b4e6a6.webp",
+          "alt": "Butterfly OMAR ASSAR photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/2c47e54ac5b4e6a6.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-omar-assar",
+        "scrapedAt": "2026-07-20T00:39:41.535Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-outerforce-alc",
+      "slug": "madera-butterfly-outerforce-alc",
+      "name": "Butterfly OUTERFORCE ALC",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-outerforce-alc",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-outerforce-alc-img-1",
+          "src": "/catalog/db8c9c84242b3dcc.webp",
+          "alt": "Butterfly OUTERFORCE ALC photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/db8c9c84242b3dcc.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-outerforce-alc",
+        "scrapedAt": "2026-07-20T00:39:45.259Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-outerforce-caf",
+      "slug": "madera-butterfly-outerforce-caf",
+      "name": "Butterfly OUTERFORCE CAF",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-outerforce-caf",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-outerforce-caf-img-1",
+          "src": "/catalog/46bd3a9661ee5de6.webp",
+          "alt": "Butterfly OUTERFORCE CAF photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/46bd3a9661ee5de6.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-outerforce-caf",
+        "scrapedAt": "2026-07-20T00:39:21.818Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-outerforce-zlc",
+      "slug": "madera-butterfly-outerforce-zlc",
+      "name": "Butterfly OUTERFORCE ZLC",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-outerforce-zlc",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-outerforce-zlc-img-1",
+          "src": "/catalog/375837937a270487.webp",
+          "alt": "Butterfly OUTERFORCE ZLC photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/375837937a270487.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-outerforce-zlc",
+        "scrapedAt": "2026-07-20T00:39:52.903Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-ovtcharov-s1",
+      "slug": "madera-butterfly-ovtcharov-s1",
+      "name": "Butterfly OVTCHAROV S1",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-ovtcharov-s1",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-ovtcharov-s1-img-1",
+          "src": "/catalog/62b0260882724ff9.webp",
+          "alt": "Butterfly OVTCHAROV S1 photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/62b0260882724ff9.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-ovtcharov-s1",
+        "scrapedAt": "2026-07-20T00:38:31.966Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-ovtcharov-s1-xxs",
+      "slug": "madera-butterfly-ovtcharov-s1-xxs",
+      "name": "Butterfly OVTCHAROV S1 XXS",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-ovtcharov-s1-xxs",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-ovtcharov-s1-xxs-img-1",
+          "src": "/catalog/8a0fece2fc2c4daa.webp",
+          "alt": "Butterfly OVTCHAROV S1 XXS photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/8a0fece2fc2c4daa.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-ovtcharov-s1-xxs",
+        "scrapedAt": "2026-07-20T00:38:20.410Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-ovtcharov-s2",
+      "slug": "madera-butterfly-ovtcharov-s2",
+      "name": "Butterfly OVTCHAROV S2",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-ovtcharov-s2",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-ovtcharov-s2-img-1",
+          "src": "/catalog/eed0467c5d80fbe8.webp",
+          "alt": "Butterfly OVTCHAROV S2 photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/eed0467c5d80fbe8.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-ovtcharov-s2",
+        "scrapedAt": "2026-07-20T00:38:54.962Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-ovtcharov-s2-xxs",
+      "slug": "madera-butterfly-ovtcharov-s2-xxs",
+      "name": "Butterfly OVTCHAROV S2 XXS",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-ovtcharov-s2-xxs",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-ovtcharov-s2-xxs-img-1",
+          "src": "/catalog/b99f63788c85188f.webp",
+          "alt": "Butterfly OVTCHAROV S2 XXS photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b99f63788c85188f.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-ovtcharov-s2-xxs",
+        "scrapedAt": "2026-07-20T00:38:39.402Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-petr-korbel",
+      "slug": "madera-butterfly-petr-korbel",
+      "name": "Butterfly Petr Korbel",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-petr-korbel",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-petr-korbel-img-1",
+          "src": "/catalog/f7b409b210c0e4f3.jpg",
+          "alt": "Butterfly Petr Korbel photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/f7b409b210c0e4f3.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-petr-korbel",
+        "scrapedAt": "2026-07-20T00:38:12.761Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-petr-korbel-xxs",
+      "slug": "madera-butterfly-petr-korbel-xxs",
+      "name": "Butterfly Petr Korbel XXS",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-petr-korbel-xxs",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-petr-korbel-xxs-img-1",
+          "src": "/catalog/572d9abcdaf337fb.jpg",
+          "alt": "Butterfly Petr Korbel XXS photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/572d9abcdaf337fb.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-petr-korbel-xxs",
+        "scrapedAt": "2026-07-20T00:38:00.406Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-primorac-made-in-japan",
+      "slug": "madera-butterfly-primorac-made-in-japan",
+      "name": "Butterfly Primorac ' Made in Japan'",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-primorac-made-in-japan",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-primorac-made-in-japan-img-1",
+          "src": "/catalog/91f2ba456c54fd5e.jpg",
+          "alt": "Butterfly Primorac ' Made in Japan' photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/91f2ba456c54fd5e.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-primorac-made-in-japan",
+        "scrapedAt": "2026-07-20T00:38:43.610Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-primorac-carbon",
+      "slug": "madera-butterfly-primorac-carbon",
+      "name": "Butterfly Primorac Carbon",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-primorac-carbon-1",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-primorac-carbon-img-1",
+          "src": "/catalog/1a237fefa6ea24e4.jpg",
+          "alt": "Butterfly Primorac Carbon photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/1a237fefa6ea24e4.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-primorac-carbon-1",
+        "scrapedAt": "2026-07-20T00:39:49.218Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-sk-carbon",
+      "slug": "madera-butterfly-sk-carbon",
+      "name": "Butterfly SK Carbon",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-sk-carbon",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-sk-carbon-img-1",
+          "src": "/catalog/c4634082c8275461.jpg",
+          "alt": "Butterfly SK Carbon photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c4634082c8275461.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-sk-carbon",
+        "scrapedAt": "2026-07-20T00:39:33.878Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-timo-boll-alc",
+      "slug": "madera-butterfly-timo-boll-alc",
+      "name": "Butterfly Timo Boll ALC",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-alc",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-timo-boll-alc-img-1",
+          "src": "/catalog/61678def0c4295fa.jpg",
+          "alt": "Butterfly Timo Boll ALC photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/61678def0c4295fa.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-alc",
+        "scrapedAt": "2026-07-20T00:40:16.814Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-timo-boll-caf",
+      "slug": "madera-butterfly-timo-boll-caf",
+      "name": "Butterfly Timo Boll CAF",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-caf",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-timo-boll-caf-img-1",
+          "src": "/catalog/b74e183c3d1de1db.webp",
+          "alt": "Butterfly Timo Boll CAF photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/b74e183c3d1de1db.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-caf",
+        "scrapedAt": "2026-07-20T00:39:29.713Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-timo-boll-j-xxs",
+      "slug": "madera-butterfly-timo-boll-j-xxs",
+      "name": "Butterfly Timo Boll J ( XXS )",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-j-xxs",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-timo-boll-j-xxs-img-1",
+          "src": "/catalog/e8a186fd2d896520.webp",
+          "alt": "Butterfly Timo Boll J ( XXS ) photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/e8a186fd2d896520.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-j-xxs",
+        "scrapedAt": "2026-07-20T00:38:28.279Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-timo-boll-tj-xxs",
+      "slug": "madera-butterfly-timo-boll-tj-xxs",
+      "name": "Butterfly Timo Boll TJ ( XXS )",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-tj-xxs",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-timo-boll-tj-xxs-img-1",
+          "src": "/catalog/c4826a65420da2ff.jpg",
+          "alt": "Butterfly Timo Boll TJ ( XXS ) photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/c4826a65420da2ff.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-tj-xxs",
+        "scrapedAt": "2026-07-20T00:39:37.793Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-timo-boll-zlf",
+      "slug": "madera-butterfly-timo-boll-zlf",
+      "name": "Butterfly Timo Boll ZLF",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-zlf",
+      "handleTypes": [
+        "AN",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-timo-boll-zlf-img-1",
+          "src": "/catalog/98e710b5cf6724ee.jpg",
+          "alt": "Butterfly Timo Boll ZLF photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/98e710b5cf6724ee.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-timo-boll-zlf",
+        "scrapedAt": "2026-07-20T00:40:32.574Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-viscaria",
+      "slug": "madera-butterfly-viscaria",
+      "name": "Butterfly Viscaria",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-viscaria",
+      "handleTypes": [
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-viscaria-img-1",
+          "src": "/catalog/3ed310b047d81381.jpg",
+          "alt": "Butterfly Viscaria photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/3ed310b047d81381.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-viscaria",
+        "scrapedAt": "2026-07-20T00:40:12.899Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-viscaria-ph",
+      "slug": "madera-butterfly-viscaria-ph",
+      "name": "Butterfly Viscaria PH",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-viscaria-ph",
+      "handleTypes": [
+        "PH"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-viscaria-ph-img-1",
+          "src": "/catalog/0d876314c57246ae.webp",
+          "alt": "Butterfly Viscaria PH photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/0d876314c57246ae.webp"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-viscaria-ph",
+        "scrapedAt": "2026-07-20T00:40:24.716Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-zhang-jike-alc",
+      "slug": "madera-butterfly-zhang-jike-alc",
+      "name": "Butterfly Zhang Jike ALC",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-zhang-jike-alc",
+      "handleTypes": [
+        "AN",
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-zhang-jike-alc-img-1",
+          "src": "/catalog/de0877abdb39036b.jpg",
+          "alt": "Butterfly Zhang Jike ALC photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/de0877abdb39036b.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-zhang-jike-alc",
+        "scrapedAt": "2026-07-20T00:40:20.758Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-zhang-jike-t5000",
+      "slug": "madera-butterfly-zhang-jike-t5000",
+      "name": "Butterfly Zhang Jike T5000",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-zhang-jike-t5000",
+      "handleTypes": [
+        "AN",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-zhang-jike-t5000-img-1",
+          "src": "/catalog/4b8ef9df0cbb4a17.jpg",
+          "alt": "Butterfly Zhang Jike T5000 photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/4b8ef9df0cbb4a17.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-zhang-jike-t5000",
+        "scrapedAt": "2026-07-20T00:40:08.953Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-zoran-primorac",
+      "slug": "madera-butterfly-zoran-primorac",
+      "name": "Butterfly Zoran Primorac",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-zoran-primorac",
+      "handleTypes": [
+        "AN",
+        "FL",
+        "ST"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-zoran-primorac-img-1",
+          "src": "/catalog/f12ca9dd4605b40a.jpg",
+          "alt": "Butterfly Zoran Primorac photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/f12ca9dd4605b40a.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-zoran-primorac",
+        "scrapedAt": "2026-07-20T00:38:08.561Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
+      "id": "zonatt-madera-butterfly-zoran-primorac-xxs",
+      "slug": "madera-butterfly-zoran-primorac-xxs",
+      "name": "Butterfly Zoran Primorac XXS",
+      "brandId": "butterfly",
+      "category": "blade",
+      "description": "Imported from ZonaTT (zonatt-maderas). Source page: https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-zoran-primorac-xxs",
+      "handleTypes": [
+        "FL"
+      ],
+      "images": [
+        {
+          "id": "zonatt-madera-butterfly-zoran-primorac-xxs-img-1",
+          "src": "/catalog/f12ca9dd4605b40a.jpg",
+          "alt": "Butterfly Zoran Primorac XXS photo 1",
+          "isPrimary": true
+        }
+      ],
+      "imageLocalPaths": [
+        "/catalog/f12ca9dd4605b40a.jpg"
+      ],
+      "provenance": {
+        "sourceId": "zonatt-maderas",
+        "sourceUrl": "https://www.zonatt.com/es/maderas-de-tenis-de-mesa/madera-butterfly-zoran-primorac-xxs",
+        "scrapedAt": "2026-07-20T00:37:56.251Z",
+        "attribution": "ZonaTT (imported for TTSetupBuilder offline catalog)",
+        "license": "unknown — review before redistribution",
+        "mediaRights": "unknown"
+      }
+    },
+    {
       "id": "vpsport-challenger-attack",
       "slug": "challenger-attack",
       "name": "Challenger Attack",
@@ -498,7 +2090,7 @@
         },
         {
           "id": "dandoy-blade-dandoy-allround-img-3",
-          "src": "/catalog/b83f8a928e7bd30d.webp",
+          "src": "/catalog/b83f8a928e7bd30d.jpg",
           "alt": "Dandoy Allround photo 3",
           "isPrimary": false
         }
@@ -506,7 +2098,7 @@
       "imageLocalPaths": [
         "/catalog/68c8049c2af56d89.webp",
         "/catalog/919afa3c6e1513ec.webp",
-        "/catalog/b83f8a928e7bd30d.webp"
+        "/catalog/b83f8a928e7bd30d.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -9790,7 +11382,7 @@
         },
         {
           "id": "dandoy-rubber-stiga-dna-dragon-power-525-img-2",
-          "src": "/catalog/d5de678cbf64b48c.webp",
+          "src": "/catalog/d5de678cbf64b48c.jpg",
           "alt": "Stiga DNA Dragon Power 52.5 photo 2",
           "isPrimary": false
         },
@@ -9803,7 +11395,7 @@
       ],
       "imageLocalPaths": [
         "/catalog/4b67125fc1bb3100.jpg",
-        "/catalog/d5de678cbf64b48c.webp",
+        "/catalog/d5de678cbf64b48c.jpg",
         "/catalog/ddb3c03e1dcd1380.jpg"
       ],
       "provenance": {
@@ -11419,13 +13011,13 @@
       "images": [
         {
           "id": "dandoy-rubber-stiga-mantra-h-img-1",
-          "src": "/catalog/c160706a74541dd7.webp",
+          "src": "/catalog/c160706a74541dd7.jpg",
           "alt": "Stiga Mantra H photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/c160706a74541dd7.webp"
+        "/catalog/c160706a74541dd7.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-rubbers",
@@ -11446,13 +13038,13 @@
       "images": [
         {
           "id": "dandoy-rubber-stiga-mantra-m-img-1",
-          "src": "/catalog/882de6f3e3754532.webp",
+          "src": "/catalog/882de6f3e3754532.jpg",
           "alt": "Stiga Mantra M photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/882de6f3e3754532.webp"
+        "/catalog/882de6f3e3754532.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-rubbers",
@@ -12148,13 +13740,13 @@
       "images": [
         {
           "id": "dandoy-rubber-stiga-vertical-20-img-1",
-          "src": "/catalog/5fc73974373f389d.webp",
+          "src": "/catalog/5fc73974373f389d.jpg",
           "alt": "Stiga Vertical 20 photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/5fc73974373f389d.webp"
+        "/catalog/5fc73974373f389d.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-rubbers",
@@ -12974,7 +14566,7 @@
         },
         {
           "id": "dandoy-rubber-yasaka-rakza-7-hard-img-3",
-          "src": "/catalog/3b0408570b703c53.webp",
+          "src": "/catalog/3b0408570b703c53.jpg",
           "alt": "Yasaka Rakza 7 Hard photo 3",
           "isPrimary": false
         }
@@ -12982,7 +14574,7 @@
       "imageLocalPaths": [
         "/catalog/25b794f0c9cd463f.jpg",
         "/catalog/c4042226d9d41cd8.jpg",
-        "/catalog/3b0408570b703c53.webp"
+        "/catalog/3b0408570b703c53.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-rubbers",
@@ -13003,13 +14595,13 @@
       "images": [
         {
           "id": "dandoy-rubber-yasaka-rakza-7-serie-34-img-1",
-          "src": "/catalog/f481941c4e66ecb3.webp",
+          "src": "/catalog/f481941c4e66ecb3.jpg",
           "alt": "Yasaka Rakza 7 Serie 3=4 photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/f481941c4e66ecb3.webp"
+        "/catalog/f481941c4e66ecb3.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-rubbers",

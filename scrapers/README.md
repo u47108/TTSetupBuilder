@@ -54,7 +54,9 @@ pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-im
 
 | Source id | Status |
 |-----------|--------|
-| `dandoy-blades` | **Live** — Magento listing + PDP gallery `"full"` images |
+| `dandoy-blades` / `dandoy-rubbers` | **Live** — Magento |
+| `vpsport-*` | **Live** — Jumpseller |
+| `zonatt-maderas` | **Live** — ZonaTT blades (`div.producto` + `og:image`) |
 | `tt11-*` | Stub — Cloudflare blocks automated GET |
 | Others | Stub / dry-run only |
 

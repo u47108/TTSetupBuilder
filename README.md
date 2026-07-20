@@ -61,14 +61,17 @@ Scrapers (default dry-run, no site hammering):
 
 ```bash
 pnpm scrape -- --list
-pnpm scrape -- --source=tt11-blades
+pnpm scrape -- --source=zonatt-maderas
+pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-images --publish --limit=50
 ```
+
+Live catalog sources today: **Dandoy**, **VP Sport**, **ZonaTT** (`docs/DATA_SOURCES.md`).
 
 Build: `pnpm --filter web build`. Details: [`apps/web/README.md`](./apps/web/README.md), [`scrapers/README.md`](./scrapers/README.md).
 
 ### Live site (GitHub Pages)
 
-After push to `main`, Actions publishes:
+Settings → Pages → Source: **GitHub Actions**. After a green **Deploy GitHub Pages** run:
 
 **https://u47108.github.io/TTSetupBuilder/**
 
@@ -120,9 +123,12 @@ SPA — no SSR required. Compatible with GitHub Pages and Cloudflare Pages.
 
 ## Status
 
-🚧 Early Development — **Milestone 1 foundation bootstrapped**
+🚧 Early Development — SPA + local catalog + builder
 
-Vite + React SPA in `apps/web` with Feature First layout, dark-only shell, and canonical React Router routes (ADR-002 / ADR-003 / ADR-006 / ADR-007). Catalog, search, and media pipeline come next.
+- Vite + React SPA (`apps/web`) with Feature First layout and dark-only shell
+- Local catalog ~**434** products (Dandoy + VP Sport + ZonaTT), owned images under `public/catalog/`
+- Builder: blade + tomada + rubbers + optional player photo / share PNG
+- Deploy target: GitHub Pages (see Quick start)
 
 ---
 

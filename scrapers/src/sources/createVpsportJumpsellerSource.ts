@@ -11,7 +11,7 @@ import type {
 } from './types.js';
 
 const BASE = 'https://www.vpsport.cl';
-const HANDLE_TYPES = new Set<BladeHandleType>(['FL', 'ST', 'AN', 'CS']);
+const HANDLE_TYPES = new Set<BladeHandleType>(['FL', 'ST', 'AN', 'CS', 'PH']);
 
 type ListingCard = {
   url: string;
@@ -104,7 +104,7 @@ export function extractHandleTypes(html: string): BladeHandleType[] {
     /"name"\s*:\s*"Tomada"[\s\S]*?"values"\s*:\s*\[([\s\S]*?)\]/,
   );
   const haystack = tomadaBlock?.[1] ?? html;
-  const found = [...haystack.matchAll(/"name"\s*:\s*"(FL|ST|AN|CS)"/g)].map(
+  const found = [...haystack.matchAll(/"name"\s*:\s*"(FL|ST|AN|CS|PH)"/g)].map(
     (match) => match[1] as BladeHandleType,
   );
   return [...new Set(found)].filter((value) => HANDLE_TYPES.has(value));

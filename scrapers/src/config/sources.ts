@@ -213,6 +213,19 @@ export const SOURCE_CONFIGS: readonly SourceConfig[] = [
     selectorNotes: ['LIVE: anti-topspin category'],
     rateLimitMs: 1000,
   },
+  {
+    id: 'zonatt-maderas',
+    name: 'ZonaTT — maderas',
+    listingUrl: 'https://www.zonatt.com/es/maderas-de-tenis-de-mesa',
+    categories: ['blade'],
+    role: 'catalog-photos-primary',
+    selectorNotes: [
+      'LIVE: div.producto + PDP og:image (/img/zonatt/…)',
+      'Mango handles on listing: AN, FL, ST, PH (penhold)',
+      'Category listing is typically a single HTML page',
+    ],
+    rateLimitMs: 1200,
+  },
 ] as const;
 
 export function getSourceConfig(id: string): SourceConfig | undefined {
