@@ -1,6 +1,7 @@
 /**
- * Re-encodes existing owned catalog images (smaller JPEG, max ~720px).
- * Renames non-jpg → .jpg and rewrites catalog.json paths.
+ * Re-encodes owned catalog images (max ~720px).
+ * Studio white backgrounds → transparent WebP; otherwise JPEG.
+ * Rewrites catalog.json paths when extension changes.
  *
  * Usage: pnpm optimize-images
  */
@@ -23,9 +24,12 @@ async function main(): Promise<void> {
 
   let savedBytes = 0;
   let processed = 0;
+  let knocked = 0;
   let skipped = 0;
 
-  console.info(`Optimizing ${files.length} files in ${catalogDir} (max 720px JPEG q72)…`);
+  console.info(
+    `Optimizing ${files.length} files (JPEG or WebP+alpha if studio white bg)…`,
+  );
 
   for (const name of files) {
     const filePath = path.join(catalogDir, name);
@@ -34,14 +38,21 @@ async function main(): Promise<void> {
 
     try {
       const optimized = await optimizeCatalogImage(before);
-      if (optimized.buffer.length >= beforeSize * 0.95 && beforeSize < 60_000) {
+      const base = path.parse(name).name;
+      const outName = `${base}${optimized.extension}`;
+      const outPath = path.join(catalogDir, outName);
+
+      // Skip tiny wins only when format stays the same and already small
+      if (
+        !optimized.knockedOutWhite &&
+        outName === name &&
+        optimized.buffer.length >= beforeSize * 0.95 &&
+        beforeSize < 60_000
+      ) {
         skipped += 1;
         continue;
       }
 
-      const base = path.parse(name).name;
-      const outName = `${base}.jpg`;
-      const outPath = path.join(catalogDir, outName);
       await writeFile(outPath, optimized.buffer);
 
       if (outName !== name) {
@@ -49,10 +60,11 @@ async function main(): Promise<void> {
         renames.set(`/catalog/${name}`, `/catalog/${outName}`);
       }
 
+      if (optimized.knockedOutWhite) knocked += 1;
       savedBytes += Math.max(0, beforeSize - optimized.buffer.length);
       processed += 1;
-      if (processed % 50 === 0) {
-        console.info(`  …${processed}/${files.length}`);
+      if (processed % 40 === 0) {
+        console.info(`  …${processed}/${files.length} (knockout=${knocked})`);
       }
     } catch (error) {
       console.warn(`skip ${name}:`, error);
@@ -73,7 +85,7 @@ async function main(): Promise<void> {
   }
 
   console.info(
-    `Done. processed=${processed} skipped=${skipped} saved≈${(savedBytes / 1024 / 1024).toFixed(1)} MB`,
+    `Done. processed=${processed} knockout=${knocked} skipped=${skipped} saved≈${(savedBytes / 1024 / 1024).toFixed(1)} MB`,
   );
 }
 

@@ -24,6 +24,9 @@ export type ProductImage = {
   isPrimary?: boolean;
 };
 
+/** Shakehand / penhold handle shapes (VP Sport “Tomada”, etc.). */
+export type BladeHandleType = 'FL' | 'ST' | 'AN' | 'CS';
+
 /**
  * Catalog product. Images are a collection (ADR-004), not a singleton URL.
  */
@@ -35,6 +38,11 @@ export type Product = {
   category: ProductCategory;
   images: ProductImage[];
   description?: string;
+  /**
+   * Available blade handle types when known (e.g. FL flared, ST straight).
+   * Only meaningful for `category: 'blade'`.
+   */
+  handleTypes?: BladeHandleType[];
 };
 
 export type Brand = {

@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **GitHub Pages** deploy via Actions (`deploy-pages.yml`); URL `https://u47108.github.io/TTSetupBuilder/`
+- Builder: tomada FL/ST, foto del jugador con zoom/pan, poster share PNG
+- Catalog images: studio white backgrounds → transparent WebP (`pnpm optimize-images`)
 - Live scrapers for **VP Sport (Jumpseller)** — 7 categories (gomas lisas, maderos, poros, anti-topspin)
 - Live scrapers for **Dandoy blades + rubbers** with multi-page crawl and merged SPA catalog publish
 - Seed catalog expanded (Dandoy + VP Sport): **~380 products**, owned JPEG ≤720px

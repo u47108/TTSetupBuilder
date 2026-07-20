@@ -1,4 +1,8 @@
-import type { CatalogProduct, ProductCategory } from '@ttsetupbuilder/types';
+import type {
+  BladeHandleType,
+  CatalogProduct,
+  ProductCategory,
+} from '@ttsetupbuilder/types';
 
 export type NormalizeProductInput = {
   id: string;
@@ -7,6 +11,7 @@ export type NormalizeProductInput = {
   brandId: string;
   category: ProductCategory;
   description?: string;
+  handleTypes?: BladeHandleType[];
   sourceId: string;
   sourceUrl: string;
   scrapedAt?: string;
@@ -40,8 +45,6 @@ export function normalizeProduct(input: NormalizeProductInput): CatalogProduct {
           isPrimary: index === 0,
         }));
 
-  // ADR-004: products have multiple images — keep at least an empty array contract;
-  // callers should attach 2+ when media exists. Placeholder empty is valid for stubs.
   return {
     id: input.id,
     slug: input.slug,
@@ -49,6 +52,7 @@ export function normalizeProduct(input: NormalizeProductInput): CatalogProduct {
     brandId: input.brandId,
     category: input.category,
     description: input.description,
+    handleTypes: input.handleTypes,
     images,
     imageLocalPaths,
     provenance: {

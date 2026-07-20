@@ -9,10 +9,12 @@ import { BrandsScreen } from '@/features/brands/BrandsScreen';
 import { SearchScreen } from '@/features/search/SearchScreen';
 import { CompareScreen } from '@/features/compare/CompareScreen';
 import { BuilderScreen } from '@/features/builder/BuilderScreen';
+import { routerBasename } from '@/shared/lib/publicAssetUrl';
 
 export function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={routerBasename()}>
+
       <Routes>
         <Route element={<AppShell />}>
           <Route index element={<HomeScreen />} />

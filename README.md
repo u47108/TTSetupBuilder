@@ -66,6 +66,18 @@ pnpm scrape -- --source=tt11-blades
 
 Build: `pnpm --filter web build`. Details: [`apps/web/README.md`](./apps/web/README.md), [`scrapers/README.md`](./scrapers/README.md).
 
+### Live site (GitHub Pages)
+
+After push to `main`, Actions publishes:
+
+**https://u47108.github.io/TTSetupBuilder/**
+
+Local build with the same base path:
+
+```bash
+VITE_BASE_PATH=/TTSetupBuilder/ pnpm --filter web build
+```
+
 ---
 
 ## Technology

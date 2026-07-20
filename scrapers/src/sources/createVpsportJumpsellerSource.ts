@@ -1,5 +1,5 @@
 import * as cheerio from 'cheerio';
-import type { ProductCategory } from '@ttsetupbuilder/types';
+import type { BladeHandleType, ProductCategory } from '@ttsetupbuilder/types';
 import { downloadImageToOwnedStorage, fetchHtml } from '../pipeline/downloadImage.js';
 import { normalizeProduct } from '../pipeline/normalizeProduct.js';
 import type {
@@ -11,6 +11,7 @@ import type {
 } from './types.js';
 
 const BASE = 'https://www.vpsport.cl';
+const HANDLE_TYPES = new Set<BladeHandleType>(['FL', 'ST', 'AN', 'CS']);
 
 type ListingCard = {
   url: string;
@@ -44,7 +45,6 @@ function absoluteUrl(href: string): string {
   return `${BASE}${href.startsWith('/') ? '' : '/'}${href}`;
 }
 
-/** Prefer ~720 thumbs (ADR-008) — rewrite Jumpseller CDN variants. */
 function toCatalogThumb(url: string): string {
   const match = /^(https:\/\/cdnx\.jumpseller\.com\/vpsport-spa\/image\/\d+)\//.exec(url);
   if (match) {
@@ -96,15 +96,26 @@ function extractPdpImageUrls(html: string, max: number): string[] {
     .map((id) => `https://cdnx.jumpseller.com/vpsport-spa/image/${id}/thumb/720/720`);
 }
 
+/**
+ * VP Sport “Tomada” option — classic blades usually FL (flared) and ST (straight).
+ */
+export function extractHandleTypes(html: string): BladeHandleType[] {
+  const tomadaBlock = html.match(
+    /"name"\s*:\s*"Tomada"[\s\S]*?"values"\s*:\s*\[([\s\S]*?)\]/,
+  );
+  const haystack = tomadaBlock?.[1] ?? html;
+  const found = [...haystack.matchAll(/"name"\s*:\s*"(FL|ST|AN|CS)"/g)].map(
+    (match) => match[1] as BladeHandleType,
+  );
+  return [...new Set(found)].filter((value) => HANDLE_TYPES.has(value));
+}
+
 export type VpsportOptions = {
   config: SourceConfig;
   category: ProductCategory;
   maxImagesPerProduct?: number;
 };
 
-/**
- * Jumpseller category scraper for VP Sport (Chile).
- */
 export function createVpsportJumpsellerSource(options: VpsportOptions): SourceModule {
   const { config, category, maxImagesPerProduct = 2 } = options;
   const logPrefix = config.id;
@@ -136,9 +147,17 @@ export function createVpsportJumpsellerSource(options: VpsportOptions): SourceMo
         console.info(`[${logPrefix}] PDP ${products.length + 1}/${ctx.limit}: ${card.name}`);
 
         let imageUrls: string[] = [];
+        let handleTypes: BladeHandleType[] | undefined;
         try {
           const pdpHtml = await fetchHtml(card.url, ctx.rateLimitMs);
           imageUrls = extractPdpImageUrls(pdpHtml, maxImagesPerProduct);
+          if (category === 'blade') {
+            const handles = extractHandleTypes(pdpHtml);
+            handleTypes = handles.length > 0 ? handles : undefined;
+            if (handleTypes) {
+              console.info(`[${logPrefix}]   tomada: ${handleTypes.join(', ')}`);
+            }
+          }
         } catch (error) {
           console.warn(`[${logPrefix}] PDP failed for ${card.url}:`, error);
         }
@@ -180,6 +199,7 @@ export function createVpsportJumpsellerSource(options: VpsportOptions): SourceMo
             name: card.name,
             brandId,
             category,
+            handleTypes,
             description: `Imported from VP Sport (${config.id}). Source page: ${card.url}`,
             sourceId: config.id,
             sourceUrl: card.url,

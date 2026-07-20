@@ -1,5 +1,7 @@
 import { useCatalogQuery } from '@/features/catalog/useCatalogQuery';
+import { BladeHandlePicker } from '@/features/builder/BladeHandlePicker';
 import { BuilderProductPicker } from '@/features/builder/BuilderProductPicker';
+import { PlayerPhotoPicker } from '@/features/builder/PlayerPhotoPicker';
 import { useBuilderStore } from '@/features/builder/builder-store';
 import { RacketPreview } from '@/features/builder/RacketPreview';
 import { EmptyState } from '@/shared/components/EmptyState';
@@ -10,13 +12,29 @@ export function BuilderScreen() {
   const products = data?.products ?? [];
 
   const blade = useBuilderStore((state) => state.blade);
+  const bladeHandle = useBuilderStore((state) => state.bladeHandle);
   const fh = useBuilderStore((state) => state.fh);
   const bh = useBuilderStore((state) => state.bh);
+  const playerPhotoUrl = useBuilderStore((state) => state.playerPhotoUrl);
+  const playerName = useBuilderStore((state) => state.playerName);
+  const playerPhotoZoom = useBuilderStore((state) => state.playerPhotoZoom);
+  const playerPhotoOffsetX = useBuilderStore((state) => state.playerPhotoOffsetX);
+  const playerPhotoOffsetY = useBuilderStore((state) => state.playerPhotoOffsetY);
   const activeSlot = useBuilderStore((state) => state.activeSlot);
   const setActiveSlot = useBuilderStore((state) => state.setActiveSlot);
   const selectProduct = useBuilderStore((state) => state.selectProduct);
+  const setBladeHandle = useBuilderStore((state) => state.setBladeHandle);
+  const setPlayerPhoto = useBuilderStore((state) => state.setPlayerPhoto);
+  const setPlayerName = useBuilderStore((state) => state.setPlayerName);
+  const setPlayerPhotoZoom = useBuilderStore((state) => state.setPlayerPhotoZoom);
+  const setPlayerPhotoOffset = useBuilderStore((state) => state.setPlayerPhotoOffset);
+  const clearPlayerPhoto = useBuilderStore((state) => state.clearPlayerPhoto);
   const clearSlot = useBuilderStore((state) => state.clearSlot);
   const reset = useBuilderStore((state) => state.reset);
+
+  const rubbersUnlocked = Boolean(blade && bladeHandle);
+  const photoUnlocked = Boolean(blade && bladeHandle && fh && bh);
+  const hasDraft = Boolean(blade || fh || bh || playerPhotoUrl || playerName);
 
   if (isError) {
     return (
@@ -39,10 +57,10 @@ export function BuilderScreen() {
           Arma tu setup
         </h1>
         <p className="max-w-2xl text-base text-[var(--color-text-secondary)]">
-          En la paleta elige en orden: madero, goma derecha y goma izquierda. Busca por nombre o marca
-          en el catálogo local.
+          Orden: 1 madero → 2 tomada (FL/ST) → 3 goma derecha → 4 goma izquierda → 5 foto
+          (opcional) → compartir.
         </p>
-        {blade || fh || bh ? (
+        {hasDraft ? (
           <button
             type="button"
             onClick={reset}
@@ -70,8 +88,16 @@ export function BuilderScreen() {
               onClear={() => clearSlot('blade')}
             />
 
+            {blade ? (
+              <BladeHandlePicker
+                available={blade.handleTypes ?? ['FL', 'ST']}
+                selected={bladeHandle}
+                onSelect={setBladeHandle}
+              />
+            ) : null}
+
             <BuilderProductPicker
-              label="2 · Goma derecha"
+              label="3 · Goma derecha"
               hint="Forehand / lado derecho"
               category="rubber"
               products={products}
@@ -80,12 +106,12 @@ export function BuilderScreen() {
               onActivate={() => setActiveSlot('fh')}
               onSelect={(product) => selectProduct('fh', product)}
               onClear={() => clearSlot('fh')}
-              disabled={!blade}
-              disabledReason="Elige el madero antes de la goma derecha."
+              disabled={!rubbersUnlocked}
+              disabledReason="Elige madero y tomada (FL o ST) antes."
             />
 
             <BuilderProductPicker
-              label="3 · Goma izquierda"
+              label="4 · Goma izquierda"
               hint="Backhand / lado izquierdo"
               category="rubber"
               products={products}
@@ -94,12 +120,39 @@ export function BuilderScreen() {
               onActivate={() => setActiveSlot('bh')}
               onSelect={(product) => selectProduct('bh', product)}
               onClear={() => clearSlot('bh')}
-              disabled={!blade || !fh}
-              disabledReason="Elige madero y goma derecha antes."
+              disabled={!rubbersUnlocked || !fh}
+              disabledReason="Elige madero, tomada y goma derecha antes."
+            />
+
+            <PlayerPhotoPicker
+              photoUrl={playerPhotoUrl}
+              playerName={playerName}
+              zoom={playerPhotoZoom}
+              offsetX={playerPhotoOffsetX}
+              offsetY={playerPhotoOffsetY}
+              isActive={activeSlot === 'player'}
+              disabled={!photoUnlocked}
+              disabledReason="Completa madero, tomada y ambas gomas antes de la foto."
+              onActivate={() => setActiveSlot('player')}
+              onPhoto={setPlayerPhoto}
+              onNameChange={setPlayerName}
+              onZoomChange={setPlayerPhotoZoom}
+              onOffsetChange={setPlayerPhotoOffset}
+              onClear={clearPlayerPhoto}
             />
           </aside>
 
-          <RacketPreview blade={blade} fh={fh} bh={bh} />
+          <RacketPreview
+            blade={blade}
+            bladeHandle={bladeHandle}
+            fh={fh}
+            bh={bh}
+            playerPhotoUrl={playerPhotoUrl}
+            playerName={playerName}
+            playerPhotoZoom={playerPhotoZoom}
+            playerPhotoOffsetX={playerPhotoOffsetX}
+            playerPhotoOffsetY={playerPhotoOffsetY}
+          />
         </div>
       )}
     </div>

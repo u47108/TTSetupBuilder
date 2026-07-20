@@ -68,7 +68,7 @@ pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-im
 | `--limit=<n>` | Max products (default 8) |
 | `--max-pages=<n>` | Max listing pages (default 1) |
 
-Images are stored as **owned JPEG ≤720px** (sharp). Re-optimize existing files:
+Images are stored as **owned JPEG ≤720px** or **WebP with alpha** when a studio white background is detected (`pnpm optimize-images`).
 
 ```bash
 pnpm optimize-images
