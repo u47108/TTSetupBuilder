@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-20T06:47:57.028Z",
+  "generatedAt": "2026-07-20T06:50:02.191Z",
   "products": [
     {
       "id": "dandoy-rubber-729-755-2-mystery",
@@ -61254,20 +61254,20 @@
       "images": [
         {
           "id": "vpsport-viscaria-super-alc-img-1",
-          "src": "/catalog/a4931f89bd7ef156.jpg",
+          "src": "/catalog/d6bab10e0f5d25af.webp",
           "alt": "Viscaria Super ALC photo 1",
           "isPrimary": true
         },
         {
           "id": "vpsport-viscaria-super-alc-img-2",
-          "src": "/catalog/b959714e05f70829.jpg",
+          "src": "/catalog/a15f61937730aaa3.webp",
           "alt": "Viscaria Super ALC photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/a4931f89bd7ef156.jpg",
-        "/catalog/b959714e05f70829.jpg"
+        "/catalog/d6bab10e0f5d25af.webp",
+        "/catalog/a15f61937730aaa3.webp"
       ],
       "provenance": {
         "sourceId": "vpsport-maderos-clasicos",
@@ -64373,13 +64373,13 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-solo-img-1",
-          "src": "/catalog/a8081bf240ab3c64.webp",
+          "src": "/catalog/cebd839f37a4c777.jpg",
           "alt": "Xiom Solo photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/a8081bf240ab3c64.webp"
+        "/catalog/cebd839f37a4c777.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64400,20 +64400,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-stradivarius-img-1",
-          "src": "/catalog/97ae00a3a2559b89.webp",
+          "src": "/catalog/c66754205887664c.jpg",
           "alt": "Xiom Stradivarius photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-stradivarius-img-2",
-          "src": "/catalog/ca9ab6e72493c264.webp",
+          "src": "/catalog/0a2cc3d96a6a94dc.jpg",
           "alt": "Xiom Stradivarius photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/97ae00a3a2559b89.webp",
-        "/catalog/ca9ab6e72493c264.webp"
+        "/catalog/c66754205887664c.jpg",
+        "/catalog/0a2cc3d96a6a94dc.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64437,13 +64437,13 @@
       "images": [
         {
           "id": "zonatt-madera-xiom-stradivarius-img-1",
-          "src": "/catalog/4ade805752361160.webp",
+          "src": "/catalog/535c28679004a283.jpg",
           "alt": "XIOM STRADIVARIUS photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/4ade805752361160.webp"
+        "/catalog/535c28679004a283.jpg"
       ],
       "provenance": {
         "sourceId": "zonatt-maderas",
@@ -64464,20 +64464,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-stradivarius-super-axl-img-1",
-          "src": "/catalog/94dbde0bfe96bec7.webp",
+          "src": "/catalog/8fd65184a47a5139.jpg",
           "alt": "Xiom Stradivarius Super AXL photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-stradivarius-super-axl-img-2",
-          "src": "/catalog/191ab65b540b2bb7.webp",
+          "src": "/catalog/20d0e0abdd46d7e3.jpg",
           "alt": "Xiom Stradivarius Super AXL photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/94dbde0bfe96bec7.webp",
-        "/catalog/191ab65b540b2bb7.webp"
+        "/catalog/8fd65184a47a5139.jpg",
+        "/catalog/20d0e0abdd46d7e3.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64498,20 +64498,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-stradivarius-super-axli-img-1",
-          "src": "/catalog/38d2a3374662da84.webp",
+          "src": "/catalog/79610a6df2b51c67.jpg",
           "alt": "Xiom Stradivarius Super AXLi photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-stradivarius-super-axli-img-2",
-          "src": "/catalog/00cde061c6f91dc5.webp",
+          "src": "/catalog/322121cafe880224.jpg",
           "alt": "Xiom Stradivarius Super AXLi photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/38d2a3374662da84.webp",
-        "/catalog/00cde061c6f91dc5.webp"
+        "/catalog/79610a6df2b51c67.jpg",
+        "/catalog/322121cafe880224.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64532,20 +64532,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-stradivarius-super-zxl-img-1",
-          "src": "/catalog/9fbf44c3b53949d6.webp",
+          "src": "/catalog/3b26d953e6ba4e04.jpg",
           "alt": "Xiom Stradivarius Super ZXL photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-stradivarius-super-zxl-img-2",
-          "src": "/catalog/fd140c2fd5e6dcfa.webp",
+          "src": "/catalog/0d799acd9c1ebe1a.jpg",
           "alt": "Xiom Stradivarius Super ZXL photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/9fbf44c3b53949d6.webp",
-        "/catalog/fd140c2fd5e6dcfa.webp"
+        "/catalog/3b26d953e6ba4e04.jpg",
+        "/catalog/0d799acd9c1ebe1a.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64566,20 +64566,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-stradivarius-super-zxli-img-1",
-          "src": "/catalog/b449ab9375cfa778.webp",
+          "src": "/catalog/2f7ee2631fa122b5.jpg",
           "alt": "Xiom Stradivarius Super ZXLi photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-stradivarius-super-zxli-img-2",
-          "src": "/catalog/c1ef9442bc31caf3.webp",
+          "src": "/catalog/b5a223fc5012bc19.jpg",
           "alt": "Xiom Stradivarius Super ZXLi photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/b449ab9375cfa778.webp",
-        "/catalog/c1ef9442bc31caf3.webp"
+        "/catalog/2f7ee2631fa122b5.jpg",
+        "/catalog/b5a223fc5012bc19.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64600,13 +64600,13 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-strato-img-1",
-          "src": "/catalog/922ec33eb49dd6e8.webp",
+          "src": "/catalog/b84eb68c9fa706ac.jpg",
           "alt": "Xiom Strato photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/922ec33eb49dd6e8.webp"
+        "/catalog/b84eb68c9fa706ac.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64627,20 +64627,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-tetra-tmx-img-1",
-          "src": "/catalog/862b571686881385.webp",
+          "src": "/catalog/672dd40ea0c0934c.jpg",
           "alt": "Xiom Tetra TMX photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-tetra-tmx-img-2",
-          "src": "/catalog/2b21c291b961c4a0.webp",
+          "src": "/catalog/f3632f1aa88d3ed6.jpg",
           "alt": "Xiom Tetra TMX photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/862b571686881385.webp",
-        "/catalog/2b21c291b961c4a0.webp"
+        "/catalog/672dd40ea0c0934c.jpg",
+        "/catalog/f3632f1aa88d3ed6.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64661,20 +64661,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-tetra-tmxi-img-1",
-          "src": "/catalog/c5e3802bcfafcbe1.webp",
+          "src": "/catalog/80772d1a6426c2b9.jpg",
           "alt": "Xiom Tetra TMXi photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-tetra-tmxi-img-2",
-          "src": "/catalog/c27f7ea9e58dd6ee.webp",
+          "src": "/catalog/d8b4de1afb4915e5.jpg",
           "alt": "Xiom Tetra TMXi photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/c5e3802bcfafcbe1.webp",
-        "/catalog/c27f7ea9e58dd6ee.webp"
+        "/catalog/80772d1a6426c2b9.jpg",
+        "/catalog/d8b4de1afb4915e5.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66202,20 +66202,20 @@
       "images": [
         {
           "id": "vpsport-xstar-v-img-1",
-          "src": "/catalog/79ea2ee33c31c1b4.webp",
+          "src": "/catalog/972923f17abbb05b.jpg",
           "alt": "Xstar V photo 1",
           "isPrimary": true
         },
         {
           "id": "vpsport-xstar-v-img-2",
-          "src": "/catalog/2d1e4ef65ba3433f.webp",
+          "src": "/catalog/3158659453808c5b.jpg",
           "alt": "Xstar V photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/79ea2ee33c31c1b4.webp",
-        "/catalog/2d1e4ef65ba3433f.webp"
+        "/catalog/972923f17abbb05b.jpg",
+        "/catalog/3158659453808c5b.jpg"
       ],
       "provenance": {
         "sourceId": "vpsport-maderos-clasicos",
@@ -66236,13 +66236,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-2040-img-1",
-          "src": "/catalog/c60b1df062910391.webp",
+          "src": "/catalog/06a8a89c07a6c5b1.jpg",
           "alt": "Yasaka 2040 photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/c60b1df062910391.webp"
+        "/catalog/06a8a89c07a6c5b1.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66361,7 +66361,7 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-atletico-power-img-1",
-          "src": "/catalog/3399d70395f744e1.webp",
+          "src": "/catalog/45f480823aa9d059.jpg",
           "alt": "Yasaka Atletico Power photo 1",
           "isPrimary": true
         },
@@ -66373,7 +66373,7 @@
         }
       ],
       "imageLocalPaths": [
-        "/catalog/3399d70395f744e1.webp",
+        "/catalog/45f480823aa9d059.jpg",
         "/catalog/0080a07b7097bffc.jpg"
       ],
       "provenance": {
@@ -66395,13 +66395,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-battle-balsa-img-1",
-          "src": "/catalog/094df3878ca03f8e.webp",
+          "src": "/catalog/f8a5e473d2a9f042.jpg",
           "alt": "Yasaka Battle Balsa photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/094df3878ca03f8e.webp"
+        "/catalog/f8a5e473d2a9f042.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66425,13 +66425,13 @@
       "images": [
         {
           "id": "zonatt-madera-yasaka-ebony-carbon-img-1",
-          "src": "/catalog/91ff1966229f119c.webp",
+          "src": "/catalog/d5ac5029ef7d9a17.jpg",
           "alt": "Yasaka EBONY CARBON photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/91ff1966229f119c.webp"
+        "/catalog/d5ac5029ef7d9a17.jpg"
       ],
       "provenance": {
         "sourceId": "zonatt-maderas",
@@ -66552,20 +66552,20 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-extra-3-d-img-1",
-          "src": "/catalog/37579af4193854c7.webp",
+          "src": "/catalog/45ae34cc32bdd46b.jpg",
           "alt": "Yasaka Extra 3 D photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-yasaka-extra-3-d-img-2",
-          "src": "/catalog/37579af4193854c7.webp",
+          "src": "/catalog/45ae34cc32bdd46b.jpg",
           "alt": "Yasaka Extra 3 D photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/37579af4193854c7.webp",
-        "/catalog/37579af4193854c7.webp"
+        "/catalog/45ae34cc32bdd46b.jpg",
+        "/catalog/45ae34cc32bdd46b.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66586,13 +66586,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-extra-offensive-7-power-img-1",
-          "src": "/catalog/0e095c6ad5308d05.webp",
+          "src": "/catalog/f33a94f265c50b40.jpg",
           "alt": "Yasaka Extra Offensive 7 Power photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/0e095c6ad5308d05.webp"
+        "/catalog/f33a94f265c50b40.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66613,20 +66613,20 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-falck-carbon-img-1",
-          "src": "/catalog/327a79638016bbb1.webp",
+          "src": "/catalog/6ae7b47b964fda28.jpg",
           "alt": "Yasaka Falck Carbon photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-yasaka-falck-carbon-img-2",
-          "src": "/catalog/fa5106b89d1ba28d.webp",
+          "src": "/catalog/53f82d33e45c9724.jpg",
           "alt": "Yasaka Falck Carbon photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/327a79638016bbb1.webp",
-        "/catalog/fa5106b89d1ba28d.webp"
+        "/catalog/6ae7b47b964fda28.jpg",
+        "/catalog/53f82d33e45c9724.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66647,13 +66647,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-falck-w7-img-1",
-          "src": "/catalog/c826deb9087f2070.webp",
+          "src": "/catalog/f777978907138b6f.jpg",
           "alt": "Yasaka Falck W7 photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/c826deb9087f2070.webp"
+        "/catalog/f777978907138b6f.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66674,13 +66674,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-goiabao-5-img-1",
-          "src": "/catalog/364657f790e6ce18.webp",
+          "src": "/catalog/3cdfee676e9977c4.jpg",
           "alt": "Yasaka Goiabao 5 photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/364657f790e6ce18.webp"
+        "/catalog/3cdfee676e9977c4.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66701,13 +66701,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-ma-lin-carbon-img-1",
-          "src": "/catalog/a7667c591e598f05.webp",
+          "src": "/catalog/e40c06ad7d09a4a0.jpg",
           "alt": "Yasaka Ma Lin Carbon photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/a7667c591e598f05.webp"
+        "/catalog/e40c06ad7d09a4a0.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66728,13 +66728,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-ma-lin-extra-special-img-1",
-          "src": "/catalog/c3dc9455980348de.webp",
+          "src": "/catalog/985286056ced5467.jpg",
           "alt": "Yasaka Ma Lin Extra Special photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/c3dc9455980348de.webp"
+        "/catalog/985286056ced5467.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -66755,13 +66755,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-ma-lin-soft-carbon-img-1",
-          "src": "/catalog/3d91208c6bacd4e4.webp",
+          "src": "/catalog/2f67b3ca6cf7bbd5.jpg",
           "alt": "Yasaka Ma Lin Soft Carbon photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/3d91208c6bacd4e4.webp"
+        "/catalog/2f67b3ca6cf7bbd5.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -67125,7 +67125,7 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-masamune-img-1",
-          "src": "/catalog/2dc74aa1a9b2c606.webp",
+          "src": "/catalog/ab79c0ab4e6f647d.jpg",
           "alt": "Yasaka Masamune photo 1",
           "isPrimary": true
         },
@@ -67137,7 +67137,7 @@
         }
       ],
       "imageLocalPaths": [
-        "/catalog/2dc74aa1a9b2c606.webp",
+        "/catalog/ab79c0ab4e6f647d.jpg",
         "/catalog/0eb9fa3c54da558c.jpg"
       ],
       "provenance": {
@@ -67159,13 +67159,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-max-carbon-3d-img-1",
-          "src": "/catalog/df2ccbb2e435bd76.webp",
+          "src": "/catalog/a77375c90cf71d8f.jpg",
           "alt": "Yasaka Max Carbon 3D photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/df2ccbb2e435bd76.webp"
+        "/catalog/a77375c90cf71d8f.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -67186,13 +67186,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-max-wood-img-1",
-          "src": "/catalog/b737ee68941bdf41.webp",
+          "src": "/catalog/cb95fa7e40532a70.jpg",
           "alt": "Yasaka Max Wood photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/b737ee68941bdf41.webp"
+        "/catalog/cb95fa7e40532a70.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -67213,20 +67213,20 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-myth-carbon-img-1",
-          "src": "/catalog/5621a3610adbe4d8.webp",
+          "src": "/catalog/c045214fe9b04c50.jpg",
           "alt": "Yasaka Myth Carbon photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-yasaka-myth-carbon-img-2",
-          "src": "/catalog/7a27a2d1b817583c.webp",
+          "src": "/catalog/faace4a0f1331211.jpg",
           "alt": "Yasaka Myth Carbon photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/5621a3610adbe4d8.webp",
-        "/catalog/7a27a2d1b817583c.webp"
+        "/catalog/c045214fe9b04c50.jpg",
+        "/catalog/faace4a0f1331211.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -67247,20 +67247,20 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-myth-extra-offensive-img-1",
-          "src": "/catalog/a5c8f6e06851d759.webp",
+          "src": "/catalog/e653c828ba1eeccc.jpg",
           "alt": "Yasaka Myth Extra Offensive photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-yasaka-myth-extra-offensive-img-2",
-          "src": "/catalog/24da216ad055abe8.webp",
+          "src": "/catalog/c80c6335d7b79944.jpg",
           "alt": "Yasaka Myth Extra Offensive photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/a5c8f6e06851d759.webp",
-        "/catalog/24da216ad055abe8.webp"
+        "/catalog/e653c828ba1eeccc.jpg",
+        "/catalog/c80c6335d7b79944.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -67281,20 +67281,20 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-myth-extra-special-img-1",
-          "src": "/catalog/56ba0491ef3340c3.webp",
+          "src": "/catalog/8af72e54ef2bfcea.jpg",
           "alt": "Yasaka Myth Extra Special photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-yasaka-myth-extra-special-img-2",
-          "src": "/catalog/808c77ce7c7e8a0c.webp",
+          "src": "/catalog/90a91403071388fc.jpg",
           "alt": "Yasaka Myth Extra Special photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/56ba0491ef3340c3.webp",
-        "/catalog/808c77ce7c7e8a0c.webp"
+        "/catalog/8af72e54ef2bfcea.jpg",
+        "/catalog/90a91403071388fc.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -67315,20 +67315,20 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-myth-soft-carbon-img-1",
-          "src": "/catalog/ef088b26557c5f75.webp",
+          "src": "/catalog/61427b235327af9c.jpg",
           "alt": "Yasaka Myth Soft Carbon photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-yasaka-myth-soft-carbon-img-2",
-          "src": "/catalog/3a6a37a75a695a1b.webp",
+          "src": "/catalog/f29cef1163a718ea.jpg",
           "alt": "Yasaka Myth Soft Carbon photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/ef088b26557c5f75.webp",
-        "/catalog/3a6a37a75a695a1b.webp"
+        "/catalog/61427b235327af9c.jpg",
+        "/catalog/f29cef1163a718ea.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -68443,7 +68443,7 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-resonate-gi-img-1",
-          "src": "/catalog/26f9c1580f00ce0e.webp",
+          "src": "/catalog/1fea79f9c31ea702.jpg",
           "alt": "Yasaka Resonate GI photo 1",
           "isPrimary": true
         },
@@ -68455,7 +68455,7 @@
         }
       ],
       "imageLocalPaths": [
-        "/catalog/26f9c1580f00ce0e.webp",
+        "/catalog/1fea79f9c31ea702.jpg",
         "/catalog/882cbb825d551082.jpg"
       ],
       "provenance": {
@@ -68477,7 +68477,7 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-resonate-go-img-1",
-          "src": "/catalog/3639adaf679e30a9.webp",
+          "src": "/catalog/76d80fa9a6e519f3.jpg",
           "alt": "Yasaka Resonate GO photo 1",
           "isPrimary": true
         },
@@ -68489,7 +68489,7 @@
         }
       ],
       "imageLocalPaths": [
-        "/catalog/3639adaf679e30a9.webp",
+        "/catalog/76d80fa9a6e519f3.jpg",
         "/catalog/4a29495f88782330.jpg"
       ],
       "provenance": {
@@ -68618,13 +68618,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-sweden-classic-img-1",
-          "src": "/catalog/6e19d298f215ec60.webp",
+          "src": "/catalog/a6004b81e25513a1.jpg",
           "alt": "Yasaka Sweden Classic photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/6e19d298f215ec60.webp"
+        "/catalog/a6004b81e25513a1.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -68645,13 +68645,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-sweden-ek-carbon-img-1",
-          "src": "/catalog/3977c9e9b9e32bb8.webp",
+          "src": "/catalog/163cf76b9fc1e197.jpg",
           "alt": "Yasaka Sweden EK Carbon photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/3977c9e9b9e32bb8.webp"
+        "/catalog/163cf76b9fc1e197.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -68672,13 +68672,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-sweden-extra-img-1",
-          "src": "/catalog/96ccf15c66a38ec5.webp",
+          "src": "/catalog/62e7c23573654aa4.jpg",
           "alt": "Yasaka Sweden Extra photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/96ccf15c66a38ec5.webp"
+        "/catalog/62e7c23573654aa4.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -68699,13 +68699,13 @@
       "images": [
         {
           "id": "dandoy-blade-yasaka-sweden-guardian-img-1",
-          "src": "/catalog/b3e96af1a5289a6e.webp",
+          "src": "/catalog/9a1c3d7c7e0bac66.jpg",
           "alt": "Yasaka Sweden Guardian photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/b3e96af1a5289a6e.webp"
+        "/catalog/9a1c3d7c7e0bac66.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",

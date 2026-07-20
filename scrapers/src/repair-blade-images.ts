@@ -13,6 +13,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import type { CatalogProduct } from '@ttsetupbuilder/types';
 import { downloadImageToOwnedStorage, fetchHtml } from './pipeline/downloadImage.js';
+import { allowKnockoutForCategory } from './pipeline/optimizeImage.js';
 import { extractGalleryUrls } from './sources/createDandoyMagentoSource.js';
 import { extractPdpImageUrls } from './sources/createVpsportJumpsellerSource.js';
 import { extractZonattPdpImage } from './sources/createZonattCatalogSource.js';
@@ -170,7 +171,7 @@ async function main(): Promise<void> {
           outputDir: catalogDir,
           publicPrefix: '/catalog',
           rateLimitMs: rateMs,
-          allowKnockout: false,
+          allowKnockout: allowKnockoutForCategory('blade'),
         });
         publicSrcs.push(downloaded.publicSrc);
         imagesWritten += 1;
