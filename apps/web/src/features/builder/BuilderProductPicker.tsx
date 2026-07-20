@@ -1,6 +1,7 @@
 import { useDeferredValue, useMemo, useState } from 'react';
 import type { CatalogProduct, ProductCategory } from '@ttsetupbuilder/types';
 import { searchCatalog } from '@/features/search/searchCatalog';
+import { useT } from '@/shared/i18n/useT';
 import { cn } from '@/shared/lib/cn';
 
 type BuilderProductPickerProps = {
@@ -30,6 +31,7 @@ export function BuilderProductPicker({
   disabled = false,
   disabledReason,
 }: BuilderProductPickerProps) {
+  const t = useT();
   const [query, setQuery] = useState('');
   const deferredQuery = useDeferredValue(query);
 
@@ -72,7 +74,7 @@ export function BuilderProductPicker({
         </div>
         {selected ? (
           <span className="shrink-0 rounded-lg border border-[var(--color-border-subtle)] bg-[var(--color-canvas)] px-2 py-1 text-xs text-[var(--color-text-secondary)]">
-            Elegido
+            {t('builder.selected')}
           </span>
         ) : null}
       </button>
@@ -90,13 +92,14 @@ export function BuilderProductPicker({
             </p>
             <p className="text-xs uppercase tracking-[0.12em] text-[var(--color-text-tertiary)]">
               {selected.brandId}
+              {selected.discontinued ? ` · ${t('discontinued.badge')}` : ''}
             </p>
             <button
               type="button"
               className="text-xs text-[var(--color-accent)] hover:underline"
               onClick={onClear}
             >
-              Quitar
+              {t('builder.clear')}
             </button>
           </div>
         </div>
@@ -104,17 +107,17 @@ export function BuilderProductPicker({
 
       {disabled ? (
         <p className="mt-4 text-sm text-[var(--color-text-tertiary)]">
-          {disabledReason ?? 'Completa el paso anterior primero.'}
+          {disabledReason ?? t('builder.completePrevious')}
         </p>
       ) : isActive ? (
         <div className="mt-4 space-y-3">
           <label className="block space-y-2">
-            <span className="sr-only">Buscar {label}</span>
+            <span className="sr-only">{t('builder.searchPlaceholder', { label })}</span>
             <input
               type="search"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
-              placeholder={`Buscar ${label.toLowerCase()}…`}
+              placeholder={t('builder.searchPlaceholder', { label: label.toLowerCase() })}
               autoComplete="off"
               className="w-full rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-canvas)] px-3 py-2.5 text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-tertiary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
             />
@@ -122,10 +125,10 @@ export function BuilderProductPicker({
 
           {pool.length === 0 ? (
             <p className="text-sm text-[var(--color-text-tertiary)]">
-              No hay {category === 'blade' ? 'maderos' : 'gomas'} en el catálogo local.
+              {category === 'blade' ? t('builder.emptyBlades') : t('builder.emptyRubbers')}
             </p>
           ) : results.length === 0 ? (
-            <p className="text-sm text-[var(--color-text-tertiary)]">Sin coincidencias.</p>
+            <p className="text-sm text-[var(--color-text-tertiary)]">{t('builder.noMatches')}</p>
           ) : (
             <ul className="max-h-64 space-y-1 overflow-y-auto pr-1">
               {results.map((product) => {
@@ -160,6 +163,7 @@ export function BuilderProductPicker({
                         </p>
                         <p className="truncate text-xs text-[var(--color-text-tertiary)]">
                           {product.brandId}
+                          {product.discontinued ? ` · ${t('discontinued.badge')}` : ''}
                         </p>
                       </div>
                     </button>
@@ -175,7 +179,7 @@ export function BuilderProductPicker({
           className="mt-4 text-sm text-[var(--color-accent)] hover:underline"
           onClick={onActivate}
         >
-          Abrir buscador
+          {t('builder.openSearch')}
         </button>
       )}
     </section>

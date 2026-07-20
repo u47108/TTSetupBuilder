@@ -9,6 +9,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Footer author credit — Luis Nuñez (EN/ES i18n) and GitHub contact link ([u47108](https://github.com/u47108)) alongside app version in AppShell
+
+## [0.1.0] - 2026-07-20
+
+Web app (`apps/web`) **v0.1.0** — first functional SPA release: local catalog, builder, search, compare, EN/ES i18n, ITTF offline notices, GitHub Pages deploy.
+
+### Fixed
+
+- Viscaria blade photos: `vpsport-viscaria-alc` primary from clean full-blade studio JPEG (no knockout); `vpsport-viscaria-cs` primary replaced shredded/handle-crop WebP with full CS blade JPEG from VP Sport CDN master
+- Catalog image pipeline: do not scrub alpha on images without a detected studio plate (pale wood cutouts were shredded into jagged WebP); blades always JPEG via `allowKnockoutForCategory`; `downloadImageToOwnedStorage` requires `allowKnockout`; `optimize-images` re-encodes blade files without knockout
+- Blade white-plate cutouts: scrub retail dark matte fringe (black contour halo) on download; VP Sport prefers full CDN master over `/thumb/720/720`; `repair-blade-images --force` re-downloads JPEG blades
+
+### Added
+
+- **Discontinued product alert** — scraper sets catalog `discontinued` at PDP ingest (Tabletennis Reference h2 `[Discontinued]` / schema.org Offer); SPA amber builder/detail notices read that field (EN/ES; stock ≠ catalog)
+- Scraper source **`tabletennis-reference-rackets`** live PDP seeds: Ai Fukuhara PRO ZLF (detail/226, discontinued) + Viscaria (detail/858)
+- Scraper sources **`tabletennis-reference-rubbers`** / **`tabletennis-reference-rackets`** (tabletennis-reference.com — distinct from `tabletennis-reviews`); secondary photos + reviews; dry-run listing plans; rubbers live = explicit PDP seeds (e.g. Blues T1 detail/439)
+- Owned catalog photo for fixture **Donic Blues T1** (`/catalog/aefd272a97acc080.webp`) from Tabletennis Reference PDP detail/439 (page title “Bruce T1”; packaging/ITTF = Blues T1)
+- **i18n EN/ES** in `apps/web` — custom message dictionaries + `useT()`; locale in Zustand UI store (`localStorage` + `document.documentElement.lang`); AppShell language toggle (no i18next; ADR-002 / ADR-005)
+- **Builder ITTF alert** on `/builder` — amber banner in the palette when FH and/or BH rubber has non-approved `ittfApproval` (`not_found` / `not_approved` / `expired` / `inactive`); does not overlay racket preview images
 - **ITTF racket-coverings monitor** (`pnpm ittf`) — batch snapshot/diff/annotate via `ittf-admin-api`; catalog field `ittfApproval`; SPA notice for non-approved rubbers (ADR-014: no live ITTF calls)
 - Live scraper **`zonatt-maderas`** ([ZonaTT](https://www.zonatt.com/es/maderas-de-tenis-de-mesa)) — inventory from sitemap (incl. no disponibles / descatalogados); mango AN/FL/ST/PH
 - Live scraper **`zonatt-gomas`** — ZonaTT rubbers from sitemap (priority: Hurricane 3 Neo Provincial Blue Sponge 39, Killer Pro)
@@ -38,10 +58,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Navigation & information architecture document (`docs/NAVIGATION.md`)
 - Development roadmap with deployable milestones (`docs/roadmap/DEVELOPMENT_ROADMAP.md`)
 - Frontend architecture requirements ([`docs/architecture/FRONTEND_ARCHITECTURE.md`](./docs/architecture/FRONTEND_ARCHITECTURE.md)) — historical Next.js notes; **superseded by ADRs** (Vite + React SPA per ADR-002) where conflicting
+- Initial repository structure, documentation stubs (`README`, `ROADMAP`, `CONTRIBUTING`), GitHub issue/PR templates, MIT license
 
 ### Changed
 
+- Root `README.md` refreshed — user-facing features/demo/roadmap merged with maintainer quick start, ADR links, and live catalog counts (**693** blades, **976** rubbers, **1669** total)
+- Spanish UI copy uses **goma(s)** (never “caucho(s)”) for user-facing rubber wording; ITTF technical English terms (`EquipmentCode`, racket coverings) kept where needed
 - Local SPA catalog (~**1665** products) merges Dandoy + VP Sport + ZonaTT (maderas + gomas) + CL rubber seeds by `sourceId`; rubbers annotated with batch ITTF approval facts
+- ADR-002 / ADR-005 note custom EN/ES dictionaries and locale in Zustand (no major i18n library)
 - Viscaria CS / PH / ALC catalog photos refreshed (owned local assets)
 - Catalog images optimized to **max 720px JPEG q72** or **WebP+alpha** when studio white/black bg detected
 - Catalog publish **merges by sourceId** (blades + rubbers coexist in one `catalog.json`)
@@ -55,12 +79,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - System architecture (`docs/architecture/ARCHITECTURE.md`)
 - Additional live parsers (ProTT, etc.) after robots/ToS review
-
-## [0.1.0] - 2026-07-19
-
-### Added
-
-- Initial repository structure
-- Documentation stubs (`README`, `ROADMAP`, `CONTRIBUTING`)
-- GitHub issue and pull request templates
-- MIT license

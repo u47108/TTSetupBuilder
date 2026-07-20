@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 import type { ProductCategory } from '@ttsetupbuilder/types';
 import { downloadImageToOwnedStorage, fetchHtml } from '../pipeline/downloadImage.js';
+import { allowKnockoutForCategory } from '../pipeline/optimizeImage.js';
 import { normalizeProduct } from '../pipeline/normalizeProduct.js';
 import type {
   ListingCandidate,
@@ -64,7 +65,7 @@ function parseListingCards(html: string): ListingCard[] {
   return cards;
 }
 
-function extractGalleryUrls(html: string): string[] {
+export function extractGalleryUrls(html: string): string[] {
   // Prefer Magento "img" (display) over "full" (master) — smaller downloads (ADR-008).
   const imgs = [
     ...html.matchAll(
@@ -157,6 +158,7 @@ export function createDandoyMagentoSource(options: DandoyMagentoOptions): Source
                 outputDir: ctx.imageOutputDir,
                 publicPrefix: '/catalog',
                 rateLimitMs: ctx.rateLimitMs,
+                allowKnockout: allowKnockoutForCategory(category),
               });
               publicSrcs.push(downloaded.publicSrc);
               localPaths.push(downloaded.localPath);

@@ -16,8 +16,11 @@ export type DownloadImageResult = {
 };
 
 /**
- * Downloads a remote image, optimizes to catalog JPEG (max ~720px), stores by content-hash.
+ * Downloads a remote image, optimizes to catalog JPEG/WebP (max ~720px), stores by content-hash.
  * Never use the remote URL as a runtime <img src> (ADR-008).
+ *
+ * `allowKnockout` is required: pass `allowKnockoutForCategory(category)` so blades
+ * never get studio alpha knockout (pale wood ≈ white plate → shredded edges).
  */
 export async function downloadImageToOwnedStorage(options: {
   url: string;
@@ -25,8 +28,19 @@ export async function downloadImageToOwnedStorage(options: {
   /** Public URL path prefix for the SPA, e.g. /catalog */
   publicPrefix?: string;
   rateLimitMs?: number;
+  /**
+   * When false, skip studio knockout (JPEG only). Required — use
+   * `allowKnockoutForCategory(category)` (blades → false).
+   */
+  allowKnockout: boolean;
 }): Promise<DownloadImageResult> {
-  const { url, outputDir, publicPrefix = '/catalog', rateLimitMs = 1500 } = options;
+  const {
+    url,
+    outputDir,
+    publicPrefix = '/catalog',
+    rateLimitMs = 1500,
+    allowKnockout,
+  } = options;
 
   if (rateLimitMs > 0) {
     await new Promise((resolve) => setTimeout(resolve, rateLimitMs));
@@ -45,7 +59,17 @@ export async function downloadImageToOwnedStorage(options: {
   }
 
   const raw = Buffer.from(await response.arrayBuffer());
-  const optimized = await optimizeCatalogImage(raw);
+  const optimized = await optimizeCatalogImage(raw, { allowKnockout });
+
+  if (
+    !allowKnockout &&
+    (optimized.knockedOutBackground || optimized.extension === '.webp')
+  ) {
+    throw new Error(
+      `Invariant: allowKnockout=false must produce JPEG without knockout (got ${optimized.extension}, knocked=${optimized.knockedOutBackground}) for ${url}`,
+    );
+  }
+
   const contentHash = createHash('sha256').update(optimized.buffer).digest('hex');
   const filename = `${contentHash.slice(0, 16)}${optimized.extension}`;
 

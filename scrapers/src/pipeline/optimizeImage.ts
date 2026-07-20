@@ -203,9 +203,116 @@ function floodFillKnockout(
   }
 }
 
+function isLowChroma(r: number, g: number, b: number, maxDelta = 36): boolean {
+  return Math.max(r, g, b) - Math.min(r, g, b) <= maxDelta;
+}
+
+/**
+ * Retail white-plate cutouts often leave a dark matte ring on the silhouette
+ * (black “contour” between pale wood and #fff). Clear only near-black/gray
+ * pixels that touch the white plate — interior print and blue handle stay.
+ */
+function scrubDarkMatteFringe(rgba: Buffer, width: number, height: number): boolean {
+  if (detectStudioBackground(rgba, width, height) !== 'white') return false;
+
+  const channels = 4;
+  const pixelCount = width * height;
+  const isBg = new Uint8Array(pixelCount);
+  const queue = new Int32Array(pixelCount);
+  let head = 0;
+  let tail = 0;
+
+  const enqueueWhite = (x: number, y: number) => {
+    if (x < 0 || y < 0 || x >= width || y >= height) return;
+    const idx = y * width + x;
+    if (isBg[idx]) return;
+    const i = idx * channels;
+    if (!isNearWhite(rgba[i]!, rgba[i + 1]!, rgba[i + 2]!, 242)) return;
+    isBg[idx] = 1;
+    queue[tail++] = idx;
+  };
+
+  for (let x = 0; x < width; x += 1) {
+    enqueueWhite(x, 0);
+    enqueueWhite(x, height - 1);
+  }
+  for (let y = 0; y < height; y += 1) {
+    enqueueWhite(0, y);
+    enqueueWhite(width - 1, y);
+  }
+
+  while (head < tail) {
+    const idx = queue[head++]!;
+    const x = idx % width;
+    const y = (idx / width) | 0;
+    enqueueWhite(x + 1, y);
+    enqueueWhite(x - 1, y);
+    enqueueWhite(x, y + 1);
+    enqueueWhite(x, y - 1);
+  }
+
+  if (tail < Math.floor(pixelCount * 0.05)) return false;
+
+  const touchesBg = (idx: number, radius = 1) => {
+    const x = idx % width;
+    const y = (idx / width) | 0;
+    for (let dy = -radius; dy <= radius; dy += 1) {
+      for (let dx = -radius; dx <= radius; dx += 1) {
+        if (dx === 0 && dy === 0) continue;
+        const nx = x + dx;
+        const ny = y + dy;
+        if (nx < 0 || ny < 0 || nx >= width || ny >= height) continue;
+        if (isBg[ny * width + nx]) return true;
+      }
+    }
+    return false;
+  };
+
+  const isMatteFringe = (r: number, g: number, b: number, lumMax: number, chromaMax: number) => {
+    const lum = luminance(r, g, b);
+    if (lum > lumMax) return false;
+    if (!isLowChroma(r, g, b, chromaMax)) return false;
+    return true;
+  };
+
+  let changed = false;
+  // Expand outward from the white plate: hard matte → soft ring → near-edge grey.
+  const passes: Array<{ lumMax: number; chromaMax: number; radius: number }> = [
+    { lumMax: 85, chromaMax: 45, radius: 1 },
+    { lumMax: 120, chromaMax: 32, radius: 1 },
+    { lumMax: 100, chromaMax: 28, radius: 2 },
+  ];
+
+  for (const pass of passes) {
+    const toClear: number[] = [];
+    for (let idx = 0; idx < pixelCount; idx += 1) {
+      if (isBg[idx]) continue;
+      if (!touchesBg(idx, pass.radius)) continue;
+      const i = idx * channels;
+      if (!isMatteFringe(rgba[i]!, rgba[i + 1]!, rgba[i + 2]!, pass.lumMax, pass.chromaMax)) {
+        continue;
+      }
+      toClear.push(i);
+    }
+    for (const i of toClear) {
+      rgba[i] = 255;
+      rgba[i + 1] = 255;
+      rgba[i + 2] = 255;
+      rgba[i + 3] = 255;
+      isBg[(i / channels) | 0] = 1;
+      changed = true;
+    }
+  }
+
+  return changed;
+}
+
 /**
  * Studio product shots on white or black plates → transparent WebP.
- * White/black: flood-fill from edges; white fringe scrubbed hard for dark UI.
+ * White/black: flood-fill from edges; fringe scrub only after a real plate knockout.
+ *
+ * Do **not** scrub when no studio plate is detected: pale wood next to existing
+ * alpha (CDN cutouts / prior WebP) gets shredded into jagged holes on dark UI.
  */
 async function maybeKnockoutStudioBackground(
   rgba: Buffer,
@@ -213,38 +320,43 @@ async function maybeKnockoutStudioBackground(
   height: number,
 ): Promise<{ buffer: Buffer; knocked: boolean } | null> {
   const mode = detectStudioBackground(rgba, width, height);
-  let knocked = false;
+  if (!mode) return null;
 
-  if (mode) {
-    floodFillKnockout(rgba, width, height, mode);
-    knocked = true;
-  }
-
-  // Always scrub milky fringes on RGBA (incl. re-optimize of prior WebP knockouts).
-  const scrubbed = scrubWhiteFringe(rgba, width, height);
-  if (!knocked && !scrubbed) return null;
-
-  // If we only scrubbed an existing alpha image, keep WebP.
-  const hasAlpha = (() => {
-    for (let i = 3; i < rgba.length; i += 4) {
-      if (rgba[i]! < 255) return true;
-    }
-    return false;
-  })();
-  if (!hasAlpha && !knocked) return null;
+  floodFillKnockout(rgba, width, height, mode);
+  scrubWhiteFringe(rgba, width, height);
 
   const buffer = await sharp(rgba, { raw: { width, height, channels: 4 } })
     .webp({ quality: CATALOG_WEBP_QUALITY, alphaQuality: 100 })
     .toBuffer();
 
-  return { buffer, knocked: knocked || scrubbed };
+  return { buffer, knocked: true };
+}
+
+export type OptimizeCatalogImageOptions = {
+  /**
+   * Studio white/black → transparent WebP.
+   * Disable for blades: pale wood is near-white and gets eaten by flood-fill + fringe scrub.
+   * Default true only inside this function; callers that download by category must
+   * pass `allowKnockoutForCategory(category)` (blades → false).
+   */
+  allowKnockout?: boolean;
+};
+
+/** Blades keep the studio plate as JPEG — never WebP alpha knockout. */
+export function allowKnockoutForCategory(category: string): boolean {
+  return category !== 'blade';
 }
 
 /**
  * Downscale + re-encode for owned catalog storage (ADR-008).
- * Knockouts studio white/black backgrounds to alpha (WebP) when detected.
+ * Knockouts studio white/black backgrounds to alpha (WebP) when detected —
+ * unless `allowKnockout: false` (blades → JPEG ≤720, plate kept).
  */
-export async function optimizeCatalogImage(input: Buffer): Promise<OptimizeImageResult> {
+export async function optimizeCatalogImage(
+  input: Buffer,
+  options: OptimizeCatalogImageOptions = {},
+): Promise<OptimizeImageResult> {
+  const allowKnockout = options.allowKnockout !== false;
   const image = sharp(input, { failOn: 'none' }).rotate();
   const meta = await image.metadata();
   const width = meta.width ?? CATALOG_MAX_WIDTH;
@@ -257,6 +369,34 @@ export async function optimizeCatalogImage(input: Buffer): Promise<OptimizeImage
           fit: 'inside',
         })
       : image;
+
+  // Blades: never knockout — wood edges ≈ studio white → shredded alpha on dark UI.
+  // Still scrub retail dark matte rings on white plates (black contour artifacts).
+  if (!allowKnockout) {
+    const { data, info } = await resized
+      .ensureAlpha()
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+    const rgba = Buffer.from(data);
+    scrubDarkMatteFringe(rgba, info.width, info.height);
+
+    const buffer = await sharp(rgba, {
+      raw: { width: info.width, height: info.height, channels: 4 },
+    })
+      .flatten({ background: { r: 255, g: 255, b: 255 } })
+      .jpeg({ quality: CATALOG_JPEG_QUALITY, mozjpeg: true })
+      .toBuffer();
+    const outMeta = await sharp(buffer).metadata();
+    return {
+      buffer,
+      contentType: 'image/jpeg',
+      extension: '.jpg',
+      width: outMeta.width ?? CATALOG_MAX_WIDTH,
+      height: outMeta.height ?? CATALOG_MAX_WIDTH,
+      knockedOutBackground: false,
+      knockedOutWhite: false,
+    };
+  }
 
   const { data, info } = await resized.ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const rgba = Buffer.from(data);
@@ -278,6 +418,7 @@ export async function optimizeCatalogImage(input: Buffer): Promise<OptimizeImage
   const buffer = await sharp(rgba, {
     raw: { width: info.width, height: info.height, channels: 4 },
   })
+    .flatten({ background: { r: 255, g: 255, b: 255 } })
     .jpeg({ quality: CATALOG_JPEG_QUALITY, mozjpeg: true })
     .toBuffer();
 

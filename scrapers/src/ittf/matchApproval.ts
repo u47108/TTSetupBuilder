@@ -4,6 +4,9 @@ import type { IttfRacketCoveringRow as Row, IttfSnapshotDocument } from './types
 
 export { normalizeEquipmentCode } from './snapshot.js';
 
+/** Top-sheet colors commonly listed by ITTF; other ColorsList tokens → sponge. */
+const TOP_SHEET_COLOR_TOKENS = new Set(['red', 'black']);
+
 function normalizeText(value: string): string {
   return value
     .normalize('NFKD')
@@ -32,6 +35,66 @@ function jaccard(a: Set<string>, b: Set<string>): number {
 
 function brandNameKey(brand: string, name: string): string {
   return `${normalizeText(brand)}||${normalizeText(name)}`;
+}
+
+export function parseColorsList(colorsList: string | null | undefined): string[] {
+  if (!colorsList?.trim()) return [];
+  return colorsList
+    .split(',')
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+/**
+ * Split ITTF ColorsList into top-sheet vs sponge.
+ * The all_list API does not label dimensions; Red/Black are treated as sheet.
+ */
+export function splitCoveringColors(colorsList: string | null | undefined): {
+  colors: string[];
+  topSheetColors: string[];
+  spongeColors: string[];
+} {
+  const colors = parseColorsList(colorsList);
+  const topSheetColors: string[] = [];
+  const spongeColors: string[] = [];
+  for (const color of colors) {
+    if (TOP_SHEET_COLOR_TOKENS.has(color.toLowerCase())) {
+      topSheetColors.push(color);
+    } else {
+      spongeColors.push(color);
+    }
+  }
+  return { colors, topSheetColors, spongeColors };
+}
+
+/** Map HasOXVersion from ITTF (`1`/`0`/`Yes`/`No`/null). */
+export function parseOxVersion(
+  value: string | null | undefined,
+): boolean | null {
+  if (value == null || value === '') return null;
+  const normalized = String(value).trim().toLowerCase();
+  if (normalized === '1' || normalized === 'yes' || normalized === 'true') {
+    return true;
+  }
+  if (normalized === '0' || normalized === 'no' || normalized === 'false') {
+    return false;
+  }
+  return null;
+}
+
+/** Listing dimensions persisted onto CatalogProduct.ittfApproval when matched. */
+export function listingFieldsFromRow(row: Row): Partial<IttfApprovalInfo> {
+  const { colors, topSheetColors, spongeColors } = splitCoveringColors(row.ColorsList);
+  return {
+    approvalStatus: row.ApprovalStatus,
+    isActive: row.IsActive,
+    expiresOn: row.ExpiresOn,
+    colors: colors.length > 0 ? colors : undefined,
+    topSheetColors: topSheetColors.length > 0 ? topSheetColors : undefined,
+    spongeColors: spongeColors.length > 0 ? spongeColors : undefined,
+    oxVersion: parseOxVersion(row.HasOXVersion),
+    pimpleType: row.PimpleType,
+  };
 }
 
 export function deriveApprovalStatus(
@@ -183,6 +246,7 @@ export function annotateRubberProduct(
       snapshotDate,
       checkedAt,
       reason: derived.reason,
+      ...listingFieldsFromRow(match.row),
     },
   };
 }

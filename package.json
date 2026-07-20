@@ -3,6 +3,10 @@
   "private": true,
   "version": "0.1.0",
   "description": "Visual table tennis equipment database and setup builder",
+  "author": {
+    "name": "Luis Nuñez",
+    "url": "https://github.com/u47108"
+  },
   "packageManager": "pnpm@9.15.9",
   "engines": {
     "node": ">=22"
@@ -13,9 +17,12 @@
     "lint": "pnpm --filter web lint",
     "scrape": "pnpm --filter @ttsetupbuilder/scrapers scrape",
     "optimize-images": "pnpm --filter @ttsetupbuilder/scrapers optimize-images",
+    "repair-blade-images": "pnpm --filter @ttsetupbuilder/scrapers repair-blade-images",
     "enrich-handles": "pnpm --filter @ttsetupbuilder/scrapers enrich-handles",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test:e2e": "pnpm --filter web test:e2e",
+    "test:e2e:report": "pnpm --filter web test:e2e:report"
   },
   "devDependencies": {
     "prettier": "^3.5.3"

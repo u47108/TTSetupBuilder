@@ -9,8 +9,14 @@ export type IttfRacketCoveringRow = {
   ExpiresOn: string | null;
   PimpleType: string | null;
   ImageList: string | null;
+  /** Often null in all_list; ColorsList carries sheet + sponge colors. */
+  Color?: string | null;
+  /** `1` / `0` / `Yes` / `No` / null — OX (no sponge) variant listed. */
   HasOXVersion?: string | null;
+  /** Comma-separated colors (top sheet + sponge; API does not split). */
   ColorsList?: string | null;
+  EquipmentColorIds?: string | null;
+  ITTFApprovalCode?: string | null;
   PledgeSignatory?: boolean | null;
 };
 
@@ -82,4 +88,6 @@ export const ITTF_DIFF_FIELDS = [
   'ExpiresOn',
   'ImageList',
   'PimpleType',
+  'ColorsList',
+  'HasOXVersion',
 ] as const satisfies readonly (keyof IttfRacketCoveringRow)[];

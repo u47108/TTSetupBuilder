@@ -84,9 +84,12 @@ Live parsers today:
   vpsport-gomas-lisas, vpsport-maderos-clasicos, vpsport-maderos-japones,
   vpsport-maderos-lapiceros, vpsport-poros-cortos, vpsport-poros-largos,
   vpsport-gomas-anti-topspin
+  zonatt-maderas, zonatt-gomas, cl-rubber-seeds
+  tabletennis-reference-rubbers (explicit PDP seeds only — not tabletennis-reviews.com)
 
 Blocked / stub:
   tt11-* (Cloudflare challenge on automated GET)
+  tabletennis-reference-rackets (dry-run plan only; multi-page crawl TODO)
 
 Publish merges into catalog.json by sourceId (replaces that source’s rows, keeps others).
 

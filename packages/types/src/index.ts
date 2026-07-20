@@ -94,9 +94,14 @@ export type IttfApprovalStatus =
   | 'expired'
   | 'inactive';
 
+/**
+ * Multi-dimensional ITTF racket-covering listing facts (batch annotation).
+ * Players often change sponge — surface listed colors / OX / expiry so they
+ * can verify the covering *as listed*, not only the model name.
+ */
 export type IttfApprovalInfo = {
   status: IttfApprovalStatus;
-  /** Stable ITTF equipment code when present (e.g. `03-041`). */
+  /** Stable ITTF equipment code when present (e.g. `03-041` / `21-043`). */
   equipmentCode?: string;
   /** Best-matched ITTF EquipmentName when fuzzy/exact brand+name hit. */
   matchedName?: string;
@@ -108,6 +113,29 @@ export type IttfApprovalInfo = {
   checkedAt?: string;
   /** Short machine-readable reason for non-approved states. */
   reason?: string;
+  /** Raw ITTF ApprovalStatus when a snapshot row matched. */
+  approvalStatus?: boolean | null;
+  /** Raw ITTF IsActive when a snapshot row matched. */
+  isActive?: boolean | null;
+  /** ITTF ExpiresOn (ISO datetime string from snapshot). */
+  expiresOn?: string | null;
+  /**
+   * Top-sheet colors derived from ColorsList (typically Red / Black).
+   * Remaining ColorsList entries are treated as sponge colors — the ITTF
+   * list API does not split the two dimensions explicitly.
+   */
+  topSheetColors?: string[];
+  /** Sponge colors derived from ColorsList (non top-sheet entries). */
+  spongeColors?: string[];
+  /** Full ColorsList tokens when present. */
+  colors?: string[];
+  /**
+   * Whether an OX (sponge-less) version is listed.
+   * Mapped from HasOXVersion (`1`/`Yes` → true, `0`/`No` → false).
+   */
+  oxVersion?: boolean | null;
+  /** ITTF PimpleType when present (In / Out / Long / …). */
+  pimpleType?: string | null;
 };
 
 /**
@@ -123,6 +151,12 @@ export type CatalogProduct = Product & {
    * Absent on blades / non-rubber categories until a matching pipeline exists.
    */
   ittfApproval?: IttfApprovalInfo;
+  /**
+   * Manufacturer / community source marks the model as discontinued.
+   * Stock ≠ catalog (ADR-001 / DATA_SOURCES): still shown in the visual DB.
+   * Parsed from titles like `[Discontinued]` (e.g. Tabletennis Reference).
+   */
+  discontinued?: boolean;
 };
 
 /** Static catalog snapshot consumed by apps/web (ADR-010 / ADR-014). */

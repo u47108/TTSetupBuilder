@@ -27,10 +27,13 @@ We adopt the following stack for the web application:
 | Routing | **React Router** |
 | Motion | **Framer Motion** |
 | Catalog search (client) | **Fuse.js** (canonical per [ADR-010](./ADR-010-search.md); offline over owned JSON) |
+| UI copy (i18n) | **Custom EN/ES dictionaries** under `apps/web/src/shared/i18n` — **no i18next** (or other major i18n library) |
 | Runtime | **Node.js 22 LTS** |
 | Package manager | **pnpm** |
 
 **Architecture shape:** a **SPA** (Single Page Application). **No SSR is required** for the accepted product path.
+
+**Locale:** active language (`en` | `es`) lives in the Zustand UI store (see [ADR-005](./ADR-005-state-management.md)), persisted to `localStorage`, and mirrored on `document.documentElement.lang`. Adding a major i18n framework still requires updating this ADR first.
 
 **Deployment:** static-asset hosting compatible with **GitHub Pages** and **Cloudflare Pages** (and similar CDN/static hosts).
 

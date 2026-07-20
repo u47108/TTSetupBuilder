@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 import type { ProductCategory } from '@ttsetupbuilder/types';
 import { downloadImageToOwnedStorage, fetchHtml } from '../pipeline/downloadImage.js';
+import { allowKnockoutForCategory } from '../pipeline/optimizeImage.js';
 import { normalizeProduct } from '../pipeline/normalizeProduct.js';
 import type {
   ListingCandidate,
@@ -109,6 +110,7 @@ export function createWooPdpSeedSource(options: WooPdpSeedOptions): SourceModule
             outputDir: ctx.imageOutputDir,
             publicPrefix: '/catalog',
             rateLimitMs: ctx.rateLimitMs,
+            allowKnockout: allowKnockoutForCategory(category),
           });
           publicSrcs.push(downloaded.publicSrc);
           localPaths.push(downloaded.localPath);

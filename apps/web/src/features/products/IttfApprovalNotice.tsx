@@ -1,4 +1,11 @@
 import type { IttfApprovalInfo, IttfApprovalStatus } from '@ttsetupbuilder/types';
+import {
+  hasIttfListingDetail,
+  IttfListingChecklist,
+} from '@/features/products/IttfListingChecklist';
+import { useT } from '@/shared/i18n/useT';
+import type { MessageKey } from '@/shared/i18n/types';
+import { cn } from '@/shared/lib/cn';
 
 const ALERT_STATUSES: ReadonlySet<IttfApprovalStatus> = new Set([
   'not_found',
@@ -13,35 +20,21 @@ export function shouldShowIttfApprovalAlert(
   return Boolean(info && ALERT_STATUSES.has(info.status));
 }
 
-function titleFor(status: IttfApprovalStatus): string {
-  switch (status) {
-    case 'not_approved':
-      return 'Not ITTF-approved';
-    case 'not_found':
-      return 'Not on ITTF covering list';
-    case 'expired':
-      return 'ITTF approval expired';
-    case 'inactive':
-      return 'ITTF listing inactive';
-    default:
-      return 'ITTF approval note';
-  }
-}
+const TITLE_KEYS: Record<IttfApprovalStatus, MessageKey> = {
+  approved: 'ittf.titleApproved',
+  not_approved: 'ittf.titleNotApproved',
+  not_found: 'ittf.titleNotFound',
+  expired: 'ittf.titleExpired',
+  inactive: 'ittf.titleInactive',
+};
 
-function bodyFor(info: IttfApprovalInfo): string {
-  switch (info.status) {
-    case 'not_approved':
-      return 'This covering appears in the ITTF racket-coverings database without a valid approval code (or with ApprovalStatus=false). It is not homologated for competition use under current ITTF rules.';
-    case 'not_found':
-      return 'No matching entry was found in the owned ITTF racket-coverings snapshot. This may be a renamed model, a regional exclusive, or simply not listed.';
-    case 'expired':
-      return 'A matching ITTF entry was found, but its ExpiresOn date is in the past according to the local snapshot.';
-    case 'inactive':
-      return 'A matching ITTF entry exists but is marked inactive in the local approval snapshot.';
-    default:
-      return 'See local ITTF approval annotation on this catalog row.';
-  }
-}
+const BODY_KEYS: Record<IttfApprovalStatus, MessageKey> = {
+  approved: 'ittf.bodyApproved',
+  not_approved: 'ittf.bodyNotApproved',
+  not_found: 'ittf.bodyNotFound',
+  expired: 'ittf.bodyExpired',
+  inactive: 'ittf.bodyInactive',
+};
 
 type IttfApprovalNoticeProps = {
   info: IttfApprovalInfo;
@@ -49,56 +42,93 @@ type IttfApprovalNoticeProps = {
 
 /**
  * Quiet dark-UI notice for rubber/pips approval facts (visual database — not ecommerce chrome).
+ * Shows amber alert for non-approved statuses; quiet listing panel when approved so players
+ * can verify code / colors / OX / expiry vs how ITTF lists the covering.
  */
 export function IttfApprovalNotice({ info }: IttfApprovalNoticeProps) {
-  if (!shouldShowIttfApprovalAlert(info)) return null;
+  const t = useT();
+  const isAlert = shouldShowIttfApprovalAlert(info);
+  const showChecklist = hasIttfListingDetail(info) || isAlert;
+
+  if (!isAlert && !showChecklist && info.status !== 'approved') return null;
 
   return (
     <aside
       role="status"
-      aria-label="ITTF approval status"
-      className="rounded-2xl border border-amber-500/35 bg-amber-500/[0.08] px-4 py-3.5"
+      aria-label={t('ittf.ariaLabel')}
+      data-ittf-tone={isAlert ? 'alert' : 'listing'}
+      className={cn(
+        'rounded-2xl border px-4 py-3.5',
+        isAlert
+          ? 'border-amber-500/35 bg-amber-500/[0.08]'
+          : 'border-[var(--color-border-subtle)] bg-[var(--color-elevated)]',
+      )}
     >
-      <p className="text-xs font-medium uppercase tracking-[0.16em] text-amber-200/90">
-        ITTF covering status
-      </p>
-      <p className="mt-1.5 font-[family-name:var(--font-display)] text-lg text-amber-50">
-        {titleFor(info.status)}
-      </p>
-      <p className="mt-2 text-sm leading-relaxed text-amber-100/75">{bodyFor(info)}</p>
-      <dl className="mt-3 grid gap-1.5 text-xs text-amber-100/60">
-        {info.matchedBrand || info.matchedName ? (
-          <div className="flex flex-wrap gap-x-2">
-            <dt className="text-amber-200/50">Matched</dt>
-            <dd>
-              {[info.matchedBrand, info.matchedName].filter(Boolean).join(' · ')}
-            </dd>
-          </div>
-        ) : null}
-        {info.equipmentCode ? (
-          <div className="flex flex-wrap gap-x-2">
-            <dt className="text-amber-200/50">Code</dt>
-            <dd className="font-mono text-amber-100/80">{info.equipmentCode}</dd>
-          </div>
-        ) : (
-          <div className="flex flex-wrap gap-x-2">
-            <dt className="text-amber-200/50">Code</dt>
-            <dd className="font-mono text-amber-100/80">—</dd>
-          </div>
+      <p
+        className={cn(
+          'text-xs font-medium uppercase tracking-[0.16em]',
+          isAlert ? 'text-amber-200/90' : 'text-[var(--color-text-tertiary)]',
         )}
-        {info.reason ? (
-          <div className="flex flex-wrap gap-x-2">
-            <dt className="text-amber-200/50">Detail</dt>
-            <dd>{info.reason}</dd>
-          </div>
-        ) : null}
-        {info.snapshotDate ? (
-          <div className="flex flex-wrap gap-x-2">
-            <dt className="text-amber-200/50">Snapshot</dt>
-            <dd className="font-mono">{info.snapshotDate}</dd>
-          </div>
-        ) : null}
-      </dl>
+      >
+        {t('ittf.coveringStatus')}
+      </p>
+      <p
+        className={cn(
+          'mt-1.5 font-[family-name:var(--font-display)] text-lg',
+          isAlert ? 'text-amber-50' : 'text-[var(--color-text-primary)]',
+        )}
+      >
+        {t(TITLE_KEYS[info.status])}
+      </p>
+      <p
+        className={cn(
+          'mt-2 text-sm leading-relaxed',
+          isAlert ? 'text-amber-100/75' : 'text-[var(--color-text-secondary)]',
+        )}
+      >
+        {t(BODY_KEYS[info.status])}
+      </p>
+      {info.matchedBrand || info.matchedName ? (
+        <p
+          className={cn(
+            'mt-2 text-xs',
+            isAlert ? 'text-amber-100/60' : 'text-[var(--color-text-tertiary)]',
+          )}
+        >
+          {t('ittf.matched')}:{' '}
+          {[info.matchedBrand, info.matchedName].filter(Boolean).join(' · ')}
+        </p>
+      ) : null}
+      {showChecklist ? (
+        <div
+          className={cn(
+            isAlert ? 'text-amber-100/70' : 'text-[var(--color-text-secondary)]',
+          )}
+        >
+          <p
+            className={cn(
+              'mt-3 text-[10px] font-medium uppercase tracking-[0.14em]',
+              isAlert ? 'text-amber-200/70' : 'text-[var(--color-text-tertiary)]',
+            )}
+          >
+            {t('ittf.listingChecklist')}
+          </p>
+          <IttfListingChecklist info={info} compact={isAlert} />
+        </div>
+      ) : null}
+      {info.reason && isAlert ? (
+        <p className="mt-2 font-mono text-[11px] text-amber-100/45">{info.reason}</p>
+      ) : null}
+      {info.snapshotDate ? (
+        <p
+          className={cn(
+            'mt-2 font-mono text-[11px]',
+            isAlert ? 'text-amber-100/40' : 'text-[var(--color-text-tertiary)]',
+          )}
+        >
+          {t('ittf.snapshot')}: {info.snapshotDate}
+        </p>
+      ) : null}
     </aside>
   );
 }

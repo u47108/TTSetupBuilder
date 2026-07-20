@@ -2,11 +2,15 @@ import { useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useCatalogQuery } from '@/features/catalog/useCatalogQuery';
-import { IttfApprovalNotice, shouldShowIttfApprovalAlert } from '@/features/products/IttfApprovalNotice';
+import { DiscontinuedNotice } from '@/features/products/DiscontinuedNotice';
+import { IttfApprovalNotice } from '@/features/products/IttfApprovalNotice';
 import { EmptyState } from '@/shared/components/EmptyState';
 import { TextLink } from '@/shared/components/TextLink';
+import { useT } from '@/shared/i18n/useT';
+import type { MessageKey } from '@/shared/i18n/types';
 
 export function ProductDetailScreen() {
+  const t = useT();
   const { slug } = useParams<{ slug: string }>();
   const { data, isPending, isError } = useCatalogQuery();
   const product = useMemo(
@@ -18,33 +22,38 @@ export function ProductDetailScreen() {
   if (isError) {
     return (
       <EmptyState
-        eyebrow="Product detail"
-        title="Catalog failed to load."
-        description="Owned /data/catalog.json is required."
-        action={<TextLink to="/products">Back to products</TextLink>}
+        eyebrow={t('productDetail.eyebrow')}
+        title={t('productDetail.errorTitle')}
+        description={t('productDetail.errorDescription')}
+        action={<TextLink to="/products">{t('productDetail.back')}</TextLink>}
       />
     );
   }
 
   if (isPending) {
     return (
-      <p className="text-sm text-[var(--color-text-tertiary)]">Loading product from local catalog…</p>
+      <p className="text-sm text-[var(--color-text-tertiary)]">{t('productDetail.loading')}</p>
     );
   }
 
   if (!product) {
     return (
       <EmptyState
-        eyebrow="Product detail"
-        title={slug ? `“${slug}” is not in the owned catalog.` : 'Product not loaded yet.'}
-        description="Detail pages only resolve products published into local JSON — never live third-party pages."
-        action={<TextLink to="/products">Back to products</TextLink>}
+        eyebrow={t('productDetail.eyebrow')}
+        title={
+          slug
+            ? t('productDetail.missingTitle', { slug })
+            : t('productDetail.missingTitle', { slug: '—' })
+        }
+        description={t('productDetail.missingDescription')}
+        action={<TextLink to="/products">{t('productDetail.back')}</TextLink>}
       />
     );
   }
 
   const images = product.images;
   const active = images[activeIndex] ?? images[0];
+  const categoryKey = `category.${product.category}` as MessageKey;
 
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
@@ -93,7 +102,7 @@ export function ProductDetailScreen() {
       <section className="space-y-6">
         <div className="space-y-3">
           <p className="text-xs font-medium uppercase tracking-[0.18em] text-[var(--color-text-tertiary)]">
-            {product.category}
+            {t(categoryKey)}
           </p>
           <h1 className="font-[family-name:var(--font-display)] text-3xl tracking-tight text-[var(--color-text-primary)] sm:text-4xl">
             {product.name}
@@ -103,26 +112,34 @@ export function ProductDetailScreen() {
           ) : null}
         </div>
 
-        {product.category === 'rubber' && shouldShowIttfApprovalAlert(product.ittfApproval) ? (
+        {product.discontinued ? <DiscontinuedNotice /> : null}
+
+        {product.category === 'rubber' && product.ittfApproval ? (
           <IttfApprovalNotice info={product.ittfApproval} />
         ) : null}
 
         <dl className="space-y-3 text-sm text-[var(--color-text-secondary)]">
           <div className="flex justify-between gap-4 border-b border-[var(--color-border-subtle)] py-2">
-            <dt>Brand</dt>
+            <dt>{t('productDetail.brand')}</dt>
             <dd className="text-[var(--color-text-primary)]">{product.brandId}</dd>
           </div>
           <div className="flex justify-between gap-4 border-b border-[var(--color-border-subtle)] py-2">
-            <dt>Images</dt>
+            <dt>{t('productDetail.images')}</dt>
             <dd className="text-[var(--color-text-primary)]">{images.length}</dd>
           </div>
           <div className="flex justify-between gap-4 border-b border-[var(--color-border-subtle)] py-2">
-            <dt>Source</dt>
+            <dt>{t('productDetail.source')}</dt>
             <dd className="text-[var(--color-text-primary)]">{product.provenance.sourceId}</dd>
           </div>
+          {product.discontinued ? (
+            <div className="flex justify-between gap-4 border-b border-[var(--color-border-subtle)] py-2">
+              <dt>{t('productDetail.discontinued')}</dt>
+              <dd className="text-amber-200/90">{t('discontinued.badge')}</dd>
+            </div>
+          ) : null}
           {product.ittfApproval ? (
             <div className="flex justify-between gap-4 border-b border-[var(--color-border-subtle)] py-2">
-              <dt>ITTF</dt>
+              <dt>{t('productDetail.ittf')}</dt>
               <dd className="text-right text-[var(--color-text-primary)]">
                 {product.ittfApproval.status}
                 {product.ittfApproval.equipmentCode
@@ -133,7 +150,7 @@ export function ProductDetailScreen() {
           ) : null}
         </dl>
 
-        <TextLink to="/products">Back to products</TextLink>
+        <TextLink to="/products">{t('productDetail.back')}</TextLink>
       </section>
     </div>
   );

@@ -3,6 +3,8 @@ import { createListingStub } from './createListingStub.js';
 import { clRubberSeeds } from './cl-rubber-seeds.js';
 import { dandoyBlades } from './dandoy-blades.js';
 import { dandoyRubbers } from './dandoy-rubbers.js';
+import { tabletennisReferenceRackets } from './tabletennis-reference-rackets.js';
+import { tabletennisReferenceRubbers } from './tabletennis-reference-rubbers.js';
 import { VPSPORT_MODULES } from './vpsport.js';
 import { zonattGomas } from './zonatt-gomas.js';
 import { zonattMaderas } from './zonatt-maderas.js';
@@ -26,7 +28,15 @@ export const ittfRacketCoverings = createListingStub(requireConfig('ittf-racket-
 export const ttSpinRubbers = createListingStub(requireConfig('tt-spin-rubbers'));
 export const prottRubbers = createListingStub(requireConfig('prott-rubbers'));
 export const prottBlades = createListingStub(requireConfig('prott-blades'));
-export { clRubberSeeds, dandoyBlades, dandoyRubbers, zonattGomas, zonattMaderas };
+export {
+  clRubberSeeds,
+  dandoyBlades,
+  dandoyRubbers,
+  tabletennisReferenceRackets,
+  tabletennisReferenceRubbers,
+  zonattGomas,
+  zonattMaderas,
+};
 export * from './vpsport.js';
 
 const MODULES: readonly SourceModule[] = [
@@ -34,6 +44,8 @@ const MODULES: readonly SourceModule[] = [
   tt11Blades,
   tt11Rubbers,
   tabletennisReviews,
+  tabletennisReferenceRubbers,
+  tabletennisReferenceRackets,
   ttgearlabDatabase,
   ittfEquipmentApproval,
   ittfRacketCoverings,

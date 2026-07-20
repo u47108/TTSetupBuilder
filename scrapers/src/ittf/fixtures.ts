@@ -78,7 +78,7 @@ export const PRASIDHA_RESTRICTED_FIXTURES: IttfRacketCoveringRow[] = [
   },
 ];
 
-/** Contrast: approved coverings with real-looking codes. */
+/** Contrast: approved coverings with real-looking codes + listing dimensions. */
 export const APPROVED_CONTRAST_FIXTURES: IttfRacketCoveringRow[] = [
   {
     EquipmentRacketCoveringId: 9101,
@@ -90,6 +90,8 @@ export const APPROVED_CONTRAST_FIXTURES: IttfRacketCoveringRow[] = [
     ExpiresOn: '2027-06-30T00:00:00',
     PimpleType: 'In',
     ImageList: null,
+    ColorsList: 'Red,Black,Green,Violet,Pink',
+    HasOXVersion: '0',
   },
   {
     EquipmentRacketCoveringId: 9102,
@@ -98,9 +100,11 @@ export const APPROVED_CONTRAST_FIXTURES: IttfRacketCoveringRow[] = [
     EquipmentCode: '21-043',
     ApprovalStatus: true,
     IsActive: true,
-    ExpiresOn: '2027-06-30T00:00:00',
+    ExpiresOn: '2026-12-31T00:00:00',
     PimpleType: 'In',
-    ImageList: null,
+    ImageList: '21-043_DONIC BLUES T1_picture.JPG',
+    ColorsList: 'Red,Black',
+    HasOXVersion: null,
   },
   {
     EquipmentRacketCoveringId: 9103,
@@ -112,6 +116,8 @@ export const APPROVED_CONTRAST_FIXTURES: IttfRacketCoveringRow[] = [
     ExpiresOn: '2027-06-30T00:00:00',
     PimpleType: 'In',
     ImageList: null,
+    ColorsList: 'Red,Black',
+    HasOXVersion: '0',
   },
 ];
 
@@ -131,6 +137,7 @@ function fixtureProduct(
   slug: string,
   name: string,
   brandId: string,
+  description?: string,
 ): CatalogProduct {
   return {
     id: `ittf-fixture-${slug}`,
@@ -139,6 +146,7 @@ function fixtureProduct(
     brandId,
     category: 'rubber',
     description:
+      description ??
       'Fixture seed for ITTF approval UI (not shop inventory). Used to demo not-approved / missing EquipmentCode alerts.',
     images: [],
     imageLocalPaths: [],
@@ -163,5 +171,11 @@ export function buildFixtureCatalogProducts(): CatalogProduct[] {
     fixtureProduct('prasidha-830', 'Prasidha 830', 'prasidha'),
     fixtureProduct('prasidha-long-a', 'Prasidha Long-A', 'prasidha'),
     fixtureProduct('andro-rasanter-r47-ittf-demo', 'Andro Rasanter R47', 'andro'),
+    fixtureProduct(
+      'donic-blues-t1',
+      'Donic Blues T1',
+      'donic',
+      'Fixture seed: Donic Blues T1 (ITTF 21-043) — approved contrast case with listing checklist (code, colors, expiry, OX). Official brand name Blues T1; Tabletennis Reference detail/439 mislabelled as “Bruce T1 [Discontinued]” (search alias only).',
+    ),
   ];
 }

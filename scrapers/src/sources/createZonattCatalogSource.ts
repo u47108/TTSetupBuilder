@@ -5,6 +5,7 @@ import {
   fetchHtml,
   RESEARCH_USER_AGENT,
 } from '../pipeline/downloadImage.js';
+import { allowKnockoutForCategory } from '../pipeline/optimizeImage.js';
 import { normalizeProduct } from '../pipeline/normalizeProduct.js';
 import type {
   ListingCandidate,
@@ -406,6 +407,7 @@ export function createZonattCatalogSource(options: ZonattCatalogOptions): Source
             outputDir: ctx.imageOutputDir,
             publicPrefix: '/catalog',
             rateLimitMs: ctx.rateLimitMs,
+            allowKnockout: allowKnockoutForCategory(kind.productCategory),
           });
           publicSrcs.push(downloaded.publicSrc);
           localPaths.push(downloaded.localPath);

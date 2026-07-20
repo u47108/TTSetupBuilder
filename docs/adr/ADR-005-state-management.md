@@ -15,8 +15,10 @@ React Context is often overused for everything (catalog data, filters, modals, t
 | Concern | Tool | Examples |
 |---------|------|----------|
 | **Server / local catalog data** | **TanStack Query** | Product lists, product detail, players, search index payloads, normalized JSON/catalog fetches |
-| **Client UI state** | **Zustand** | Compare tray selection, builder draft UI flags, modals, non-URL ephemeral UI |
+| **Client UI state** | **Zustand** | Compare tray selection, builder draft UI flags, modals, **UI locale (`en` \| `es`)**, non-URL ephemeral UI |
 | **Theme only** | **React Context** | Dark theme provider / design tokens bridge |
+
+**Locale** is client UI state in Zustand (persisted), not React Context and not a third-party i18n runtime — dictionaries are hand-maintained TypeScript trees (ADR-002). Do not put locale in Theme Context.
 
 **Nobody uses Context for everything.** Do not put catalog entities, search results, or builder equipment graphs in Context. Do not put fetchable catalog data primarily in Zustand when TanStack Query is the fit.
 

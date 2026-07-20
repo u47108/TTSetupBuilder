@@ -1,13 +1,17 @@
 import { useCatalogQuery } from '@/features/catalog/useCatalogQuery';
 import { BladeHandlePicker } from '@/features/builder/BladeHandlePicker';
+import { BuilderDiscontinuedAlert } from '@/features/builder/BuilderDiscontinuedAlert';
+import { BuilderIttfAlert } from '@/features/builder/BuilderIttfAlert';
 import { BuilderProductPicker } from '@/features/builder/BuilderProductPicker';
 import { PlayerPhotoPicker } from '@/features/builder/PlayerPhotoPicker';
 import { useBuilderStore } from '@/features/builder/builder-store';
 import { RacketPreview } from '@/features/builder/RacketPreview';
 import { EmptyState } from '@/shared/components/EmptyState';
 import { TextLink } from '@/shared/components/TextLink';
+import { useT } from '@/shared/i18n/useT';
 
 export function BuilderScreen() {
+  const t = useT();
   const { data, isPending, isError } = useCatalogQuery();
   const products = data?.products ?? [];
 
@@ -39,10 +43,10 @@ export function BuilderScreen() {
   if (isError) {
     return (
       <EmptyState
-        eyebrow="Builder"
-        title="No se pudo cargar el catálogo local."
-        description="El builder solo usa JSON e imágenes propias."
-        action={<TextLink to="/products">Ir a productos</TextLink>}
+        eyebrow={t('builder.eyebrow')}
+        title={t('builder.errorTitle')}
+        description={t('builder.errorDescription')}
+        action={<TextLink to="/products">{t('builder.goProducts')}</TextLink>}
       />
     );
   }
@@ -51,14 +55,13 @@ export function BuilderScreen() {
     <div className="space-y-10">
       <header className="space-y-3">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-[var(--color-text-tertiary)]">
-          Builder
+          {t('builder.eyebrow')}
         </p>
         <h1 className="font-[family-name:var(--font-display)] text-3xl tracking-tight text-[var(--color-text-primary)] sm:text-4xl">
-          Arma tu setup
+          {t('builder.title')}
         </h1>
         <p className="max-w-2xl text-base text-[var(--color-text-secondary)]">
-          Orden: 1 madero → 2 tomada (FL/ST) → 3 goma derecha → 4 goma izquierda → 5 foto
-          (opcional) → compartir.
+          {t('builder.description')}
         </p>
         {hasDraft ? (
           <button
@@ -66,19 +69,19 @@ export function BuilderScreen() {
             onClick={reset}
             className="text-sm text-[var(--color-accent)] hover:underline"
           >
-            Reiniciar setup
+            {t('builder.reset')}
           </button>
         ) : null}
       </header>
 
       {isPending ? (
-        <p className="text-sm text-[var(--color-text-tertiary)]">Cargando catálogo…</p>
+        <p className="text-sm text-[var(--color-text-tertiary)]">{t('builder.loading')}</p>
       ) : (
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
-          <aside className="space-y-4" aria-label="Paleta del builder">
+          <aside className="space-y-4" aria-label={t('builder.paletteAria')}>
             <BuilderProductPicker
-              label="1 · Madero"
-              hint="Selecciona primero la madera"
+              label={t('builder.bladeLabel')}
+              hint={t('builder.bladeHint')}
               category="blade"
               products={products}
               selected={blade}
@@ -97,8 +100,8 @@ export function BuilderScreen() {
             ) : null}
 
             <BuilderProductPicker
-              label="3 · Goma derecha"
-              hint="Forehand / lado derecho"
+              label={t('builder.fhLabel')}
+              hint={t('builder.fhHint')}
               category="rubber"
               products={products}
               selected={fh}
@@ -107,12 +110,12 @@ export function BuilderScreen() {
               onSelect={(product) => selectProduct('fh', product)}
               onClear={() => clearSlot('fh')}
               disabled={!rubbersUnlocked}
-              disabledReason="Elige madero y tomada (FL o ST) antes."
+              disabledReason={t('builder.needBladeHandle')}
             />
 
             <BuilderProductPicker
-              label="4 · Goma izquierda"
-              hint="Backhand / lado izquierdo"
+              label={t('builder.bhLabel')}
+              hint={t('builder.bhHint')}
               category="rubber"
               products={products}
               selected={bh}
@@ -121,8 +124,11 @@ export function BuilderScreen() {
               onSelect={(product) => selectProduct('bh', product)}
               onClear={() => clearSlot('bh')}
               disabled={!rubbersUnlocked || !fh}
-              disabledReason="Elige madero, tomada y goma derecha antes."
+              disabledReason={t('builder.needFh')}
             />
+
+            <BuilderDiscontinuedAlert blade={blade} fh={fh} bh={bh} />
+            <BuilderIttfAlert fh={fh} bh={bh} />
 
             <PlayerPhotoPicker
               photoUrl={playerPhotoUrl}
@@ -132,7 +138,7 @@ export function BuilderScreen() {
               offsetY={playerPhotoOffsetY}
               isActive={activeSlot === 'player'}
               disabled={!photoUnlocked}
-              disabledReason="Completa madero, tomada y ambas gomas antes de la foto."
+              disabledReason={t('builder.needSetupForPhoto')}
               onActivate={() => setActiveSlot('player')}
               onPhoto={setPlayerPhoto}
               onNameChange={setPlayerName}

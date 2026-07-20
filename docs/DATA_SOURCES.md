@@ -20,7 +20,7 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 | **User-Agent** | Identify as research bot for TTSetupBuilder (see scrapers README). |
 | **Rate limit** | Default delay between requests; never parallel-hammer listings. Default CLI mode is **dry-run**. |
 | **robots.txt / ToS** | Operators **must** check robots.txt and site Terms before enabling live fetches. Scrapers do not bypass auth or paywalls. |
-| **Images** | Download to owned disk (`apps/web/public/catalog/` or `scrapers/images/`); content-hash filenames; never use remote URLs as `<img src>` in the app. |
+| **Images** | Download to owned disk (`apps/web/public/catalog/` or `scrapers/images/`); content-hash filenames; never use remote URLs as `<img src>` in the app. **Blades: no studio knockout** (JPEG + plate kept) — pale wood edges are destroyed by white/black flood-fill + fringe scrub. |
 | **Stock ≠ catalog** | TTSetupBuilder is **not** a shop. Keep discontinued / “no disponible” / long-out-of-stock gear when a product page still exists — players still use blades bought years ago. Do not filter ingestion by buyability. |
 
 ---
@@ -32,7 +32,9 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 | `tt11-blades-penholder` | https://tabletennis11.com/en/blades-penholder | Penholder blades, product photos, retail attributes | **Catalog photos** (secondary) | **Cloudflare blocked** for automated GET (2026-07). |
 | `tt11-blades` | https://tabletennis11.com/en/blades | Blades (shakehand), photos, specs | **Primary intent** — blades | **Cloudflare blocked** for automated GET. Prefer `dandoy-blades` for live ingestion. |
 | `tt11-rubbers` | https://tabletennis11.com/en/rubbers | Rubbers, photos, sponge options | **Primary intent** — rubbers | **Cloudflare blocked** for automated GET. |
-| `tabletennis-reviews` | https://tabletennis-reviews.com/ | Community / editorial reviews, product mentions | **Reviews & qualitative context** (not primary photo inventory) | Useful for review text and cross-links; media may be sparse or third-party — only keep owned downloads. |
+| `tabletennis-reviews` | https://tabletennis-reviews.com/ | Community / editorial reviews, product mentions | **Reviews & qualitative context** (not primary photo inventory) | **Different site** from Tabletennis Reference. Useful for review text and cross-links; media may be sparse or third-party — only keep owned downloads. |
+| `tabletennis-reference-rubbers` | https://tabletennis-reference.com/rubber (home: [/](https://tabletennis-reference.com/)) | Rubber photos, community ratings/reviews, discontinued PDPs | **Secondary catalog photos** + **reviews** | **Not** `tabletennis-reviews.com`. Batch only (ADR-008/009/014). Stock ≠ catalog. Dry-run plans listing + seeds; **live** = explicit PDP seeds (`img` under `/images/rubber/`, prefer `*_450.jpg`). Multi-page crawl TODO. Operators must check robots.txt + ToS. Caveat: detail/439 titled “Bruce T1” but packaging/ITTF = **Blues T1** (21-043). |
+| `tabletennis-reference-rackets` | https://tabletennis-reference.com/racket (home: [/](https://tabletennis-reference.com/)) | Blade/racket photos + reviews, discontinued PDPs | **Secondary catalog photos** + **reviews** | Same site family as rubbers. Dry-run plans listing + seeds; **live** = explicit PDP seeds (Ai Fukuhara PRO ZLF detail/226 `[Discontinued]`, Viscaria detail/858). Parses `[Discontinued]` → `discontinued: true`. Multi-page crawl TODO. Batch only; robots/ToS check required. |
 | `ttgearlab-database` | https://ttgearlab.com/category/database/ | Gear database / measured or catalogued equipment | **Specs / lab-oriented catalog** | Category archive; confirm pagination and image rights before bulk download. |
 | `ittf-equipment-approval` | https://equipment.ittf.com/#/equipment/approval (+ API) | Official ITTF equipment approval lists | **Official approval** (authoritative status) | Batch via `ittf-admin-api.azurewebsites.net`. SPA `#` routes are UI only. See [ITTF API](#ittf-api--racket-coverings-monitor) below. |
 | `ittf-racket-coverings` | https://equipment.ittf.com/#/equipment/racket_coverings (+ API) | Official racket coverings (rubbers) approval | **Official approval** — coverings | **Live API** `Equipment_RacketCoverings/all_list`. Annotates `ittfApproval` on catalog rubbers. |
@@ -96,18 +98,34 @@ Batch CLI annotates `category=rubber` products in `apps/web/public/data/catalog.
 ```json
 "ittfApproval": {
   "status": "approved | not_found | not_approved | expired | inactive",
-  "equipmentCode": "03-041",
-  "matchedName": "Rasanter R47",
-  "matchedBrand": "Andro",
+  "equipmentCode": "21-043",
+  "matchedName": "Blues T1",
+  "matchedBrand": "Donic",
   "matchMethod": "brandNameExact",
   "snapshotDate": "2026-07-19",
-  "reason": "…"
+  "reason": "…",
+  "approvalStatus": true,
+  "isActive": true,
+  "expiresOn": "2026-12-31T00:00:00",
+  "topSheetColors": ["Red", "Black"],
+  "spongeColors": [],
+  "colors": ["Red", "Black"],
+  "oxVersion": null,
+  "pimpleType": "In"
 }
 ```
 
 Match order: explicit `equipmentCode` → exact Brand+Name → fuzzy Brand+Name. The SPA **only reads this local field** (ADR-014) — never calls ITTF at runtime.
 
-Alert statuses (UI notice on product detail): `not_found`, `not_approved`, `expired`, `inactive`.
+Listing dimensions come from the snapshot row (`ColorsList`, `HasOXVersion`, `ExpiresOn`, `ApprovalStatus`, `IsActive`, `PimpleType`). The ITTF `all_list` API does **not** split top-sheet vs sponge; we treat Red/Black as top sheet and other `ColorsList` tokens as sponge so players can verify the covering *as listed* (players often change sponge).
+
+Alert statuses (amber UI): `not_found`, `not_approved`, `expired`, `inactive`. Approved matches still show a quiet checklist (code / colors / Ox / expiry).
+
+### Catalog field (`discontinued`)
+
+Set **at scrape/normalize time** when ingesting a PDP — not inferred later in the SPA from the display name.
+
+Tabletennis Reference: `isTabletennisReferenceDiscontinued(html)` looks for `[Discontinued]` on the product `h2` (site `h1` is the banner) and/or `schema.org/Discontinued` on the Offer. The marker is stripped from `name`; `normalizeProduct` writes `discontinued: true` onto the catalog row. Stock ≠ catalog — discontinued models stay in the visual archive. The builder/detail UI only reads this owned field (ADR-014).
 
 ### Commands
 

@@ -43,6 +43,13 @@ Desktop.ini
 # Test / coverage
 coverage/
 .nyc_output/
+# Playwright — local only; never ship to Pages / public/
+playwright-report/
+test-results/
+blob-report/
+apps/web/playwright-report/
+apps/web/test-results/
+apps/web/blob-report/
 
 # Misc
 .cache/

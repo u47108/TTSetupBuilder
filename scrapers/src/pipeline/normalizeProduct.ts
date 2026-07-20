@@ -12,6 +12,8 @@ export type NormalizeProductInput = {
   category: ProductCategory;
   description?: string;
   handleTypes?: BladeHandleType[];
+  /** Manufacturer / source marks model discontinued (stock ≠ catalog). */
+  discontinued?: boolean;
   sourceId: string;
   sourceUrl: string;
   scrapedAt?: string;
@@ -53,6 +55,7 @@ export function normalizeProduct(input: NormalizeProductInput): CatalogProduct {
     category: input.category,
     description: input.description,
     handleTypes: input.handleTypes,
+    ...(input.discontinued === true ? { discontinued: true } : {}),
     images,
     imageLocalPaths,
     provenance: {

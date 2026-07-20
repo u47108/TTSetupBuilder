@@ -8,6 +8,8 @@
     "scrape": "tsx src/cli.ts",
     "ittf": "tsx src/ittf-cli.ts",
     "optimize-images": "tsx src/optimize-catalog-images.ts",
+    "repair-blade-images": "tsx src/repair-blade-images.ts",
+    "guard:optimize-image": "tsx src/pipeline/optimizeImage.guard.ts",
     "enrich-handles": "tsx src/enrich-blade-handles.ts",
     "typecheck": "tsc --noEmit"
   },

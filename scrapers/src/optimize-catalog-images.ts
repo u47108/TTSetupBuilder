@@ -1,6 +1,7 @@
 /**
  * Re-encodes owned catalog images (max ~720px).
  * Studio white/black backgrounds → transparent WebP; otherwise JPEG.
+ * Blade-referenced files always use allowKnockout=false (pale wood ≈ white plate).
  * Rewrites catalog.json paths when extension changes.
  *
  * Usage: pnpm optimize-images
@@ -8,7 +9,11 @@
 import { readdir, readFile, writeFile, unlink, rename } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { optimizeCatalogImage } from './pipeline/optimizeImage.js';
+import type { CatalogProduct } from '@ttsetupbuilder/types';
+import {
+  allowKnockoutForCategory,
+  optimizeCatalogImage,
+} from './pipeline/optimizeImage.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const catalogDir = path.resolve(__dirname, '../../apps/web/public/catalog');
@@ -42,30 +47,60 @@ async function writeWithRetry(outPath: string, buffer: Buffer): Promise<void> {
   throw new Error(`Locked write failed for ${outPath} — wrote ${fallback}`);
 }
 
+function bladeBasenames(products: CatalogProduct[]): Set<string> {
+  const names = new Set<string>();
+  for (const product of products) {
+    if (product.category !== 'blade') continue;
+    for (const image of product.images ?? []) {
+      names.add(path.basename(image.src));
+    }
+    for (const src of product.imageLocalPaths ?? []) {
+      names.add(path.basename(src));
+    }
+  }
+  return names;
+}
+
 async function main(): Promise<void> {
   const entries = await readdir(catalogDir);
   const files = entries.filter((name) => /\.(jpe?g|png|webp|gif|avif)$/i.test(name));
   const renames = new Map<string, string>();
 
+  const catalogRaw = await readFile(catalogJsonPath, 'utf8');
+  const catalog = JSON.parse(catalogRaw) as { products: CatalogProduct[] };
+  const bladeFiles = bladeBasenames(catalog.products);
+
   let savedBytes = 0;
   let processed = 0;
   let knocked = 0;
   let skipped = 0;
+  let bladeSafe = 0;
+  let bladeWebpWarned = 0;
 
   console.info(
-    `Optimizing ${files.length} files (JPEG or WebP+alpha if studio white/black bg)…`,
+    `Optimizing ${files.length} files (${bladeFiles.size} blade-linked → JPEG, no knockout)…`,
   );
 
   for (const name of files) {
+    const isBlade = bladeFiles.has(name);
     const filePath = path.join(catalogDir, name);
     const before = await readFile(filePath);
     const beforeSize = before.length;
 
     try {
-      const optimized = await optimizeCatalogImage(before);
+      const optimized = await optimizeCatalogImage(before, {
+        allowKnockout: isBlade ? false : allowKnockoutForCategory('rubber'),
+      });
       const base = path.parse(name).name;
       const outName = `${base}${optimized.extension}`;
       const outPath = path.join(catalogDir, outName);
+
+      if (isBlade) {
+        bladeSafe += 1;
+        if (name.endsWith('.webp')) {
+          bladeWebpWarned += 1;
+        }
+      }
 
       // Skip tiny wins only when format stays the same and already small
       if (
@@ -76,6 +111,10 @@ async function main(): Promise<void> {
       ) {
         skipped += 1;
         continue;
+      }
+
+      if (isBlade && (optimized.knockedOutBackground || optimized.extension === '.webp')) {
+        throw new Error(`Invariant: blade optimize produced knockout/WebP for ${name}`);
       }
 
       await writeWithRetry(outPath, optimized.buffer);
@@ -98,20 +137,24 @@ async function main(): Promise<void> {
   }
 
   if (renames.size > 0) {
-    const raw = await readFile(catalogJsonPath, 'utf8');
-    let next = raw;
+    let next = catalogRaw;
     for (const [from, to] of renames) {
       next = next.split(from).join(to);
     }
-    if (next !== raw) {
+    if (next !== catalogRaw) {
       await writeFile(catalogJsonPath, next, 'utf8');
       console.info(`Updated ${renames.size} path(s) in catalog.json`);
     }
   }
 
   console.info(
-    `Done. processed=${processed} knockout=${knocked} skipped=${skipped} saved≈${(savedBytes / 1024 / 1024).toFixed(1)} MB`,
+    `Done. processed=${processed} knockout=${knocked} bladeSafe=${bladeSafe} skipped=${skipped} saved≈${(savedBytes / 1024 / 1024).toFixed(1)} MB`,
   );
+  if (bladeWebpWarned > 0) {
+    console.info(
+      `Note: ${bladeWebpWarned} blade WebP(s) flattened to JPEG. Jagged wood edges cannot be recovered — run pnpm repair-blade-images for those products.`,
+    );
+  }
 }
 
 main().catch((error: unknown) => {

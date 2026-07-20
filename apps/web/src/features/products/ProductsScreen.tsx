@@ -3,18 +3,21 @@ import { motion } from 'framer-motion';
 import { useCatalogQuery } from '@/features/catalog/useCatalogQuery';
 import { EmptyState } from '@/shared/components/EmptyState';
 import { TextLink } from '@/shared/components/TextLink';
+import { useT } from '@/shared/i18n/useT';
+import type { MessageKey } from '@/shared/i18n/types';
 
 export function ProductsScreen() {
+  const t = useT();
   const { data, isPending, isError } = useCatalogQuery();
   const products = data?.products ?? [];
 
   if (isError) {
     return (
       <EmptyState
-        eyebrow="Products"
-        title="Local catalog could not load."
-        description="Expected owned JSON at /data/catalog.json. No third-party catalog fallback."
-        action={<TextLink to="/search">Try search</TextLink>}
+        eyebrow={t('products.eyebrow')}
+        title={t('products.errorTitle')}
+        description={t('products.errorDescription')}
+        action={<TextLink to="/search">{t('products.trySearch')}</TextLink>}
       />
     );
   }
@@ -22,10 +25,10 @@ export function ProductsScreen() {
   if (!isPending && products.length === 0) {
     return (
       <EmptyState
-        eyebrow="Products"
-        title="Catalog grid will live here."
-        description="Owned product photography leads this surface. Run a live scraper with --publish to fill public/data/catalog.json."
-        action={<TextLink to="/search">Go to search</TextLink>}
+        eyebrow={t('products.eyebrow')}
+        title={t('products.emptyTitle')}
+        description={t('products.emptyDescription')}
+        action={<TextLink to="/search">{t('products.goSearch')}</TextLink>}
       />
     );
   }
@@ -34,21 +37,22 @@ export function ProductsScreen() {
     <div className="space-y-10">
       <header className="space-y-3">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-[var(--color-text-tertiary)]">
-          Products
+          {t('products.eyebrow')}
         </p>
         <h1 className="font-[family-name:var(--font-display)] text-3xl tracking-tight text-[var(--color-text-primary)] sm:text-4xl">
-          Equipment archive
+          {t('products.title')}
         </h1>
         <p className="max-w-xl text-base text-[var(--color-text-secondary)]">
           {isPending
-            ? 'Loading local catalog…'
-            : `${products.length} products from owned data — photography first.`}
+            ? t('products.loading')
+            : t('products.count', { count: products.length })}
         </p>
       </header>
 
       <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((product, index) => {
           const primary = product.images.find((image) => image.isPrimary) ?? product.images[0];
+          const categoryKey = `category.${product.category}` as MessageKey;
           return (
             <motion.li
               key={product.id}
@@ -74,11 +78,12 @@ export function ProductsScreen() {
                 </div>
                 <div className="space-y-1 px-0.5">
                   <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-text-tertiary)]">
-                    {product.category}
+                    {t(categoryKey)}
+                    {product.discontinued ? ` · ${t('products.discontinued')}` : ''}
                     {product.category === 'rubber' &&
                     product.ittfApproval &&
                     product.ittfApproval.status !== 'approved'
-                      ? ' · ITTF alert'
+                      ? ` · ${t('products.ittfAlert')}`
                       : ''}
                   </p>
                   <h2 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-text-primary)]">

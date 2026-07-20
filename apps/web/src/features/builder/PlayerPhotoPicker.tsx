@@ -3,6 +3,7 @@ import {
   PLAYER_PHOTO_ZOOM_MAX,
   PLAYER_PHOTO_ZOOM_MIN,
 } from '@/features/builder/builder-store';
+import { useT } from '@/shared/i18n/useT';
 import { cn } from '@/shared/lib/cn';
 
 type PlayerPhotoPickerProps = {
@@ -41,6 +42,7 @@ export function PlayerPhotoPicker({
   onOffsetChange,
   onClear,
 }: PlayerPhotoPickerProps) {
+  const t = useT();
   const inputRef = useRef<HTMLInputElement>(null);
   const dragRef = useRef<{
     pointerId: number;
@@ -68,22 +70,20 @@ export function PlayerPhotoPicker({
       >
         <div className="space-y-1">
           <p className="text-xs font-medium uppercase tracking-[0.16em] text-[var(--color-text-tertiary)]">
-            5 · Foto del jugador
+            {t('builder.photo.label')}
           </p>
-          <p className="text-sm text-[var(--color-text-secondary)]">
-            Opcional · sube tu foto, ajusta zoom y arrastra para encuadrar.
-          </p>
+          <p className="text-sm text-[var(--color-text-secondary)]">{t('builder.photo.hint')}</p>
         </div>
         {photoUrl ? (
           <span className="shrink-0 rounded-lg border border-[var(--color-border-subtle)] bg-[var(--color-canvas)] px-2 py-1 text-xs text-[var(--color-text-secondary)]">
-            Lista
+            {t('builder.photo.ready')}
           </span>
         ) : null}
       </button>
 
       {disabled ? (
         <p className="mt-4 text-sm text-[var(--color-text-tertiary)]">
-          {disabledReason ?? 'Completa el setup primero.'}
+          {disabledReason ?? t('builder.photo.locked')}
         </p>
       ) : (
         <div className="mt-4 space-y-3">
@@ -107,7 +107,6 @@ export function PlayerPhotoPicker({
                   const rect = event.currentTarget.getBoundingClientRect();
                   const dx = (event.clientX - drag.startX) / Math.max(rect.width, 1);
                   const dy = (event.clientY - drag.startY) / Math.max(rect.height, 1);
-                  // Drag moves the image with the finger
                   onOffsetChange(drag.originX + dx * 2, drag.originY + dy * 2);
                 }}
                 onPointerUp={(event) => {
@@ -130,13 +129,13 @@ export function PlayerPhotoPicker({
                   }}
                 />
                 <p className="pointer-events-none absolute bottom-2 left-2 rounded-md bg-black/50 px-2 py-1 text-[10px] uppercase tracking-[0.12em] text-white/80">
-                  Arrastra para mover
+                  {t('builder.photo.dragHint')}
                 </p>
               </div>
 
               <label className="block space-y-2">
                 <div className="flex items-center justify-between gap-2 text-xs text-[var(--color-text-tertiary)]">
-                  <span>Zoom</span>
+                  <span>{t('builder.photo.zoom')}</span>
                   <span>{Math.round(zoom * 100)}%</span>
                 </div>
                 <input
@@ -149,18 +148,20 @@ export function PlayerPhotoPicker({
                   className="w-full accent-[var(--color-accent)]"
                 />
                 <div className="flex justify-between text-[10px] uppercase tracking-[0.12em] text-[var(--color-text-tertiary)]">
-                  <span>Alejar</span>
-                  <span>Acercar</span>
+                  <span>{t('builder.photo.zoomOut')}</span>
+                  <span>{t('builder.photo.zoomIn')}</span>
                 </div>
               </label>
 
               <label className="block space-y-1">
-                <span className="text-xs text-[var(--color-text-tertiary)]">Nombre (opcional)</span>
+                <span className="text-xs text-[var(--color-text-tertiary)]">
+                  {t('builder.photo.nameLabel')}
+                </span>
                 <input
                   type="text"
                   value={playerName}
                   onChange={(event) => onNameChange(event.target.value)}
-                  placeholder="Tu nombre o nick"
+                  placeholder={t('builder.photo.namePlaceholder')}
                   maxLength={40}
                   className="w-full rounded-xl border border-[var(--color-border-subtle)] bg-[var(--color-canvas)] px-3 py-2 text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-tertiary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)]"
                 />
@@ -171,7 +172,7 @@ export function PlayerPhotoPicker({
                 className="text-xs text-[var(--color-accent)] hover:underline"
                 onClick={onClear}
               >
-                Quitar foto
+                {t('builder.photo.remove')}
               </button>
             </div>
           ) : null}
@@ -193,7 +194,7 @@ export function PlayerPhotoPicker({
             onClick={() => inputRef.current?.click()}
             className="w-full rounded-xl border border-dashed border-[var(--color-border-subtle)] bg-[var(--color-canvas)] px-3 py-3 text-sm text-[var(--color-text-secondary)] transition-colors hover:border-[var(--color-accent)] hover:text-[var(--color-accent)]"
           >
-            {photoUrl ? 'Cambiar foto' : 'Subir foto del jugador'}
+            {photoUrl ? t('builder.photo.change') : t('builder.photo.upload')}
           </button>
         </div>
       )}

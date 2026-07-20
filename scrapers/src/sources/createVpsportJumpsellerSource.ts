@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 import type { BladeHandleType, ProductCategory } from '@ttsetupbuilder/types';
 import { downloadImageToOwnedStorage, fetchHtml } from '../pipeline/downloadImage.js';
+import { allowKnockoutForCategory } from '../pipeline/optimizeImage.js';
 import { normalizeProduct } from '../pipeline/normalizeProduct.js';
 import type {
   ListingCandidate,
@@ -45,10 +46,11 @@ function absoluteUrl(href: string): string {
   return `${BASE}${href.startsWith('/') ? '' : '/'}${href}`;
 }
 
-function toCatalogThumb(url: string): string {
-  const match = /^(https:\/\/cdnx\.jumpseller\.com\/vpsport-spa\/image\/\d+)\//.exec(url);
+function toCatalogMaster(url: string): string {
+  const match = /^(https:\/\/cdnx\.jumpseller\.com\/vpsport-spa\/image\/\d+)/.exec(url);
   if (match) {
-    return `${match[1]}/thumb/720/720`;
+    // Prefer full master (often PNG) over /thumb/720/720 — same cutout, more pixels.
+    return match[1]!;
   }
   return url;
 }
@@ -78,14 +80,14 @@ function parseListingCards(html: string): ListingCard[] {
     cards.push({
       url,
       name,
-      listingImageUrl: firstSrc ? toCatalogThumb(firstSrc) : undefined,
+      listingImageUrl: firstSrc ? toCatalogMaster(firstSrc) : undefined,
     });
   });
 
   return cards;
 }
 
-function extractPdpImageUrls(html: string, max: number): string[] {
+export function extractPdpImageUrls(html: string, max: number): string[] {
   const ids = [
     ...html.matchAll(/cdnx\.jumpseller\.com\/vpsport-spa\/image\/(\d+)/g),
   ].map((match) => match[1]!);
@@ -93,7 +95,7 @@ function extractPdpImageUrls(html: string, max: number): string[] {
   const unique = [...new Set(ids)];
   return unique
     .slice(0, max)
-    .map((id) => `https://cdnx.jumpseller.com/vpsport-spa/image/${id}/thumb/720/720`);
+    .map((id) => `https://cdnx.jumpseller.com/vpsport-spa/image/${id}`);
 }
 
 /**
@@ -177,6 +179,7 @@ export function createVpsportJumpsellerSource(options: VpsportOptions): SourceMo
                 outputDir: ctx.imageOutputDir,
                 publicPrefix: '/catalog',
                 rateLimitMs: ctx.rateLimitMs,
+                allowKnockout: allowKnockoutForCategory(category),
               });
               publicSrcs.push(downloaded.publicSrc);
               localPaths.push(downloaded.localPath);

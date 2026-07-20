@@ -85,6 +85,8 @@ Details: [`docs/DATA_SOURCES.md`](../docs/DATA_SOURCES.md#ittf-api--racket-cover
 | `cl-rubber-seeds` | **Live** — Bushido / Foxhara WooCommerce PDP seeds |
 | `ittf-racket-coverings` | **Live API monitor** — `pnpm ittf` (approval facts) |
 | `tt11-*` | Stub — Cloudflare blocks automated GET |
+| `tabletennis-reference-rubbers` | **Partial live** — explicit PDP seeds only (e.g. detail/439 Blues T1); multi-page `/rubber` crawl TODO. Not `tabletennis-reviews`. |
+| `tabletennis-reference-rackets` | Stub — dry-run `/racket` (+ home); live PDP seeds TODO |
 | Others | Stub / dry-run only |
 
 ### Flags
@@ -97,10 +99,14 @@ Details: [`docs/DATA_SOURCES.md`](../docs/DATA_SOURCES.md#ittf-api--racket-cover
 | `--limit=<n>` | Max products (default 8) |
 | `--max-pages=<n>` | Max listing pages (default 1) |
 
-Images are stored as **owned JPEG ≤720px** or **WebP with alpha** when a studio white/black background is detected (`pnpm optimize-images`). Black plates use edge flood-fill so dark handles stay opaque.
+Images are stored as **owned JPEG ≤720px**, or **WebP with alpha** when a studio white/black plate is detected on **non-blade** products (`pnpm optimize-images`).
+
+**Blades never get knockout** — pale wood ≈ studio white and fringe scrub shreds edges on dark UI (see Viscaria-style jagged alpha). Scrapers pass `allowKnockoutForCategory(category)`; `pnpm optimize-images` forces JPEG for blade-linked files. Blade JPEGs on white plates also scrub retail **dark matte rings** (black contour halo). Already-damaged blade WebPs need `pnpm repair-blade-images` (re-download; add `--force` to redo JPEGs).
 
 ```bash
 pnpm optimize-images
+pnpm repair-blade-images -- --id=<product-id>          # WebP blades
+pnpm repair-blade-images -- --id=<product-id> --force  # re-download JPEG too
 ```
 
 Dry-run (without `--no-dry-run --fetch-listing`) writes a URL plan under `data/normalized/<sourceId>.dry-run.json` without requesting product pages or images.

@@ -2,13 +2,16 @@
   "name": "web",
   "private": true,
   "version": "0.1.0",
+  "author": "Luis Nuñez",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "typecheck": "tsc -b --noEmit"
+    "typecheck": "tsc -b --noEmit",
+    "test:e2e": "playwright test",
+    "test:e2e:report": "playwright show-report"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.74.4",
@@ -26,6 +29,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.25.1",
+    "@playwright/test": "^1.61.1",
     "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^22.14.1",
     "@types/react": "^19.1.2",

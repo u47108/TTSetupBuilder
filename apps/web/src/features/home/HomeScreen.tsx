@@ -1,16 +1,18 @@
 import { EmptyState } from '@/shared/components/EmptyState';
 import { TextLink } from '@/shared/components/TextLink';
+import { useT } from '@/shared/i18n/useT';
 
 export function HomeScreen() {
+  const t = useT();
   return (
     <EmptyState
-      eyebrow="TTSetupBuilder"
-      title="Explore equipment like a visual archive."
-      description="A photography-first database for blades, rubbers, and professional setups — not a shop. Catalog media and search land in later milestones."
+      eyebrow={t('home.eyebrow')}
+      title={t('home.title')}
+      description={t('home.description')}
       action={
         <div className="flex flex-wrap gap-3">
-          <TextLink to="/products">Browse products</TextLink>
-          <TextLink to="/builder">Open builder</TextLink>
+          <TextLink to="/products">{t('home.browseProducts')}</TextLink>
+          <TextLink to="/builder">{t('home.openBuilder')}</TextLink>
         </div>
       }
     />
