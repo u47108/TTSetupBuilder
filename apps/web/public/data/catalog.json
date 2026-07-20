@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-07-20T06:47:03.072Z",
+  "generatedAt": "2026-07-20T06:47:57.028Z",
   "products": [
     {
       "id": "dandoy-rubber-729-755-2-mystery",
@@ -61623,13 +61623,13 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-feel-sx-img-1",
-          "src": "/catalog/432a8f4db762f3eb.webp",
+          "src": "/catalog/d39ca69e480cd15b.jpg",
           "alt": "Xiom Feel SX photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/432a8f4db762f3eb.webp"
+        "/catalog/d39ca69e480cd15b.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61650,20 +61650,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-hayabusa-arx-img-1",
-          "src": "/catalog/67122351936fb504.webp",
+          "src": "/catalog/f5bf7aef7517c6c2.jpg",
           "alt": "Xiom Hayabusa ARX photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-hayabusa-arx-img-2",
-          "src": "/catalog/59a6598ec63f7cf9.webp",
+          "src": "/catalog/d0554725ff755d8b.jpg",
           "alt": "Xiom Hayabusa ARX photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/67122351936fb504.webp",
-        "/catalog/59a6598ec63f7cf9.webp"
+        "/catalog/f5bf7aef7517c6c2.jpg",
+        "/catalog/d0554725ff755d8b.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61684,20 +61684,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-hayabusa-hx-pro-img-1",
-          "src": "/catalog/44ba012e28423f53.webp",
+          "src": "/catalog/97a8ce30257bef1a.jpg",
           "alt": "Xiom Hayabusa HX PRO photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-hayabusa-hx-pro-img-2",
-          "src": "/catalog/db86da87facaf495.webp",
+          "src": "/catalog/c69e107b0ba4eef4.jpg",
           "alt": "Xiom Hayabusa HX PRO photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/44ba012e28423f53.webp",
-        "/catalog/db86da87facaf495.webp"
+        "/catalog/97a8ce30257bef1a.jpg",
+        "/catalog/c69e107b0ba4eef4.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61718,20 +61718,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-hayabusa-off-pro-img-1",
-          "src": "/catalog/fd0df1fda998017c.webp",
+          "src": "/catalog/15275b9831a7ec3e.jpg",
           "alt": "Xiom Hayabusa OFF PRO photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-hayabusa-off-pro-img-2",
-          "src": "/catalog/d40a3e1de2a4724c.webp",
+          "src": "/catalog/9a8acd061649d975.jpg",
           "alt": "Xiom Hayabusa OFF PRO photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/fd0df1fda998017c.webp",
-        "/catalog/d40a3e1de2a4724c.webp"
+        "/catalog/15275b9831a7ec3e.jpg",
+        "/catalog/9a8acd061649d975.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61752,20 +61752,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-hayabusa-zl-pro-img-1",
-          "src": "/catalog/8393d94a3a84942d.webp",
+          "src": "/catalog/ef223fa48c1bc9aa.jpg",
           "alt": "Xiom Hayabusa ZL PRO photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-hayabusa-zl-pro-img-2",
-          "src": "/catalog/3ab44dbfb398f935.webp",
+          "src": "/catalog/ddb4bd63051f9c8d.jpg",
           "alt": "Xiom Hayabusa ZL PRO photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/8393d94a3a84942d.webp",
-        "/catalog/3ab44dbfb398f935.webp"
+        "/catalog/ef223fa48c1bc9aa.jpg",
+        "/catalog/ddb4bd63051f9c8d.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61786,20 +61786,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-hayabusa-zlx-img-1",
-          "src": "/catalog/49a8dd8d304b900c.webp",
+          "src": "/catalog/ae6329c98619379a.jpg",
           "alt": "Xiom Hayabusa ZLX photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-hayabusa-zlx-img-2",
-          "src": "/catalog/7df9e6815eb5965e.webp",
+          "src": "/catalog/8a765a13ddd012e5.jpg",
           "alt": "Xiom Hayabusa ZLX photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/49a8dd8d304b900c.webp",
-        "/catalog/7df9e6815eb5965e.webp"
+        "/catalog/ae6329c98619379a.jpg",
+        "/catalog/8a765a13ddd012e5.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61823,13 +61823,13 @@
       "images": [
         {
           "id": "zonatt-madera-xiom-hugo-hyper-axylium-hal-img-1",
-          "src": "/catalog/8d54c9781630ab68.webp",
+          "src": "/catalog/b91ba7da6f7155df.jpg",
           "alt": "XIOM HUGO HYPER AXYLIUM HAL photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/8d54c9781630ab68.webp"
+        "/catalog/b91ba7da6f7155df.jpg"
       ],
       "provenance": {
         "sourceId": "zonatt-maderas",
@@ -61850,20 +61850,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-hugo-supreme-alx-pro-img-1",
-          "src": "/catalog/d6a4f296dee62bf8.webp",
+          "src": "/catalog/e29c60b6a58e65fa.jpg",
           "alt": "Xiom Hugo Supreme ALX Pro photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-hugo-supreme-alx-pro-img-2",
-          "src": "/catalog/f741dcc42e2b3c42.webp",
+          "src": "/catalog/76208eed80d83c7d.jpg",
           "alt": "Xiom Hugo Supreme ALX Pro photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/d6a4f296dee62bf8.webp",
-        "/catalog/f741dcc42e2b3c42.webp"
+        "/catalog/e29c60b6a58e65fa.jpg",
+        "/catalog/76208eed80d83c7d.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61884,20 +61884,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-hugo-tmxi-pro-img-1",
-          "src": "/catalog/18873bb83e9cedad.webp",
+          "src": "/catalog/025edcdca91818b8.jpg",
           "alt": "Xiom Hugo TMXi Pro photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-hugo-tmxi-pro-img-2",
-          "src": "/catalog/6113db622f2683fc.webp",
+          "src": "/catalog/1368e6719e97ad1e.jpg",
           "alt": "Xiom Hugo TMXi Pro photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/18873bb83e9cedad.webp",
-        "/catalog/6113db622f2683fc.webp"
+        "/catalog/025edcdca91818b8.jpg",
+        "/catalog/1368e6719e97ad1e.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61921,13 +61921,13 @@
       "images": [
         {
           "id": "zonatt-madera-xiom-hugo-tmxi-pro-img-1",
-          "src": "/catalog/ccf14b4383315eec.webp",
+          "src": "/catalog/1c7913393b2a041b.jpg",
           "alt": "XIOM Hugo TMXi Pro photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/ccf14b4383315eec.webp"
+        "/catalog/1c7913393b2a041b.jpg"
       ],
       "provenance": {
         "sourceId": "zonatt-maderas",
@@ -61948,13 +61948,13 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-ignito-img-1",
-          "src": "/catalog/d57d363e73783373.webp",
+          "src": "/catalog/fe67ac6c30bfb298.jpg",
           "alt": "Xiom Ignito photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/d57d363e73783373.webp"
+        "/catalog/fe67ac6c30bfb298.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -61975,20 +61975,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-indeed-zlx-img-1",
-          "src": "/catalog/5f1c68fe9e829c60.webp",
+          "src": "/catalog/23be254b6eacbb9f.jpg",
           "alt": "Xiom Indeed ZLX photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-indeed-zlx-img-2",
-          "src": "/catalog/dce524e3e7c81c89.webp",
+          "src": "/catalog/f81049bf1e34fb9c.jpg",
           "alt": "Xiom Indeed ZLX photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/5f1c68fe9e829c60.webp",
-        "/catalog/dce524e3e7c81c89.webp"
+        "/catalog/23be254b6eacbb9f.jpg",
+        "/catalog/f81049bf1e34fb9c.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -62009,20 +62009,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-indeed-zlxi-img-1",
-          "src": "/catalog/39dbb5d345d61252.webp",
+          "src": "/catalog/ce2f9361ef6d1ba0.jpg",
           "alt": "Xiom Indeed ZLXi photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-indeed-zlxi-img-2",
-          "src": "/catalog/9fca02977d2012d1.webp",
+          "src": "/catalog/19be397ee0c4b4c0.jpg",
           "alt": "Xiom Indeed ZLXi photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/39dbb5d345d61252.webp",
-        "/catalog/9fca02977d2012d1.webp"
+        "/catalog/ce2f9361ef6d1ba0.jpg",
+        "/catalog/19be397ee0c4b4c0.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -62657,20 +62657,20 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-lss-alx-lite-img-1",
-          "src": "/catalog/8a648fb89e6426fe.webp",
+          "src": "/catalog/e86a4b17f91395d4.jpg",
           "alt": "Xiom LSS ALX Lite photo 1",
           "isPrimary": true
         },
         {
           "id": "dandoy-blade-xiom-lss-alx-lite-img-2",
-          "src": "/catalog/4f8e065653d11807.webp",
+          "src": "/catalog/35b7c1b11d966b1c.jpg",
           "alt": "Xiom LSS ALX Lite photo 2",
           "isPrimary": false
         }
       ],
       "imageLocalPaths": [
-        "/catalog/8a648fb89e6426fe.webp",
-        "/catalog/4f8e065653d11807.webp"
+        "/catalog/e86a4b17f91395d4.jpg",
+        "/catalog/35b7c1b11d966b1c.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
@@ -64246,13 +64246,13 @@
       "images": [
         {
           "id": "dandoy-blade-xiom-paltida-img-1",
-          "src": "/catalog/0007ffab691bdd11.webp",
+          "src": "/catalog/735214c403823114.jpg",
           "alt": "Xiom Paltida photo 1",
           "isPrimary": true
         }
       ],
       "imageLocalPaths": [
-        "/catalog/0007ffab691bdd11.webp"
+        "/catalog/735214c403823114.jpg"
       ],
       "provenance": {
         "sourceId": "dandoy-blades",
