@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "equipmentType": "racket-coverings",
+  "fetchedAt": "2026-07-19T23:00:00.000Z",
+  "sourceUrl": "fixture://ittf-racket-coverings-restricted-demo",
+  "count": 9,
+  "items": [
+    {
+      "EquipmentRacketCoveringId": 9001,
+      "EquipmentName": "Action",
+      "BrandName": "Prasidha",
+      "EquipmentCode": null,
+      "ApprovalStatus": false,
+      "IsActive": true,
+      "ExpiresOn": "2026-12-31T00:00:00",
+      "PimpleType": "Out",
+      "ImageList": null
+    },
+    {
+      "EquipmentRacketCoveringId": 9002,
+      "EquipmentName": "Osaka",
+      "BrandName": "Prasidha",
+      "EquipmentCode": null,
+      "ApprovalStatus": false,
+      "IsActive": true,
+      "ExpiresOn": "2026-12-31T00:00:00",
+      "PimpleType": "In",
+      "ImageList": null
+    },
+    {
+      "EquipmentRacketCoveringId": 9003,
+      "EquipmentName": "Twister 8338",
+      "BrandName": "Prasidha",
+      "EquipmentCode": null,
+      "ApprovalStatus": false,
+      "IsActive": true,
+      "ExpiresOn": "2026-12-31T00:00:00",
+      "PimpleType": "In",
+      "ImageList": null
+    },
+    {
+      "EquipmentRacketCoveringId": 9004,
+      "EquipmentName": "Frankfurt",
+      "BrandName": "Prasidha",
+      "EquipmentCode": null,
+      "ApprovalStatus": false,
+      "IsActive": true,
+      "ExpiresOn": "2026-12-31T00:00:00",
+      "PimpleType": "In",
+      "ImageList": null
+    },
+    {
+      "EquipmentRacketCoveringId": 9005,
+      "EquipmentName": "830",
+      "BrandName": "Prasidha",
+      "EquipmentCode": null,
+      "ApprovalStatus": false,
+      "IsActive": true,
+      "ExpiresOn": "2026-12-31T00:00:00",
+      "PimpleType": "In",
+      "ImageList": null
+    },
+    {
+      "EquipmentRacketCoveringId": 9006,
+      "EquipmentName": "Long-A",
+      "BrandName": "Prasidha",
+      "EquipmentCode": null,
+      "ApprovalStatus": false,
+      "IsActive": true,
+      "ExpiresOn": "2026-12-31T00:00:00",
+      "PimpleType": "Long",
+      "ImageList": null,
+      "HasOXVersion": "Yes"
+    },
+    {
+      "EquipmentRacketCoveringId": 9101,
+      "EquipmentName": "Rasanter R47",
+      "BrandName": "Andro",
+      "EquipmentCode": "03-041",
+      "ApprovalStatus": true,
+      "IsActive": true,
+      "ExpiresOn": "2027-06-30T00:00:00",
+      "PimpleType": "In",
+      "ImageList": null
+    },
+    {
+      "EquipmentRacketCoveringId": 9102,
+      "EquipmentName": "Blues T1",
+      "BrandName": "Donic",
+      "EquipmentCode": "21-043",
+      "ApprovalStatus": true,
+      "IsActive": true,
+      "ExpiresOn": "2027-06-30T00:00:00",
+      "PimpleType": "In",
+      "ImageList": null
+    },
+    {
+      "EquipmentRacketCoveringId": 9103,
+      "EquipmentName": "Lightning",
+      "BrandName": "Tibhar",
+      "EquipmentCode": "74-045",
+      "ApprovalStatus": true,
+      "IsActive": true,
+      "ExpiresOn": "2027-06-30T00:00:00",
+      "PimpleType": "In",
+      "ImageList": null
+    }
+  ]
+}

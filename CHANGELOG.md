@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- **ITTF racket-coverings monitor** (`pnpm ittf`) — batch snapshot/diff/annotate via `ittf-admin-api`; catalog field `ittfApproval`; SPA notice for non-approved rubbers (ADR-014: no live ITTF calls)
 - Live scraper **`zonatt-maderas`** ([ZonaTT](https://www.zonatt.com/es/maderas-de-tenis-de-mesa)) — inventory from sitemap (incl. no disponibles / descatalogados); mango AN/FL/ST/PH
 - Live scraper **`zonatt-gomas`** — ZonaTT rubbers from sitemap (priority: Hurricane 3 Neo Provincial Blue Sponge 39, Killer Pro)
 - Live seed source **`cl-rubber-seeds`** — Bushido / Foxhara WooCommerce PDPs (H3 Neo variants)
@@ -19,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Live scrapers for **VP Sport (Jumpseller)** — 7 categories (gomas lisas, maderos, poros, anti-topspin)
 - Live scrapers for **Dandoy blades + rubbers** with multi-page crawl and merged SPA catalog publish
 - Multi-source ingestion registry (`docs/DATA_SOURCES.md`) and `@ttsetupbuilder/scrapers` CLI
-- Catalog contract extensions in `@ttsetupbuilder/types` (`CatalogProduct`, `CatalogDocument`, provenance + `imageLocalPaths`)
+- Catalog contract extensions in `@ttsetupbuilder/types` (`CatalogProduct`, `CatalogDocument`, provenance + `imageLocalPaths` + `ittfApproval`)
 - Local Fuse.js search over `apps/web/public/data/catalog.json` (ADR-010)
 - Image download helper with content-hash filenames (no hotlinking)
 - pnpm workspace monorepo (`pnpm-workspace.yaml`, root `package.json`)
@@ -40,11 +41,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Local SPA catalog (~**997** products) merges Dandoy + VP Sport + ZonaTT (maderas + gomas) + CL rubber seeds by `sourceId`
+- Local SPA catalog (~**1665** products) merges Dandoy + VP Sport + ZonaTT (maderas + gomas) + CL rubber seeds by `sourceId`; rubbers annotated with batch ITTF approval facts
+- Viscaria CS / PH / ALC catalog photos refreshed (owned local assets)
 - Catalog images optimized to **max 720px JPEG q72** or **WebP+alpha** when studio white/black bg detected
 - Catalog publish **merges by sourceId** (blades + rubbers coexist in one `catalog.json`)
 - TT11 sources marked `cloudflareBlocked` (automated GET fails challenge); prefer Dandoy / VP Sport / ZonaTT for live ingestion
-- ADR-009 amended: multi-source related registry (not TT11-only); links `docs/DATA_SOURCES.md` and `scrapers/`
+- ADR-009 amended: multi-source related registry (not TT11-only); ITTF via admin API batch monitor; links `docs/DATA_SOURCES.md` and `scrapers/`
 - ADR-002 stack table lists Fuse.js as accepted catalog search dependency (per ADR-010)
 - Root `README.md` Technology section aligned with ADR-002 (Vite + React 19 SPA, not Next.js); status updated for catalog + builder
 - `docs/decisions/README.md` now points to canonical `docs/adr/`

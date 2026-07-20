@@ -54,5 +54,10 @@ scrapers/data/raw/**
 !scrapers/data/raw/.gitkeep
 scrapers/data/normalized/**
 !scrapers/data/normalized/.gitkeep
+scrapers/data/ittf/snapshots/**
+!scrapers/data/ittf/snapshots/.gitkeep
+!scrapers/data/ittf/snapshots/fixture-demo.json
+scrapers/data/ittf/reports/**
+!scrapers/data/ittf/reports/.gitkeep
 scrapers/images/**
 !scrapers/images/.gitkeep

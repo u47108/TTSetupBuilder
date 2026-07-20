@@ -67,6 +67,12 @@ pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-im
 
 Live catalog sources today: **Dandoy**, **VP Sport**, **ZonaTT** (maderas + gomas), **CL rubber seeds** (`docs/DATA_SOURCES.md`). The catalog is **not** a shop inventory — discontinued / out-of-stock blades stay when players still use them.
 
+ITTF racket-coverings approval is annotated offline (`pnpm ittf` → `ittfApproval` on rubbers); the SPA never calls ITTF at runtime.
+
+```bash
+pnpm --filter @ttsetupbuilder/scrapers ittf -- run
+```
+
 Build: `pnpm --filter web build`. Details: [`apps/web/README.md`](./apps/web/README.md), [`scrapers/README.md`](./scrapers/README.md).
 
 ### Live site (GitHub Pages)

@@ -24,12 +24,16 @@ scrapers/
   package.json
   src/
     cli.ts                 # pnpm scrape entry
+    ittf-cli.ts            # pnpm ittf — snapshot / diff / annotate
+    ittf/                  # ITTF admin API client, match, fixtures
     config/sources.ts      # registry metadata
     pipeline/              # download image, normalize, write JSON, run
     sources/               # one module per source (stubs + dry-run URLs)
     schema/                # scraped ↔ catalog contract helpers
   data/
     fixtures/              # small committed examples
+    ittf/snapshots/        # dated ITTF JSON snapshots (gitignored large dumps OK)
+    ittf/reports/          # diff + approval reports
     raw/                   # gitignored — large scrape dumps
     normalized/            # gitignored — normalized JSON batches
   images/                  # gitignored binaries; prefer publishing to apps/web/public/catalog/
@@ -50,6 +54,26 @@ pnpm scrape -- --source=dandoy-blades
 pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-images --publish --limit=8 --max-pages=1
 ```
 
+### ITTF approval monitor (batch only)
+
+Official racket-covering facts from `ittf-admin-api.azurewebsites.net` — **not** shop inventory. Annotates `ittfApproval` on `category=rubber` in the owned catalog. The SPA never calls ITTF at runtime ([ADR-014](../docs/adr/ADR-014-offline-first-data-ownership.md)).
+
+```bash
+# Nightly-style: fetch all pages → snapshot → diff → annotate catalog.json
+pnpm ittf -- run
+
+# Offline UI fixtures (Prasidha without Approval Code → alert on product detail)
+pnpm ittf -- seed-fixtures
+
+# Snapshot only / annotate only
+pnpm ittf -- snapshot
+pnpm ittf -- annotate --seed-fixtures
+```
+
+Visual QA after `seed-fixtures`: `/products/prasidha-action`, `/products/prasidha-osaka`, `/products/prasidha-long-a`.
+
+Details: [`docs/DATA_SOURCES.md`](../docs/DATA_SOURCES.md#ittf-api--racket-coverings-monitor).
+
 ### Live parsers
 
 | Source id | Status |
@@ -59,6 +83,7 @@ pnpm scrape -- --source=dandoy-blades --no-dry-run --fetch-listing --download-im
 | `zonatt-maderas` | **Live** — ZonaTT blades via **sitemap** (incl. OOS) + PDP `og:image`; listing/ajax for mango hints |
 | `zonatt-gomas` | **Live** — ZonaTT rubbers via **sitemap** (incl. OOS) + PDP `og:image` |
 | `cl-rubber-seeds` | **Live** — Bushido / Foxhara WooCommerce PDP seeds |
+| `ittf-racket-coverings` | **Live API monitor** — `pnpm ittf` (approval facts) |
 | `tt11-*` | Stub — Cloudflare blocks automated GET |
 | Others | Stub / dry-run only |
 

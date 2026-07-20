@@ -75,6 +75,11 @@ export function ProductsScreen() {
                 <div className="space-y-1 px-0.5">
                   <p className="text-xs uppercase tracking-[0.14em] text-[var(--color-text-tertiary)]">
                     {product.category}
+                    {product.category === 'rubber' &&
+                    product.ittfApproval &&
+                    product.ittfApproval.status !== 'approved'
+                      ? ' · ITTF alert'
+                      : ''}
                   </p>
                   <h2 className="font-[family-name:var(--font-display)] text-lg text-[var(--color-text-primary)]">
                     {product.name}

@@ -6,6 +6,7 @@
   "description": "Offline/batch catalog and image ingestion for TTSetupBuilder",
   "scripts": {
     "scrape": "tsx src/cli.ts",
+    "ittf": "tsx src/ittf-cli.ts",
     "optimize-images": "tsx src/optimize-catalog-images.ts",
     "enrich-handles": "tsx src/enrich-blade-handles.ts",
     "typecheck": "tsc --noEmit"

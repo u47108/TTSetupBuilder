@@ -1,7 +1,7 @@
 import { ittfRacketCoverings } from '../sources/registry.js';
 
 /**
- * ITTF racket coverings — SPA hash route.
- * API discovery required before any live fetch.
+ * ITTF racket coverings — official approval facts (not shop inventory).
+ * API: GET /api/Equipment_RacketCoverings/all_list — see `pnpm ittf`.
  */
 export { ittfRacketCoverings as source };

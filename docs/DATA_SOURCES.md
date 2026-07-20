@@ -34,8 +34,8 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 | `tt11-rubbers` | https://tabletennis11.com/en/rubbers | Rubbers, photos, sponge options | **Primary intent** — rubbers | **Cloudflare blocked** for automated GET. |
 | `tabletennis-reviews` | https://tabletennis-reviews.com/ | Community / editorial reviews, product mentions | **Reviews & qualitative context** (not primary photo inventory) | Useful for review text and cross-links; media may be sparse or third-party — only keep owned downloads. |
 | `ttgearlab-database` | https://ttgearlab.com/category/database/ | Gear database / measured or catalogued equipment | **Specs / lab-oriented catalog** | Category archive; confirm pagination and image rights before bulk download. |
-| `ittf-equipment-approval` | https://equipment.ittf.com/#/equipment/approval | Official ITTF equipment approval lists | **Official approval** (authoritative status) | **SPA with hash routes** (`#/...`). Listing HTML alone may be empty; **API discovery required** (devtools Network). Document endpoints when found; until then dry-run only. |
-| `ittf-racket-coverings` | https://equipment.ittf.com/#/equipment/racket_coverings | Official racket coverings (rubbers) approval | **Official approval** — coverings | Same SPA/`#` caveats as approval list. |
+| `ittf-equipment-approval` | https://equipment.ittf.com/#/equipment/approval (+ API) | Official ITTF equipment approval lists | **Official approval** (authoritative status) | Batch via `ittf-admin-api.azurewebsites.net`. SPA `#` routes are UI only. See [ITTF API](#ittf-api--racket-coverings-monitor) below. |
+| `ittf-racket-coverings` | https://equipment.ittf.com/#/equipment/racket_coverings (+ API) | Official racket coverings (rubbers) approval | **Official approval** — coverings | **Live API** `Equipment_RacketCoverings/all_list`. Annotates `ittfApproval` on catalog rubbers. |
 | `tt-spin-rubbers` | https://www.tt-spin.com/table-tennis-rubbers/ | Rubber catalog / photos | **Catalog photos** — rubbers (secondary) | Respect robots and commercial ToS; rate-limit strictly. |
 | `prott-rubbers` | https://www.prott.vip/Product-List.aspx?producttype=2 | Rubber product list | **Catalog photos** — rubbers | ASP.NET list pages; may need pagination query params. |
 | `prott-blades` | https://www.prott.vip/Product-List.aspx?producttype=12 | Blade product list | **Catalog photos** — blades | Same as rubbers list pattern. |
@@ -63,17 +63,74 @@ Canonical scraper package: [`scrapers/`](../scrapers/). Operator ethics and robo
 
 ---
 
-## ITTF SPA / API unknown
+## ITTF API — racket coverings monitor
 
-Routes under `equipment.ittf.com` use client-side `#` navigation. A naive HTTP GET of the hash URL often returns a shell without equipment rows.
+Official approval data lives on **`https://ittf-admin-api.azurewebsites.net`** (Swagger: `/swagger/docs/v1`). The SPA at `equipment.ittf.com` is UI only — prefer the admin API for batch ingestion.
 
-**Open work for operators:**
+### Endpoints (verified 2026-07)
 
-1. Open DevTools → Network while browsing Approval / Racket coverings.
-2. Record JSON/XHR endpoints, auth headers (if any — none expected for public lists), and pagination.
-3. Add discovered URLs to the corresponding source module comments and enable a **rate-limited** fetch mode only after robots/ToS review.
+| Endpoint | Notes |
+|----------|--------|
+| `GET /api/Equipment_RacketCoverings/all_list` | Paginated coverings. **Requires** `custom_filter=[]` and a real `sortby` (e.g. `BrandName`). Returns `{ rows, Count }`. |
+| `GET /api/Download/Equipment_RacketCoverings` | Same list shape; useful for exports. |
+| `GET /api/Equipment_RacketCovering/{id}/Details` | Full detail for one covering. |
+| `GET /api/Equipment_Balls/all_list` | Balls — use `sortby=EquipmentBallId` + `custom_filter=[]`. |
+| `GET /api/Equipment_Tables/all_list` | Tables — `sortby=EquipmentTableId`. |
+| `GET /api/Equipment_Nets/all_list` | Nets — `sortby=EquipmentNetId`. |
+| `GET /api/Equipment_Floors/all_list` | Floors — `sortby=EquipmentFloorId`. |
+| `GET /api/EquipmentTypes/all_list` | Types: Balls, Rackets, Nets, Floors, Tables, Racket Coverings, Net Gauges. |
 
-Until discovery lands, `ittf-*` sources **must** stay dry-run / stub.
+There is **no** dedicated Blades / Adhesives controller in the public swagger. “Rackets” exists as an equipment type but `Equipments/all_list` returned empty in discovery.
+
+### Row shape (racket coverings)
+
+Key fields: `EquipmentCode`, `ApprovalStatus`, `IsActive`, `ExpiresOn`, `BrandName`, `EquipmentName`, `ImageList`, `PimpleType`, `EquipmentRacketCoveringId`.
+
+- **Stable key for diffs:** `EquipmentCode` when present; otherwise `EquipmentRacketCoveringId`.
+- **Not homologated:** `ApprovalStatus=false` and/or empty/`null` `EquipmentCode` (SPA shows Approval Code `-`, e.g. many Prasidha models).
+
+### Catalog annotation (`ittfApproval`)
+
+Batch CLI annotates `category=rubber` products in `apps/web/public/data/catalog.json`:
+
+```json
+"ittfApproval": {
+  "status": "approved | not_found | not_approved | expired | inactive",
+  "equipmentCode": "03-041",
+  "matchedName": "Rasanter R47",
+  "matchedBrand": "Andro",
+  "matchMethod": "brandNameExact",
+  "snapshotDate": "2026-07-19",
+  "reason": "…"
+}
+```
+
+Match order: explicit `equipmentCode` → exact Brand+Name → fuzzy Brand+Name. The SPA **only reads this local field** (ADR-014) — never calls ITTF at runtime.
+
+Alert statuses (UI notice on product detail): `not_found`, `not_approved`, `expired`, `inactive`.
+
+### Commands
+
+```bash
+# Nightly: fetch full list + diff vs previous day + annotate catalog rubbers
+pnpm --filter @ttsetupbuilder/scrapers ittf -- run
+
+# Or step by step
+pnpm --filter @ttsetupbuilder/scrapers ittf -- snapshot
+pnpm --filter @ttsetupbuilder/scrapers ittf -- diff
+pnpm --filter @ttsetupbuilder/scrapers ittf -- annotate --seed-fixtures
+
+# Offline UI QA (Prasidha without Approval Code)
+pnpm --filter @ttsetupbuilder/scrapers ittf -- seed-fixtures
+```
+
+Artifacts: `scrapers/data/ittf/snapshots/YYYY-MM-DD.json`, `scrapers/data/ittf/reports/*-diff.json`, `*-catalog-approval.json`.
+
+### Future (design only — not implemented)
+
+- History API / multi-day timelines beyond dated snapshots
+- Alerts: email / Telegram / Discord / RSS from diff reports
+- Blade approval if/when a public list endpoint appears
 
 ---
 

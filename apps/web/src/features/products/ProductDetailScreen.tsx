@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useCatalogQuery } from '@/features/catalog/useCatalogQuery';
+import { IttfApprovalNotice, shouldShowIttfApprovalAlert } from '@/features/products/IttfApprovalNotice';
 import { EmptyState } from '@/shared/components/EmptyState';
 import { TextLink } from '@/shared/components/TextLink';
 
@@ -102,6 +103,10 @@ export function ProductDetailScreen() {
           ) : null}
         </div>
 
+        {product.category === 'rubber' && shouldShowIttfApprovalAlert(product.ittfApproval) ? (
+          <IttfApprovalNotice info={product.ittfApproval} />
+        ) : null}
+
         <dl className="space-y-3 text-sm text-[var(--color-text-secondary)]">
           <div className="flex justify-between gap-4 border-b border-[var(--color-border-subtle)] py-2">
             <dt>Brand</dt>
@@ -115,6 +120,17 @@ export function ProductDetailScreen() {
             <dt>Source</dt>
             <dd className="text-[var(--color-text-primary)]">{product.provenance.sourceId}</dd>
           </div>
+          {product.ittfApproval ? (
+            <div className="flex justify-between gap-4 border-b border-[var(--color-border-subtle)] py-2">
+              <dt>ITTF</dt>
+              <dd className="text-right text-[var(--color-text-primary)]">
+                {product.ittfApproval.status}
+                {product.ittfApproval.equipmentCode
+                  ? ` · ${product.ittfApproval.equipmentCode}`
+                  : ''}
+              </dd>
+            </div>
+          ) : null}
         </dl>
 
         <TextLink to="/products">Back to products</TextLink>

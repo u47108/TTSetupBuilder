@@ -84,6 +84,33 @@ export type ProductProvenance = {
 };
 
 /**
+ * ITTF racket-covering approval fact (batch annotation only — never live API in SPA).
+ * See scrapers `ittf-cli` and docs/DATA_SOURCES.md.
+ */
+export type IttfApprovalStatus =
+  | 'approved'
+  | 'not_found'
+  | 'not_approved'
+  | 'expired'
+  | 'inactive';
+
+export type IttfApprovalInfo = {
+  status: IttfApprovalStatus;
+  /** Stable ITTF equipment code when present (e.g. `03-041`). */
+  equipmentCode?: string;
+  /** Best-matched ITTF EquipmentName when fuzzy/exact brand+name hit. */
+  matchedName?: string;
+  matchedBrand?: string;
+  /** How the catalog row was linked to the ITTF snapshot. */
+  matchMethod?: 'equipmentCode' | 'brandNameExact' | 'brandNameFuzzy' | 'none';
+  /** ISO date of the snapshot used for annotation. */
+  snapshotDate?: string;
+  checkedAt?: string;
+  /** Short machine-readable reason for non-approved states. */
+  reason?: string;
+};
+
+/**
  * Product as published for the SPA + Fuse.js index.
  * Extends Product with provenance and explicit local image paths.
  */
@@ -91,6 +118,11 @@ export type CatalogProduct = Product & {
   provenance: ProductProvenance;
   /** Repo-relative or public-path owned files written by scrapers */
   imageLocalPaths: string[];
+  /**
+   * Official ITTF approval annotation for rubbers/pips (batch only).
+   * Absent on blades / non-rubber categories until a matching pipeline exists.
+   */
+  ittfApproval?: IttfApprovalInfo;
 };
 
 /** Static catalog snapshot consumed by apps/web (ADR-010 / ADR-014). */

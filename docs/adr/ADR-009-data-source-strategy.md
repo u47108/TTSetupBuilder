@@ -34,7 +34,7 @@ Ingestion is **multi-source**, not TT11-only. The approved registry (images, sea
 | Primary / secondary **catalog photos** | `tt11-blades`, `tt11-rubbers`, `tt11-blades-penholder`, `prott-*`, `dandoy-*`, `tt-spin-rubbers` |
 | **Reviews / qualitative** | `tabletennis-reviews` |
 | **Specs / lab database** | `ttgearlab-database` |
-| **Official ITTF approval** | `ittf-equipment-approval`, `ittf-racket-coverings` (SPA `#` routes — API discovery TBD) |
+| **Official ITTF approval** | `ittf-equipment-approval`, `ittf-racket-coverings` — batch via `ittf-admin-api` (`pnpm ittf`); SPA `#` routes are UI only |
 
 Operators must respect robots.txt / ToS; scrapers default to dry-run and store provenance on every row. Full URL table and ethics policy: [`docs/DATA_SOURCES.md`](../DATA_SOURCES.md), [`scrapers/README.md`](../../scrapers/README.md).
 

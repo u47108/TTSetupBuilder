@@ -71,10 +71,12 @@ export const SOURCE_CONFIGS: readonly SourceConfig[] = [
     categories: ['blade', 'rubber', 'ball', 'other'],
     role: 'official-approval',
     selectorNotes: [
-      'SPA shell only via naive GET — discover XHR/JSON in DevTools',
-      'TODO: record approval API base + pagination once known',
+      'Public API: https://ittf-admin-api.azurewebsites.net (swagger /swagger/docs/v1)',
+      'Racket coverings: GET /api/Equipment_RacketCoverings/all_list (custom_filter=[] + sortby=BrandName)',
+      'Siblings: Equipment_Balls / Tables / Nets / Floors all_list with type-specific sortby',
+      'No dedicated Blades/Adhesives controllers in swagger (EquipmentTypes includes Rackets)',
+      'Batch monitor: pnpm ittf -- snapshot|annotate (see scrapers README)',
     ],
-    requiresApiDiscovery: true,
     rateLimitMs: 2500,
   },
   {
@@ -84,10 +86,11 @@ export const SOURCE_CONFIGS: readonly SourceConfig[] = [
     categories: ['rubber'],
     role: 'official-approval',
     selectorNotes: [
-      'SPA # route — same API discovery as ittf-equipment-approval',
-      'TODO: covering list endpoint + brand/model fields',
+      'LIVE API: /api/Equipment_RacketCoverings/all_list → rows + Count',
+      'Fields: EquipmentCode, ApprovalStatus, IsActive, ExpiresOn, BrandName, EquipmentName, ImageList, PimpleType',
+      'Stable key: EquipmentCode when present; else EquipmentRacketCoveringId',
+      'CLI: pnpm ittf -- snapshot && pnpm ittf -- annotate --seed-fixtures',
     ],
-    requiresApiDiscovery: true,
     rateLimitMs: 2500,
   },
   {
